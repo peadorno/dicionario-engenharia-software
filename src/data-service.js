@@ -94,16 +94,20 @@ function validateRelations(relations, termIds) {
   assertUniqueIds(relations, "relações");
 }
 
+export function validateKnowledgeBase(terms, relations) {
+  validateTerms(terms);
+
+  const termIds = new Set(terms.map((term) => term.id));
+  validateRelations(relations, termIds);
+}
+
 export async function loadKnowledgeBase() {
   const [terms, relations] = await Promise.all([
     fetchJson(DATA_URLS.terms, "os termos"),
     fetchJson(DATA_URLS.relations, "as relações"),
   ]);
 
-  validateTerms(terms);
-
-  const termIds = new Set(terms.map((term) => term.id));
-  validateRelations(relations, termIds);
+  validateKnowledgeBase(terms, relations);
 
   return {
     terms: [...terms].sort((first, second) =>

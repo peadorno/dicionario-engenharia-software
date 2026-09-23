@@ -77,7 +77,8 @@ Não fazem parte do MVP:
 │   ├── relations.json
 │   └── terms.json
 ├── docs/
-│   └── architecture.md
+│   ├── architecture.md
+│   └── manual-testing.md
 ├── src/
 │   ├── app.js
 │   ├── data-service.js
@@ -85,6 +86,7 @@ Não fazem parte do MVP:
 │   ├── search.js
 │   └── ui.js
 ├── tests/
+│   ├── data-service.test.js
 │   ├── relations.test.js
 │   └── search.test.js
 ├── .gitignore
@@ -113,6 +115,16 @@ python -m http.server 8000
 ```
 
 Depois, acesse `http://localhost:8000` no navegador. Para encerrar o servidor, pressione `Ctrl+C` no terminal.
+
+## Executar os testes
+
+Os testes usam o executor nativo do Node.js e não exigem instalação de dependências. Com Node.js 20 ou superior, execute:
+
+```powershell
+npm test
+```
+
+Esse comando verifica a busca, as relações entre conceitos e a integridade dos arquivos JSON. As verificações que dependem de interação visual estão registradas em [`docs/manual-testing.md`](docs/manual-testing.md).
 
 ## Sequência de implementação
 

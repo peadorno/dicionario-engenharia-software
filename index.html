@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Dicionário para estudar conceitos de Engenharia de Software e Tecnologia e compreender suas relações."
+    >
+    <title>Dicionário de Engenharia de Software e Tecnologia</title>
+  </head>
+  <body>
+    <a href="#main-content">Ir para o conteúdo principal</a>
+
+    <header>
+      <p>Base pessoal de conhecimento</p>
+      <h1>Dicionário de Engenharia de Software e Tecnologia</h1>
+      <p>
+        Pesquise conceitos, consulte exemplos e descubra como diferentes termos
+        participam do mesmo fluxo.
+      </p>
+    </header>
+
+    <main id="main-content">
+      <section aria-labelledby="search-heading">
+        <h2 id="search-heading">Pesquisar conceitos</h2>
+
+        <form id="search-form" role="search">
+          <label for="search-input">Nome, alias, categoria ou definição</label>
+          <input
+            id="search-input"
+            name="query"
+            type="search"
+            autocomplete="off"
+            aria-controls="search-results"
+            aria-describedby="search-help"
+            disabled
+          >
+          <p id="search-help">A busca não diferencia letras maiúsculas ou acentos.</p>
+        </form>
+
+        <p id="app-status" role="status" aria-live="polite">
+          Aguardando a implementação do carregamento dos termos.
+        </p>
+
+        <div aria-labelledby="results-heading">
+          <h2 id="results-heading">Resultados</h2>
+          <p id="results-summary" aria-live="polite">Nenhum termo carregado.</p>
+          <ul id="search-results"></ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="details-heading">
+        <h2 id="details-heading">Detalhes do termo</h2>
+
+        <p id="empty-details">Selecione um termo para consultar seus detalhes.</p>
+
+        <article id="term-details" tabindex="-1" hidden>
+          <header>
+            <p id="term-category"></p>
+            <h3 id="term-name"></h3>
+            <p id="term-aliases"></p>
+          </header>
+
+          <section aria-labelledby="definition-heading">
+            <h4 id="definition-heading">Definição</h4>
+            <p id="term-definition"></p>
+          </section>
+
+          <section aria-labelledby="explanation-heading">
+            <h4 id="explanation-heading">Explicação</h4>
+            <p id="term-explanation"></p>
+          </section>
+
+          <section aria-labelledby="example-heading">
+            <h4 id="example-heading">Exemplo</h4>
+            <blockquote id="term-example"></blockquote>
+          </section>
+
+          <section aria-labelledby="related-heading">
+            <h4 id="related-heading">Termos relacionados</h4>
+            <ul id="related-terms"></ul>
+          </section>
+        </article>
+      </section>
+
+      <section aria-labelledby="relations-heading">
+        <h2 id="relations-heading">Relacionar termos</h2>
+        <p id="relations-help">
+          Selecione pelo menos dois conceitos para consultar as relações cadastradas
+          entre eles.
+        </p>
+
+        <form id="relations-form">
+          <fieldset aria-describedby="relations-help">
+            <legend>Termos selecionados</legend>
+            <ul id="selected-terms"></ul>
+          </fieldset>
+
+          <button id="relate-button" type="submit" disabled>Relacionar termos</button>
+        </form>
+
+        <output id="relations-output" aria-live="polite" hidden></output>
+      </section>
+    </main>
+
+    <footer>
+      <p>Projeto pessoal de estudo e consulta técnica.</p>
+    </footer>
+
+    <noscript>
+      <p>Esta aplicação precisa de JavaScript para carregar e pesquisar os conceitos.</p>
+    </noscript>
+  </body>
+</html>

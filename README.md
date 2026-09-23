@@ -2,7 +2,7 @@
 
 Aplicação web estática para estudar e consultar conceitos técnicos, suas definições, exemplos e relações com outros conceitos.
 
-> **Estado atual:** arquitetura documentada e conjunto inicial de termos e relações modelado em JSON. A interface ainda não foi implementada.
+> **Estado atual:** arquitetura documentada, dados iniciais modelados e estrutura semântica da interface criada. Estilos e comportamento ainda não foram implementados.
 
 ## Objetivo
 

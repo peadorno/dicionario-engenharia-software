@@ -2,7 +2,7 @@
 
 Aplicação web estática para estudar e consultar conceitos técnicos, suas definições, exemplos e relações com outros conceitos.
 
-> **Estado atual:** arquitetura e dados iniciais definidos. A interface responsiva carrega, apresenta e pesquisa os termos. Navegação por relações e relacionamento múltiplo ainda não foram implementados.
+> **Estado atual:** arquitetura e dados iniciais definidos. A interface responsiva carrega, pesquisa e permite navegar entre termos relacionados. O relacionamento múltiplo ainda não foi implementado.
 
 ## Objetivo
 

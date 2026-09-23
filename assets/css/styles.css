@@ -285,6 +285,23 @@ input[type="search"]:disabled {
   line-height: 1.45;
 }
 
+.related-term__name,
+.related-term__explanation {
+  display: block;
+}
+
+.related-term__name {
+  color: var(--color-primary-dark);
+  font-weight: 800;
+}
+
+.related-term__explanation {
+  margin-top: 0.35rem;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
 #empty-details {
   min-height: 12rem;
   margin: 0;

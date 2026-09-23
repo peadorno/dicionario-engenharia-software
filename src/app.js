@@ -1,9 +1,12 @@
 import { loadKnowledgeBase } from "./data-service.js";
+import { findRelatedTerms } from "./relations.js";
 import { searchTerms } from "./search.js";
 import {
+  clearSearchInput,
   enableSearch,
   renderTermDetails,
   renderTermList,
+  renderRelatedTerms,
   setErrorState,
   setLoadingState,
   setReadyState,
@@ -31,11 +34,21 @@ function selectTerm(termId) {
   state.selectedTermId = termId;
   renderCurrentResults();
   renderTermDetails(term);
+  renderRelatedTerms(
+    findRelatedTerms(termId, state.terms, state.relations),
+    selectRelatedTerm,
+  );
 }
 
 function updateSearch(query) {
   state.query = query;
   renderCurrentResults();
+}
+
+function selectRelatedTerm(termId) {
+  state.query = "";
+  clearSearchInput();
+  selectTerm(termId);
 }
 
 async function initialize() {

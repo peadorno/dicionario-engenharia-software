@@ -1,6 +1,8 @@
 const elements = {
   appStatus: document.querySelector("#app-status"),
   emptyDetails: document.querySelector("#empty-details"),
+  relatedSection: document.querySelector("#related-section"),
+  relatedTerms: document.querySelector("#related-terms"),
   results: document.querySelector("#search-results"),
   resultsSummary: document.querySelector("#results-summary"),
   searchForm: document.querySelector("#search-form"),
@@ -13,6 +15,30 @@ const elements = {
   termExplanation: document.querySelector("#term-explanation"),
   termName: document.querySelector("#term-name"),
 };
+
+function createRelatedTermButton(related, onSelect) {
+  const item = document.createElement("li");
+  const button = document.createElement("button");
+  const name = document.createElement("span");
+  const explanation = document.createElement("span");
+
+  button.type = "button";
+  button.dataset.termId = related.term.id;
+  button.addEventListener("click", () => onSelect(related.term.id));
+
+  name.className = "related-term__name";
+  name.textContent = related.term.term;
+
+  explanation.className = "related-term__explanation";
+  explanation.textContent = related.relations
+    .map((relation) => relation.explanation)
+    .join(" ");
+
+  button.append(name, explanation);
+  item.append(button);
+
+  return item;
+}
 
 function createResultButton(term, selectedTermId, onSelect) {
   const item = document.createElement("li");
@@ -81,6 +107,17 @@ export function renderTermDetails(term) {
   elements.termDetails.focus({ preventScroll: true });
 }
 
+export function renderRelatedTerms(relatedTerms, onSelect) {
+  const fragment = document.createDocumentFragment();
+
+  for (const related of relatedTerms) {
+    fragment.append(createRelatedTermButton(related, onSelect));
+  }
+
+  elements.relatedTerms.replaceChildren(fragment);
+  elements.relatedSection.hidden = relatedTerms.length === 0;
+}
+
 export function setLoadingState() {
   elements.appStatus.dataset.state = "loading";
   elements.appStatus.textContent = "Carregando os conceitos…";
@@ -102,6 +139,10 @@ export function enableSearch(onSearch) {
   elements.searchInput.addEventListener("input", (event) => {
     onSearch(event.currentTarget.value);
   });
+}
+
+export function clearSearchInput() {
+  elements.searchInput.value = "";
 }
 
 export function setErrorState(message) {

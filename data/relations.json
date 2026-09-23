@@ -1,0 +1,121 @@
+[
+  {
+    "id": "git-commit",
+    "source": "git",
+    "target": "commit",
+    "type": "records",
+    "explanation": "O Git organiza o histórico do projeto por meio de commits, que registram conjuntos identificados de mudanças."
+  },
+  {
+    "id": "branch-commit",
+    "source": "branch",
+    "target": "commit",
+    "type": "contains",
+    "explanation": "Uma branch aponta para uma sequência de commits que representa uma linha de desenvolvimento."
+  },
+  {
+    "id": "branch-merge",
+    "source": "branch",
+    "target": "merge",
+    "type": "integrates",
+    "explanation": "O merge integra em outra branch as mudanças desenvolvidas em uma linha de trabalho separada."
+  },
+  {
+    "id": "branch-pull-request",
+    "source": "branch",
+    "target": "pull-request",
+    "type": "proposes",
+    "explanation": "Uma pull request normalmente propõe integrar as mudanças de uma branch em outra."
+  },
+  {
+    "id": "pull-request-merge",
+    "source": "pull-request",
+    "target": "merge",
+    "type": "precedes",
+    "explanation": "Depois da revisão e das verificações necessárias, uma pull request aprovada pode ser concluída por meio de um merge."
+  },
+  {
+    "id": "pull-request-ci",
+    "source": "pull-request",
+    "target": "ci",
+    "type": "validated-by",
+    "explanation": "O CI pode validar automaticamente as mudanças de uma pull request antes do merge."
+  },
+  {
+    "id": "commit-ci",
+    "source": "commit",
+    "target": "ci",
+    "type": "triggers",
+    "explanation": "O envio de novos commits pode acionar o CI para executar verificações automatizadas."
+  },
+  {
+    "id": "ci-cd",
+    "source": "ci",
+    "target": "cd",
+    "type": "enables",
+    "explanation": "O CI produz confiança sobre a mudança, enquanto o CD automatiza sua preparação e possível publicação."
+  },
+  {
+    "id": "ci-deploy",
+    "source": "ci",
+    "target": "deploy",
+    "type": "precedes",
+    "explanation": "O CI executa verificações automatizadas antes que uma versão seja encaminhada para deploy."
+  },
+  {
+    "id": "cd-deploy",
+    "source": "cd",
+    "target": "deploy",
+    "type": "automates",
+    "explanation": "O CD torna o processo de deploy repetível e pode automatizar parte ou toda a publicação de uma versão."
+  },
+  {
+    "id": "deploy-staging",
+    "source": "deploy",
+    "target": "staging",
+    "type": "targets",
+    "explanation": "Um deploy em staging disponibiliza a versão em um ambiente próximo ao real para validação."
+  },
+  {
+    "id": "staging-producao",
+    "source": "staging",
+    "target": "producao",
+    "type": "precedes",
+    "explanation": "A validação em staging reduz o risco antes que a versão seja promovida para produção."
+  },
+  {
+    "id": "deploy-producao",
+    "source": "deploy",
+    "target": "producao",
+    "type": "targets",
+    "explanation": "O deploy em produção disponibiliza uma versão do software para usuários e dados reais."
+  },
+  {
+    "id": "deploy-rollback",
+    "source": "deploy",
+    "target": "rollback",
+    "type": "mitigated-by",
+    "explanation": "Quando um deploy causa problemas, o rollback pode restaurar uma versão ou estado anterior."
+  },
+  {
+    "id": "producao-rollback",
+    "source": "producao",
+    "target": "rollback",
+    "type": "recovers-with",
+    "explanation": "Uma falha relevante em produção pode exigir um rollback para reduzir o impacto aos usuários."
+  },
+  {
+    "id": "feature-flag-deploy",
+    "source": "feature-flag",
+    "target": "deploy",
+    "type": "decouples",
+    "explanation": "Uma feature flag separa o deploy do código da decisão de liberar a funcionalidade aos usuários."
+  },
+  {
+    "id": "feature-flag-producao",
+    "source": "feature-flag",
+    "target": "producao",
+    "type": "controls",
+    "explanation": "Em produção, uma feature flag permite liberar gradualmente ou desativar uma funcionalidade sem novo deploy."
+  }
+]

@@ -2,7 +2,7 @@
 
 Aplicação web estática para estudar e consultar conceitos técnicos, suas definições, exemplos e relações com outros conceitos.
 
-> **Estado atual:** planejamento e preparação do repositório. A aplicação ainda não foi implementada.
+> **Estado atual:** arquitetura documentada e conjunto inicial de termos e relações modelado em JSON. A interface ainda não foi implementada.
 
 ## Objetivo
 
@@ -41,7 +41,7 @@ Não fazem parte do MVP:
 - busca fuzzy;
 - favoritos, comentários ou analytics.
 
-## Termos iniciais propostos
+## Termos iniciais
 
 - Git
 - Commit
@@ -94,6 +94,11 @@ Não fazem parte do MVP:
 ```
 
 Os diretórios e arquivos da aplicação serão adicionados somente quando suas respectivas etapas forem implementadas. A estrutura não será preenchida antecipadamente com arquivos vazios.
+
+Os dados iniciais já estão disponíveis em:
+
+- [`data/terms.json`](data/terms.json): definições e exemplos dos termos;
+- [`data/relations.json`](data/relations.json): conexões e explicações entre conceitos.
 
 ## Arquitetura
 

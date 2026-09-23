@@ -1,0 +1,110 @@
+[
+  {
+    "id": "git",
+    "term": "Git",
+    "category": "Git",
+    "aliases": ["sistema de controle de versão"],
+    "definition": "Sistema distribuído de controle de versão usado para registrar e acompanhar mudanças em arquivos.",
+    "explanation": "O Git mantém o histórico do projeto e permite que diferentes linhas de trabalho evoluam separadamente. Cada pessoa pode trabalhar com uma cópia completa do repositório e sincronizar mudanças quando necessário.",
+    "example": "O time usa Git para acompanhar a evolução do código e colaborar sem sobrescrever o trabalho de outras pessoas."
+  },
+  {
+    "id": "commit",
+    "term": "Commit",
+    "category": "Git",
+    "aliases": ["registro de alteração"],
+    "definition": "Registro identificado de um conjunto de mudanças no histórico de um repositório Git.",
+    "explanation": "Um commit representa um ponto do histórico do projeto. Ele deve reunir mudanças relacionadas e possuir uma mensagem que explique claramente a intenção da alteração.",
+    "example": "Depois de atualizar a documentação, Pedro criou um commit descrevendo a mudança realizada."
+  },
+  {
+    "id": "branch",
+    "term": "Branch",
+    "category": "Git",
+    "aliases": ["ramificação"],
+    "definition": "Linha independente de desenvolvimento dentro de um repositório Git.",
+    "explanation": "Uma branch permite desenvolver uma funcionalidade ou correção sem alterar imediatamente a linha principal do projeto. Quando o trabalho está pronto, suas mudanças podem ser integradas a outra branch.",
+    "example": "A nova busca foi desenvolvida em uma branch separada antes de ser integrada à main."
+  },
+  {
+    "id": "merge",
+    "term": "Merge",
+    "category": "Git",
+    "aliases": ["mesclagem", "integração de branches"],
+    "definition": "Operação que integra o histórico e as mudanças de uma branch em outra.",
+    "explanation": "O merge combina linhas de desenvolvimento. Quando as mesmas partes de um arquivo foram alteradas de maneiras incompatíveis, pode ser necessário resolver conflitos antes de concluir a operação.",
+    "example": "Após a revisão, o time realizou o merge da branch da busca na branch main."
+  },
+  {
+    "id": "pull-request",
+    "term": "Pull Request",
+    "category": "Git",
+    "aliases": ["PR", "solicitação de integração"],
+    "definition": "Proposta de integração de mudanças entre branches, normalmente acompanhada de revisão e verificações automáticas.",
+    "explanation": "Uma pull request cria um espaço para discutir o código, revisar as alterações e executar validações antes do merge. Ela também registra por que uma mudança foi incorporada ao projeto.",
+    "example": "A desenvolvedora abriu uma pull request para que o time revisasse a nova funcionalidade."
+  },
+  {
+    "id": "ci",
+    "term": "CI",
+    "category": "DevOps",
+    "aliases": ["Continuous Integration", "Integração Contínua"],
+    "definition": "Prática de integrar mudanças frequentemente e validá-las automaticamente.",
+    "explanation": "A integração contínua executa verificações como testes, análise estática e construção do projeto sempre que mudanças relevantes são enviadas. O objetivo é encontrar problemas cedo e manter o software em um estado integrável.",
+    "example": "O CI executou os testes automaticamente quando a pull request foi atualizada."
+  },
+  {
+    "id": "cd",
+    "term": "CD",
+    "category": "DevOps",
+    "aliases": ["Continuous Delivery", "Entrega Contínua", "Continuous Deployment", "Implantação Contínua"],
+    "definition": "Conjunto de práticas que automatiza a preparação e, em alguns contextos, a publicação de versões do software.",
+    "explanation": "CD pode significar entrega contínua, quando uma versão fica pronta para publicação, ou implantação contínua, quando versões aprovadas chegam automaticamente à produção. Em ambos os casos, a automação reduz passos manuais e torna o processo mais repetível.",
+    "example": "Após as validações do CI, o fluxo de CD preparou a versão para publicação."
+  },
+  {
+    "id": "deploy",
+    "term": "Deploy",
+    "category": "DevOps",
+    "aliases": ["implantação", "publicação"],
+    "definition": "Processo de disponibilizar uma versão de um software em determinado ambiente.",
+    "explanation": "Um deploy instala ou atualiza uma aplicação e suas configurações em um ambiente. Ele pode ocorrer em desenvolvimento, staging ou produção e deve ser observável e reversível.",
+    "example": "Depois que os testes passaram no CI, o time realizou o deploy da nova versão em staging."
+  },
+  {
+    "id": "staging",
+    "term": "Staging",
+    "category": "DevOps",
+    "aliases": ["homologação", "pré-produção"],
+    "definition": "Ambiente semelhante à produção usado para validar uma versão antes de liberá-la aos usuários finais.",
+    "explanation": "Staging permite testar integração, configuração e comportamento em condições próximas às reais. Ele reduz riscos, mas não substitui testes automatizados nem garante que todos os problemas serão encontrados.",
+    "example": "A equipe validou o fluxo de pagamento em staging antes da publicação em produção."
+  },
+  {
+    "id": "producao",
+    "term": "Produção",
+    "category": "DevOps",
+    "aliases": ["production", "ambiente produtivo"],
+    "definition": "Ambiente no qual o software atende usuários reais e processa dados reais.",
+    "explanation": "Produção exige controles de acesso, monitoramento, segurança e procedimentos de recuperação mais rigorosos. Mudanças nesse ambiente devem ser planejadas e acompanhadas para reduzir impacto aos usuários.",
+    "example": "A nova versão foi monitorada depois do deploy em produção."
+  },
+  {
+    "id": "rollback",
+    "term": "Rollback",
+    "category": "DevOps",
+    "aliases": ["reversão", "retorno de versão"],
+    "definition": "Procedimento de retorno a um estado anterior após uma mudança causar problemas.",
+    "explanation": "Um rollback reduz o tempo de impacto quando uma publicação falha. Para ser confiável, precisa ser planejado, testado e compatível com mudanças de dados e infraestrutura.",
+    "example": "O time executou o rollback quando detectou erros após o deploy."
+  },
+  {
+    "id": "feature-flag",
+    "term": "Feature Flag",
+    "category": "Engenharia de Software",
+    "aliases": ["feature toggle", "chave de funcionalidade"],
+    "definition": "Mecanismo que permite ativar ou desativar uma funcionalidade sem remover seu código ou realizar um novo deploy.",
+    "explanation": "Feature flags separam a publicação técnica do código da liberação da funcionalidade aos usuários. Elas permitem liberações graduais e reação rápida, mas precisam ser gerenciadas para não acumular complexidade desnecessária.",
+    "example": "A equipe ativou a nova busca para um grupo pequeno usando uma feature flag."
+  }
+]

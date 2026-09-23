@@ -2,7 +2,7 @@
 
 Aplicação web estática para estudar e consultar conceitos técnicos, suas definições, exemplos e relações com outros conceitos.
 
-> **Estado atual:** arquitetura documentada, dados iniciais modelados e interface semântica e responsiva criada. O comportamento em JavaScript ainda não foi implementado.
+> **Estado atual:** arquitetura e dados iniciais definidos. A interface responsiva já carrega e apresenta os termos. Busca e relacionamento múltiplo ainda não foram implementados.
 
 ## Objetivo
 
@@ -103,6 +103,16 @@ Os dados iniciais já estão disponíveis em:
 ## Arquitetura
 
 As decisões iniciais de arquitetura, modelo de dados, busca, relações e testes estão descritas em [`docs/architecture.md`](docs/architecture.md).
+
+## Executar localmente
+
+Como a aplicação usa módulos JavaScript e carrega arquivos JSON, execute-a por um servidor HTTP local. Na pasta do projeto:
+
+```powershell
+python -m http.server 8000
+```
+
+Depois, acesse `http://localhost:8000` no navegador. Para encerrar o servidor, pressione `Ctrl+C` no terminal.
 
 ## Sequência de implementação
 

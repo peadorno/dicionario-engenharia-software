@@ -205,6 +205,12 @@ input[type="search"]:disabled {
   font-size: 0.9rem;
 }
 
+#app-status[data-state="error"] {
+  border: 1px solid #f1b8b8;
+  background: #fff0f0;
+  color: #8f1d1d;
+}
+
 #results-heading {
   margin-block: 1.75rem 0.25rem;
   font-size: 1rem;
@@ -245,6 +251,38 @@ input[type="search"]:disabled {
   border-color: var(--color-primary);
   background: var(--color-primary-soft);
   transform: translateY(-1px);
+}
+
+#search-results button[aria-current="true"] {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+.term-result__name,
+.term-result__category,
+.term-result__definition {
+  display: block;
+}
+
+.term-result__name {
+  font-weight: 800;
+}
+
+.term-result__category {
+  margin-top: 0.15rem;
+  color: var(--color-primary-dark);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.term-result__definition {
+  margin-top: 0.35rem;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 #empty-details {

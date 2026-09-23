@@ -1,5 +1,7 @@
 import { loadKnowledgeBase } from "./data-service.js";
+import { searchTerms } from "./search.js";
 import {
+  enableSearch,
   renderTermDetails,
   renderTermList,
   setErrorState,
@@ -10,8 +12,14 @@ import {
 const state = {
   terms: [],
   relations: [],
+  query: "",
   selectedTermId: null,
 };
+
+function renderCurrentResults() {
+  const results = searchTerms(state.terms, state.query);
+  renderTermList(results, state.selectedTermId, selectTerm, state.query.trim());
+}
 
 function selectTerm(termId) {
   const term = state.terms.find((item) => item.id === termId);
@@ -21,8 +29,13 @@ function selectTerm(termId) {
   }
 
   state.selectedTermId = termId;
-  renderTermList(state.terms, state.selectedTermId, selectTerm);
+  renderCurrentResults();
   renderTermDetails(term);
+}
+
+function updateSearch(query) {
+  state.query = query;
+  renderCurrentResults();
 }
 
 async function initialize() {
@@ -34,7 +47,8 @@ async function initialize() {
     state.terms = knowledgeBase.terms;
     state.relations = knowledgeBase.relations;
 
-    renderTermList(state.terms, state.selectedTermId, selectTerm);
+    renderCurrentResults();
+    enableSearch(updateSearch);
     setReadyState(state.terms.length);
   } catch (error) {
     console.error(error);

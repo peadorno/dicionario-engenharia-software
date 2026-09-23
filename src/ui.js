@@ -3,6 +3,8 @@ const elements = {
   emptyDetails: document.querySelector("#empty-details"),
   results: document.querySelector("#search-results"),
   resultsSummary: document.querySelector("#results-summary"),
+  searchForm: document.querySelector("#search-form"),
+  searchInput: document.querySelector("#search-input"),
   termAliases: document.querySelector("#term-aliases"),
   termCategory: document.querySelector("#term-category"),
   termDefinition: document.querySelector("#term-definition"),
@@ -39,7 +41,7 @@ function createResultButton(term, selectedTermId, onSelect) {
   return item;
 }
 
-export function renderTermList(terms, selectedTermId, onSelect) {
+export function renderTermList(terms, selectedTermId, onSelect, query = "") {
   const fragment = document.createDocumentFragment();
 
   for (const term of terms) {
@@ -47,7 +49,16 @@ export function renderTermList(terms, selectedTermId, onSelect) {
   }
 
   elements.results.replaceChildren(fragment);
-  elements.resultsSummary.textContent = `${terms.length} termos disponíveis.`;
+
+  if (query === "") {
+    elements.resultsSummary.textContent = `${terms.length} termos disponíveis.`;
+  } else if (terms.length === 0) {
+    elements.resultsSummary.textContent = `Nenhum termo encontrado para “${query}”.`;
+  } else if (terms.length === 1) {
+    elements.resultsSummary.textContent = `1 termo encontrado para “${query}”.`;
+  } else {
+    elements.resultsSummary.textContent = `${terms.length} termos encontrados para “${query}”.`;
+  }
 }
 
 export function renderTermDetails(term) {
@@ -79,6 +90,18 @@ export function setLoadingState() {
 export function setReadyState(termCount) {
   elements.appStatus.dataset.state = "ready";
   elements.appStatus.textContent = `${termCount} termos carregados. Selecione um conceito para começar.`;
+}
+
+export function enableSearch(onSearch) {
+  elements.searchInput.disabled = false;
+
+  elements.searchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+  });
+
+  elements.searchInput.addEventListener("input", (event) => {
+    onSearch(event.currentTarget.value);
+  });
 }
 
 export function setErrorState(message) {

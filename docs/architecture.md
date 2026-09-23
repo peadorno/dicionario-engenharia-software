@@ -125,11 +125,14 @@ Antes da comparação, textos serão:
 Prioridade dos resultados:
 
 1. nome exatamente igual;
-2. nome iniciado pela consulta;
-3. alias igual ou iniciado pela consulta;
-4. ocorrência no nome;
-5. ocorrência na categoria;
-6. ocorrência na definição ou explicação.
+2. alias exatamente igual;
+3. nome iniciado pela consulta;
+4. alias iniciado pela consulta;
+5. ocorrência no nome ou alias;
+6. ocorrência na categoria;
+7. ocorrência na definição ou explicação.
+
+A ordenação usa a correspondência mais forte encontrada para cada termo. Pontos de campos diferentes não são somados, evitando que várias coincidências fracas superem um nome ou alias mais preciso.
 
 Uma consulta vazia mostrará todos os termos em ordem alfabética. Busca fuzzy e bibliotecas externas não fazem parte do MVP.
 

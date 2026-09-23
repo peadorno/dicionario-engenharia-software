@@ -1,0 +1,24 @@
+# Dependências e resultados de testes
+node_modules/
+coverage/
+
+# Saídas geradas
+dist/
+build/
+
+# Variáveis de ambiente e arquivos locais
+.env
+.env.*
+!.env.example
+*.local
+*.log
+
+# Editores
+.vscode/
+.idea/
+*.code-workspace
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini

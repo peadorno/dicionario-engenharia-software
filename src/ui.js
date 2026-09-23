@@ -3,10 +3,15 @@ const elements = {
   emptyDetails: document.querySelector("#empty-details"),
   relatedSection: document.querySelector("#related-section"),
   relatedTerms: document.querySelector("#related-terms"),
+  relateButton: document.querySelector("#relate-button"),
+  relationsForm: document.querySelector("#relations-form"),
+  relationsOutput: document.querySelector("#relations-output"),
   results: document.querySelector("#search-results"),
   resultsSummary: document.querySelector("#results-summary"),
   searchForm: document.querySelector("#search-form"),
   searchInput: document.querySelector("#search-input"),
+  selectedTerms: document.querySelector("#selected-terms"),
+  selectionToggle: document.querySelector("#selection-toggle"),
   termAliases: document.querySelector("#term-aliases"),
   termCategory: document.querySelector("#term-category"),
   termDefinition: document.querySelector("#term-definition"),
@@ -15,6 +20,23 @@ const elements = {
   termExplanation: document.querySelector("#term-explanation"),
   termName: document.querySelector("#term-name"),
 };
+
+function createSelectedTermItem(term, onRemove) {
+  const item = document.createElement("li");
+  const name = document.createElement("span");
+  const removeButton = document.createElement("button");
+
+  item.className = "selected-term";
+  name.textContent = term.term;
+
+  removeButton.type = "button";
+  removeButton.textContent = "Remover";
+  removeButton.setAttribute("aria-label", `Remover ${term.term} da seleção`);
+  removeButton.addEventListener("click", () => onRemove(term.id));
+
+  item.append(name, removeButton);
+  return item;
+}
 
 function createRelatedTermButton(related, onSelect) {
   const item = document.createElement("li");
@@ -143,6 +165,70 @@ export function enableSearch(onSearch) {
 
 export function clearSearchInput() {
   elements.searchInput.value = "";
+}
+
+export function enableRelationControls(onToggle, onRelate) {
+  elements.selectionToggle.addEventListener("click", onToggle);
+  elements.relationsForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    onRelate();
+  });
+}
+
+export function renderSelectionToggle(term, isSelected) {
+  elements.selectionToggle.hidden = false;
+  elements.selectionToggle.setAttribute("aria-pressed", String(isSelected));
+  elements.selectionToggle.textContent = isSelected
+    ? `Remover ${term.term} da relação`
+    : `Adicionar ${term.term} à relação`;
+}
+
+export function renderSelectedTerms(terms, onRemove) {
+  const fragment = document.createDocumentFragment();
+
+  for (const term of terms) {
+    fragment.append(createSelectedTermItem(term, onRemove));
+  }
+
+  elements.selectedTerms.replaceChildren(fragment);
+  elements.relateButton.disabled = terms.length < 2;
+}
+
+export function clearRelationsOutput() {
+  elements.relationsOutput.replaceChildren();
+  elements.relationsOutput.hidden = true;
+}
+
+export function renderRelationsOutput(result, termsById) {
+  const heading = document.createElement("h3");
+  const explanation = document.createElement("p");
+
+  heading.textContent = "Como estes termos se relacionam";
+
+  if (result.relations.length > 0) {
+    explanation.textContent = result.relations
+      .map((relation) => relation.explanation)
+      .join(" ");
+  } else {
+    explanation.textContent =
+      "Não há uma relação direta cadastrada entre os termos selecionados.";
+  }
+
+  elements.relationsOutput.replaceChildren(heading, explanation);
+
+  if (result.disconnectedTermIds.length > 0 && result.relations.length > 0) {
+    const disconnected = document.createElement("p");
+    const names = result.disconnectedTermIds
+      .map((id) => termsById.get(id)?.term)
+      .filter(Boolean)
+      .join(", ");
+
+    disconnected.className = "relations-output__note";
+    disconnected.textContent = `Sem ligação direta neste conjunto: ${names}.`;
+    elements.relationsOutput.append(disconnected);
+  }
+
+  elements.relationsOutput.hidden = false;
 }
 
 export function setErrorState(message) {

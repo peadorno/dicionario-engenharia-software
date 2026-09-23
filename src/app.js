@@ -1,12 +1,17 @@
 import { loadKnowledgeBase } from "./data-service.js";
-import { findRelatedTerms } from "./relations.js";
+import { findRelatedTerms, findRelationsBetween } from "./relations.js";
 import { searchTerms } from "./search.js";
 import {
   clearSearchInput,
+  clearRelationsOutput,
   enableSearch,
+  enableRelationControls,
   renderTermDetails,
   renderTermList,
   renderRelatedTerms,
+  renderRelationsOutput,
+  renderSelectedTerms,
+  renderSelectionToggle,
   setErrorState,
   setLoadingState,
   setReadyState,
@@ -17,6 +22,7 @@ const state = {
   relations: [],
   query: "",
   selectedTermId: null,
+  selectedRelationTermIds: new Set(),
 };
 
 function renderCurrentResults() {
@@ -38,6 +44,7 @@ function selectTerm(termId) {
     findRelatedTerms(termId, state.terms, state.relations),
     selectRelatedTerm,
   );
+  renderSelectionToggle(term, state.selectedRelationTermIds.has(termId));
 }
 
 function updateSearch(query) {
@@ -51,6 +58,59 @@ function selectRelatedTerm(termId) {
   selectTerm(termId);
 }
 
+function getSelectedRelationTerms() {
+  return [...state.selectedRelationTermIds]
+    .map((id) => state.terms.find((term) => term.id === id))
+    .filter(Boolean);
+}
+
+function renderRelationSelection() {
+  renderSelectedTerms(getSelectedRelationTerms(), removeRelationTerm);
+  clearRelationsOutput();
+
+  const selectedTerm = state.terms.find((term) => term.id === state.selectedTermId);
+
+  if (selectedTerm) {
+    renderSelectionToggle(
+      selectedTerm,
+      state.selectedRelationTermIds.has(selectedTerm.id),
+    );
+  }
+}
+
+function toggleSelectedTerm() {
+  if (!state.selectedTermId) {
+    return;
+  }
+
+  if (state.selectedRelationTermIds.has(state.selectedTermId)) {
+    state.selectedRelationTermIds.delete(state.selectedTermId);
+  } else {
+    state.selectedRelationTermIds.add(state.selectedTermId);
+  }
+
+  renderRelationSelection();
+}
+
+function removeRelationTerm(termId) {
+  state.selectedRelationTermIds.delete(termId);
+  renderRelationSelection();
+}
+
+function relateSelectedTerms() {
+  if (state.selectedRelationTermIds.size < 2) {
+    return;
+  }
+
+  const result = findRelationsBetween(
+    [...state.selectedRelationTermIds],
+    state.relations,
+  );
+  const termsById = new Map(state.terms.map((term) => [term.id, term]));
+
+  renderRelationsOutput(result, termsById);
+}
+
 async function initialize() {
   setLoadingState();
 
@@ -62,6 +122,8 @@ async function initialize() {
 
     renderCurrentResults();
     enableSearch(updateSearch);
+    enableRelationControls(toggleSelectedTerm, relateSelectedTerms);
+    renderRelationSelection();
     setReadyState(state.terms.length);
   } catch (error) {
     console.error(error);

@@ -2,7 +2,7 @@
 
 Aplicação web estática para estudar e consultar conceitos técnicos, suas definições, exemplos e relações com outros conceitos.
 
-> **Estado atual:** arquitetura e dados iniciais definidos. A interface responsiva carrega, pesquisa e permite navegar entre termos relacionados. O relacionamento múltiplo ainda não foi implementado.
+> **Estado atual:** MVP funcional. A interface responsiva carrega, pesquisa e apresenta termos, permite navegar por relações e explica as conexões diretas entre múltiplos conceitos selecionados.
 
 ## Objetivo
 

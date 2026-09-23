@@ -61,6 +61,14 @@
             <p id="term-category"></p>
             <h3 id="term-name"></h3>
             <p id="term-aliases"></p>
+            <button
+              id="selection-toggle"
+              type="button"
+              aria-pressed="false"
+              hidden
+            >
+              Adicionar à relação
+            </button>
           </header>
 
           <section aria-labelledby="definition-heading">
@@ -101,7 +109,7 @@
           <button id="relate-button" type="submit" disabled>Relacionar termos</button>
         </form>
 
-        <output id="relations-output" aria-live="polite" hidden></output>
+        <div id="relations-output" role="status" aria-live="polite" hidden></div>
       </section>
     </main>
 

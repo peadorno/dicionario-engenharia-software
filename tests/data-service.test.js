@@ -32,6 +32,16 @@ test("rejeita IDs duplicados de termos", () => {
   );
 });
 
+test("rejeita ID de termo fora do formato definido", () => {
+  const invalidTerms = structuredClone(terms);
+  invalidTerms[0].id = "Git Inválido";
+
+  assert.throws(
+    () => validateKnowledgeBase(invalidTerms, relations),
+    /possui um ID inválido/,
+  );
+});
+
 test("rejeita relação que aponta para termo inexistente", () => {
   const invalidRelations = structuredClone(relations);
   invalidRelations[0].target = "termo-inexistente";
@@ -61,5 +71,18 @@ test("rejeita IDs duplicados de relações", () => {
   assert.throws(
     () => validateKnowledgeBase(terms, invalidRelations),
     /ID duplicado em relações/,
+  );
+});
+
+test("rejeita relações semanticamente duplicadas", () => {
+  const duplicate = structuredClone(relations[0]);
+  duplicate.id = "commit-git-duplicada";
+  duplicate.source = relations[0].target;
+  duplicate.target = relations[0].source;
+  const invalidRelations = [...structuredClone(relations), duplicate];
+
+  assert.throws(
+    () => validateKnowledgeBase(terms, invalidRelations),
+    /Relação duplicada/,
   );
 });

@@ -2,7 +2,7 @@
 
 Aplicação web estática para estudar e consultar conceitos técnicos, suas definições, exemplos e relações com outros conceitos.
 
-> **Estado atual:** MVP funcional. A interface responsiva carrega, pesquisa e apresenta termos, permite navegar por relações e explica as conexões diretas entre múltiplos conceitos selecionados.
+> **Estado atual:** MVP funcional, licenciado e revisado localmente. Resta ativar e validar o GitHub Pages.
 
 ## Objetivo
 
@@ -66,7 +66,7 @@ Não fazem parte do MVP:
 - Git e GitHub;
 - GitHub Pages para publicação.
 
-## Estrutura planejada
+## Estrutura do projeto
 
 ```text
 .
@@ -87,6 +87,7 @@ Não fazem parte do MVP:
 │   └── ui.js
 ├── tests/
 │   ├── data-service.test.js
+│   ├── html.test.js
 │   ├── relations.test.js
 │   └── search.test.js
 ├── .gitignore
@@ -94,8 +95,6 @@ Não fazem parte do MVP:
 ├── package.json
 └── README.md
 ```
-
-Os diretórios e arquivos da aplicação serão adicionados somente quando suas respectivas etapas forem implementadas. A estrutura não será preenchida antecipadamente com arquivos vazios.
 
 Os dados iniciais já estão disponíveis em:
 
@@ -124,22 +123,26 @@ Os testes usam o executor nativo do Node.js e não exigem instalação de depend
 npm test
 ```
 
-Esse comando verifica a busca, as relações entre conceitos e a integridade dos arquivos JSON. As verificações que dependem de interação visual estão registradas em [`docs/manual-testing.md`](docs/manual-testing.md).
+Esse comando verifica a busca, as relações entre conceitos, a integridade dos arquivos JSON e referências estruturais do HTML. As verificações que dependem de interação visual estão registradas em [`docs/manual-testing.md`](docs/manual-testing.md).
 
-## Sequência de implementação
+## Progresso do MVP
 
-1. Preparar o repositório e documentar as decisões iniciais.
-2. Definir os primeiros termos e relações em JSON.
-3. Construir a estrutura semântica da interface.
-4. Criar o estilo responsivo.
-5. Carregar e apresentar os termos.
-6. Implementar a busca.
-7. Implementar a navegação entre termos relacionados.
-8. Implementar a seleção e relação de múltiplos termos.
-9. Adicionar testes automatizados e uma lista de testes manuais.
-10. Revisar acessibilidade, documentação e publicação.
+- [x] Estruturar e documentar o projeto.
+- [x] Cadastrar os termos e suas relações.
+- [x] Implementar busca, detalhes e navegação entre conceitos.
+- [x] Implementar a relação de múltiplos termos.
+- [x] Adicionar testes automatizados e checklist manual.
+- [x] Revisar acessibilidade e responsividade localmente.
+- [x] Definir a licença do repositório.
+- [ ] Ativar e validar a publicação no GitHub Pages.
 
-Cada etapa deverá resultar em uma mudança pequena, verificável e documentada.
+## Publicação
+
+O projeto está preparado para ser publicado diretamente da raiz da branch `main`, sem etapa de build. Depois que o GitHub Pages for ativado, a URL esperada será:
+
+`https://peadorno.github.io/dicionario-engenharia-software/`
+
+A ativação será feita após o envio desta preparação final para o repositório.
 
 ## Princípios do projeto
 
@@ -159,4 +162,4 @@ Este projeto não deve conter tokens, senhas, chaves, credenciais, dados pessoai
 
 ## Licença
 
-Ainda não definida. A licença será escolhida antes da primeira publicação pública.
+Distribuído sob a licença MIT. Consulte o arquivo [`LICENSE`](LICENSE) para conhecer os termos.

@@ -7,6 +7,7 @@
       name="description"
       content="Dicionário para estudar conceitos de Engenharia de Software e Tecnologia e compreender suas relações."
     >
+    <meta name="theme-color" content="#f4f7fb">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Dicionário de Engenharia de Software e Tecnologia</title>
   </head>
@@ -22,12 +23,14 @@
       </p>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <section aria-labelledby="search-heading">
         <h2 id="search-heading">Pesquisar conceitos</h2>
 
         <form id="search-form" role="search">
-          <label for="search-input">Nome, alias, categoria ou definição</label>
+          <label for="search-input">
+            Nome, alias, categoria, definição ou explicação
+          </label>
           <input
             id="search-input"
             name="query"
@@ -56,7 +59,12 @@
 
         <p id="empty-details">Selecione um termo para consultar seus detalhes.</p>
 
-        <article id="term-details" tabindex="-1" hidden>
+        <article
+          id="term-details"
+          tabindex="-1"
+          aria-labelledby="term-name"
+          hidden
+        >
           <header>
             <p id="term-category"></p>
             <h3 id="term-name"></h3>

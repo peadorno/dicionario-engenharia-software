@@ -14,6 +14,7 @@ const REQUIRED_TERM_FIELDS = [
 ];
 
 const REQUIRED_RELATION_FIELDS = ["id", "source", "target", "type", "explanation"];
+const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 async function fetchJson(url, label) {
   const response = await fetch(url);
@@ -58,14 +59,38 @@ function assertUniqueIds(items, label) {
   }
 }
 
+function assertValidId(id, label) {
+  if (typeof id !== "string" || !ID_PATTERN.test(id)) {
+    throw new Error(`${label} possui um ID inválido: "${id}".`);
+  }
+}
+
+function assertStringFields(item, fields, label) {
+  for (const field of fields) {
+    if (typeof item[field] !== "string") {
+      throw new Error(`${label} deve possuir texto no campo "${field}".`);
+    }
+  }
+}
+
 function validateTerms(terms) {
   assertArray(terms, "termos");
 
   for (const term of terms) {
     assertRequiredFields(term, REQUIRED_TERM_FIELDS, `Termo "${term.id ?? "desconhecido"}"`);
+    assertStringFields(
+      term,
+      ["id", "term", "category", "definition", "explanation", "example"],
+      `Termo "${term.id}"`,
+    );
+    assertValidId(term.id, `Termo "${term.term}"`);
 
     if (!Array.isArray(term.aliases)) {
       throw new Error(`Os aliases do termo "${term.id}" devem formar uma lista.`);
+    }
+
+    if (term.aliases.some((alias) => typeof alias !== "string" || alias.trim() === "")) {
+      throw new Error(`Os aliases do termo "${term.id}" devem conter apenas textos.`);
     }
   }
 
@@ -74,6 +99,8 @@ function validateTerms(terms) {
 
 function validateRelations(relations, termIds) {
   assertArray(relations, "relações");
+  assertUniqueIds(relations, "relações");
+  const relationKeys = new Set();
 
   for (const relation of relations) {
     assertRequiredFields(
@@ -81,6 +108,12 @@ function validateRelations(relations, termIds) {
       REQUIRED_RELATION_FIELDS,
       `Relação "${relation.id ?? "desconhecida"}"`,
     );
+    assertStringFields(
+      relation,
+      REQUIRED_RELATION_FIELDS,
+      `Relação "${relation.id}"`,
+    );
+    assertValidId(relation.id, `Relação entre "${relation.source}" e "${relation.target}"`);
 
     if (!termIds.has(relation.source) || !termIds.has(relation.target)) {
       throw new Error(`A relação "${relation.id}" aponta para um termo inexistente.`);
@@ -89,9 +122,19 @@ function validateRelations(relations, termIds) {
     if (relation.source === relation.target) {
       throw new Error(`A relação "${relation.id}" não pode ligar um termo a ele próprio.`);
     }
+
+    const endpoints = [relation.source, relation.target].sort().join("|");
+    const relationKey = `${endpoints}|${relation.type}`;
+
+    if (relationKeys.has(relationKey)) {
+      throw new Error(
+        `Relação duplicada entre "${relation.source}" e "${relation.target}" do tipo "${relation.type}".`,
+      );
+    }
+
+    relationKeys.add(relationKey);
   }
 
-  assertUniqueIds(relations, "relações");
 }
 
 export function validateKnowledgeBase(terms, relations) {

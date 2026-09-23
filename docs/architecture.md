@@ -155,7 +155,7 @@ O MVP considerará apenas relações diretas. Cálculo de caminhos e geração a
 
 Será utilizado o test runner nativo do Node.js. Não será adotado framework de testes inicialmente.
 
-Cobertura automatizada planejada:
+Cobertura automatizada atual:
 
 - normalização de texto;
 - busca por cada campo suportado;
@@ -165,7 +165,9 @@ Cobertura automatizada planejada:
 - validação de referências das relações;
 - descoberta e ordenação de relações;
 - eliminação de duplicatas;
-- detecção de termos desconectados.
+- detecção de termos desconectados;
+- unicidade de IDs no HTML;
+- referências ARIA e caminhos de arquivos locais no HTML.
 
 Uma lista manual cobrirá:
 

@@ -2,7 +2,9 @@
 
 Aplicação web estática para estudar e consultar conceitos técnicos, suas definições, exemplos e relações com outros conceitos.
 
-> **Estado atual:** MVP funcional, licenciado e revisado localmente. Resta ativar e validar o GitHub Pages.
+> **Estado atual:** MVP funcional, licenciado, testado e publicado no GitHub Pages.
+
+**Acesse o projeto:** [peadorno.github.io/dicionario-engenharia-software](https://peadorno.github.io/dicionario-engenharia-software/)
 
 ## Objetivo
 
@@ -134,15 +136,15 @@ Esse comando verifica a busca, as relações entre conceitos, a integridade dos 
 - [x] Adicionar testes automatizados e checklist manual.
 - [x] Revisar acessibilidade e responsividade localmente.
 - [x] Definir a licença do repositório.
-- [ ] Ativar e validar a publicação no GitHub Pages.
+- [x] Ativar e validar a publicação no GitHub Pages.
 
 ## Publicação
 
-O projeto está preparado para ser publicado diretamente da raiz da branch `main`, sem etapa de build. Depois que o GitHub Pages for ativado, a URL esperada será:
+O projeto é publicado diretamente da raiz da branch `main`, sem etapa de build, em:
 
-`https://peadorno.github.io/dicionario-engenharia-software/`
+[https://peadorno.github.io/dicionario-engenharia-software/](https://peadorno.github.io/dicionario-engenharia-software/)
 
-A ativação será feita após o envio desta preparação final para o repositório.
+O GitHub Pages está configurado com HTTPS obrigatório. Novos commits enviados à `main` serão publicados automaticamente.
 
 ## Princípios do projeto
 

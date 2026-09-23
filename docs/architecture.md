@@ -182,16 +182,16 @@ Testes automatizados de DOM serão avaliados somente se a interface crescer a po
 
 ## 10. Publicação
 
-O projeto será publicado como site estático pelo GitHub Pages. Para o MVP, a opção recomendada é publicar diretamente a branch `main`, sem workflow de build.
+O projeto é publicado como site estático pelo GitHub Pages diretamente da raiz da branch `main`, sem workflow de build. O endereço público é `https://peadorno.github.io/dicionario-engenharia-software/`.
 
-Antes da publicação:
+Antes de cada nova publicação relevante:
 
 - executar todos os testes;
 - revisar o diff e o histórico;
 - confirmar a ausência de dados sensíveis;
 - validar a aplicação em tela pequena e grande;
 - verificar links e arquivos JSON;
-- definir uma licença.
+- confirmar que a licença e a documentação continuam atualizadas.
 
 ## 11. Decisões adiadas
 

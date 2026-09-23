@@ -11,6 +11,7 @@ import {
   renderRelatedTerms,
   renderRelatedRelation,
   renderRelationsOutput,
+  renderProjectStats,
   renderSelectedTerms,
   renderSelectionToggle,
   setErrorState,
@@ -136,6 +137,7 @@ async function initialize() {
     state.relations = knowledgeBase.relations;
 
     renderCurrentResults();
+    renderProjectStats(state.terms, state.relations);
     enableSearch(updateSearch);
     enableRelationControls(toggleSelectedTerm, relateSelectedTerms);
     renderRelationSelection();

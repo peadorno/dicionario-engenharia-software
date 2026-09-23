@@ -63,7 +63,7 @@
     <main id="main-content" tabindex="-1">
       <h1 class="visually-hidden">Dicionário de Engenharia de Software e Tecnologia</h1>
 
-      <section aria-label="Busca de conceitos">
+      <section class="search-section" aria-label="Busca de conceitos">
         <form id="search-form" role="search">
           <div class="search-control">
             <svg class="search-control__icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -106,7 +106,7 @@
 
       </section>
 
-      <section aria-labelledby="details-heading">
+      <section class="details-panel" aria-labelledby="details-heading">
         <h2 id="details-heading">Significado e contexto</h2>
 
         <p id="empty-details">Selecione um termo para consultar seus detalhes.</p>
@@ -160,7 +160,7 @@
         </article>
       </section>
 
-      <section aria-labelledby="relations-heading">
+      <section class="relations-panel" aria-labelledby="relations-heading">
         <h2 id="relations-heading">Comparar conceitos</h2>
         <p id="relations-help">
           Selecione pelo menos dois conceitos para consultar as relações cadastradas
@@ -180,12 +180,67 @@
       </section>
     </main>
 
-    <footer id="sobre">
-      <h2>Sobre</h2>
-      <p>
-        Um dicionário pessoal para consultar tecnologia, engenharia de software
-        e governança de metadados com contexto e relações entre conceitos.
-      </p>
+    <footer id="sobre" class="site-footer">
+      <div class="about">
+        <header class="about__header">
+          <p class="about__eyebrow">Sobre o projeto</p>
+          <h2>Conhecimento técnico conectado, direto ao ponto.</h2>
+          <p>
+            Este dicionário reúne conceitos de Engenharia de Software,
+            inteligência artificial, tecnologia e governança de metadados. O
+            objetivo é apoiar estudos e decisões do trabalho cotidiano, mostrando
+            não apenas o significado de cada termo, mas também as relações entre
+            eles.
+          </p>
+        </header>
+
+        <dl class="about__stats" aria-label="Dados atuais do dicionário">
+          <div>
+            <dt id="about-term-count">—</dt>
+            <dd>termos pesquisáveis</dd>
+          </div>
+          <div>
+            <dt id="about-curated-count">—</dt>
+            <dd>verbetes completos</dd>
+          </div>
+          <div>
+            <dt id="about-relation-count">—</dt>
+            <dd>relações documentadas</dd>
+          </div>
+        </dl>
+
+        <div class="about__details">
+          <section aria-labelledby="about-architecture-heading">
+            <h3 id="about-architecture-heading">Como foi construído</h3>
+            <p>
+              É uma aplicação web estática feita com HTML semântico, CSS
+              responsivo e módulos JavaScript nativos. Os termos e as relações
+              ficam separados em arquivos JSON, o que facilita revisão,
+              versionamento e crescimento da base sem depender de framework,
+              servidor ou banco de dados.
+            </p>
+          </section>
+
+          <section aria-labelledby="about-search-heading">
+            <h3 id="about-search-heading">Busca local e inteligente</h3>
+            <p>
+              A pesquisa combina correspondência por nome, aliases e conteúdo,
+              tolerância a variações de escrita e expansão de intenções
+              relacionadas. Todo o processamento acontece no navegador; as
+              consultas não são enviadas a serviços externos.
+            </p>
+          </section>
+
+          <section aria-labelledby="about-quality-heading">
+            <h3 id="about-quality-heading">Qualidade e publicação</h3>
+            <p>
+              A base é validada por testes automatizados em Node.js, incluindo
+              integridade dos dados, relações, busca e acessibilidade estrutural.
+              O código é versionado com Git e publicado pelo GitHub Pages.
+            </p>
+          </section>
+        </div>
+      </div>
     </footer>
 
     <noscript>

@@ -40,6 +40,9 @@ test("orienta quando o index é aberto diretamente pelo protocolo file", () => {
 });
 
 test("configura a busca como uma lista suspensa de sugestões", () => {
+  assert.match(html, /class="search-section"/);
+  assert.match(html, /class="details-panel"/);
+  assert.match(html, /class="relations-panel"/);
   assert.match(html, /role="combobox"/);
   assert.match(html, /aria-autocomplete="list"/);
   assert.match(html, /aria-controls="search-suggestions"/);
@@ -59,6 +62,18 @@ test("mantém o menu principal intencionalmente simples", () => {
   assert.match(html, /href="#sobre">Sobre<\/a>/);
   assert.match(html, /id="theme-toggle"/);
   assert.match(html, /src="\.\/src\/theme\.js"/);
+});
+
+test("documenta objetivo, arquitetura, busca e qualidade na seção Sobre", () => {
+  assert.match(html, /id="sobre" class="site-footer"/);
+  assert.match(html, /id="about-architecture-heading"/);
+  assert.match(html, /id="about-search-heading"/);
+  assert.match(html, /id="about-quality-heading"/);
+  assert.match(html, /id="about-term-count"/);
+  assert.match(html, /id="about-curated-count"/);
+  assert.match(html, /id="about-relation-count"/);
+  assert.match(html, /HTML semântico/);
+  assert.match(html, /GitHub Pages/);
 });
 
 test("anuncia atualizações dinâmicas relevantes", () => {

@@ -1,4 +1,7 @@
 const elements = {
+  aboutCuratedCount: document.querySelector("#about-curated-count"),
+  aboutRelationCount: document.querySelector("#about-relation-count"),
+  aboutTermCount: document.querySelector("#about-term-count"),
   appStatus: document.querySelector("#app-status"),
   emptyDetails: document.querySelector("#empty-details"),
   relatedSection: document.querySelector("#related-section"),
@@ -23,6 +26,14 @@ const elements = {
   termName: document.querySelector("#term-name"),
   termSource: document.querySelector("#term-source"),
 };
+
+export function renderProjectStats(terms, relations) {
+  const curatedCount = terms.filter((term) => term.status !== "catalogado").length;
+
+  elements.aboutTermCount.textContent = terms.length.toLocaleString("pt-BR");
+  elements.aboutCuratedCount.textContent = curatedCount.toLocaleString("pt-BR");
+  elements.aboutRelationCount.textContent = relations.length.toLocaleString("pt-BR");
+}
 
 function createSelectedTermItem(term, onRemove) {
   const item = document.createElement("li");

@@ -2,11 +2,13 @@ const elements = {
   appStatus: document.querySelector("#app-status"),
   emptyDetails: document.querySelector("#empty-details"),
   relatedSection: document.querySelector("#related-section"),
+  relatedRelationOutput: document.querySelector("#related-relation-output"),
   relatedTerms: document.querySelector("#related-terms"),
   relateButton: document.querySelector("#relate-button"),
   relationsForm: document.querySelector("#relations-form"),
   relationsOutput: document.querySelector("#relations-output"),
   results: document.querySelector("#search-results"),
+  searchSuggestions: document.querySelector("#search-suggestions"),
   resultsSummary: document.querySelector("#results-summary"),
   searchForm: document.querySelector("#search-form"),
   searchInput: document.querySelector("#search-input"),
@@ -19,6 +21,7 @@ const elements = {
   termExample: document.querySelector("#term-example"),
   termExplanation: document.querySelector("#term-explanation"),
   termName: document.querySelector("#term-name"),
+  termSource: document.querySelector("#term-source"),
 };
 
 function createSelectedTermItem(term, onRemove) {
@@ -42,21 +45,19 @@ function createRelatedTermButton(related, onSelect) {
   const item = document.createElement("li");
   const button = document.createElement("button");
   const name = document.createElement("span");
-  const explanation = document.createElement("span");
+  const action = document.createElement("span");
 
   button.type = "button";
   button.dataset.termId = related.term.id;
-  button.addEventListener("click", () => onSelect(related.term.id));
+  button.addEventListener("click", () => onSelect(related));
 
   name.className = "related-term__name";
   name.textContent = related.term.term;
 
-  explanation.className = "related-term__explanation";
-  explanation.textContent = related.relations
-    .map((relation) => relation.explanation)
-    .join(" ");
+  action.className = "related-term__action";
+  action.textContent = "Mostrar relação";
 
-  button.append(name, explanation);
+  button.append(name, action);
   item.append(button);
 
   return item;
@@ -70,6 +71,9 @@ function createResultButton(term, selectedTermId, onSelect) {
   const definition = document.createElement("span");
 
   button.type = "button";
+  button.id = `suggestion-${term.id}`;
+  button.setAttribute("role", "option");
+  button.tabIndex = -1;
   button.dataset.termId = term.id;
   button.setAttribute("aria-current", String(term.id === selectedTermId));
   button.addEventListener("click", () => onSelect(term.id));
@@ -97,10 +101,13 @@ export function renderTermList(terms, selectedTermId, onSelect, query = "") {
   }
 
   elements.results.replaceChildren(fragment);
+  const hasQuery = query !== "";
 
-  if (query === "") {
-    elements.resultsSummary.textContent = `${terms.length} termos disponíveis.`;
-  } else if (terms.length === 0) {
+  elements.searchSuggestions.hidden = !hasQuery;
+  elements.searchInput.setAttribute("aria-expanded", String(hasQuery));
+  elements.resultsSummary.hidden = terms.length > 0;
+
+  if (terms.length === 0) {
     elements.resultsSummary.textContent = `Nenhum termo encontrado para “${query}”.`;
   } else if (terms.length === 1) {
     elements.resultsSummary.textContent = `1 termo encontrado para “${query}”.`;
@@ -111,6 +118,25 @@ export function renderTermList(terms, selectedTermId, onSelect, query = "") {
 
 export function renderTermDetails(term) {
   elements.termCategory.textContent = term.category;
+  const isCatalogEntry = term.status === "catalogado";
+  elements.termSource.replaceChildren();
+
+  if (isCatalogEntry) {
+    elements.termSource.append("Em curadoria · Fonte: ");
+
+    if (term.sourceUrl) {
+      const sourceLink = document.createElement("a");
+      sourceLink.href = term.sourceUrl;
+      sourceLink.textContent = term.source;
+      sourceLink.target = "_blank";
+      sourceLink.rel = "noopener noreferrer";
+      elements.termSource.append(sourceLink);
+    } else {
+      elements.termSource.append(term.source);
+    }
+  }
+
+  elements.termSource.hidden = !isCatalogEntry;
   elements.termName.textContent = term.term;
   elements.termDefinition.textContent = term.definition;
   elements.termExplanation.textContent = term.explanation;
@@ -138,9 +164,38 @@ export function renderRelatedTerms(relatedTerms, onSelect) {
 
   elements.relatedTerms.replaceChildren(fragment);
   elements.relatedSection.hidden = relatedTerms.length === 0;
+  elements.relatedRelationOutput.replaceChildren();
+  elements.relatedRelationOutput.hidden = true;
+}
+
+export function renderRelatedRelation(currentTerm, related, onNavigate) {
+  const pair = document.createElement("p");
+  const sentence = document.createElement("p");
+  const navigateButton = document.createElement("button");
+
+  pair.className = "related-relation__pair";
+  pair.textContent = `${currentTerm.term} + ${related.term.term}`;
+
+  sentence.className = "related-relation__sentence";
+  sentence.textContent = `${currentTerm.term} e ${related.term.term} se relacionam assim: ${related.relations
+    .map((relation) => relation.explanation)
+    .join(" ")}`;
+
+  navigateButton.type = "button";
+  navigateButton.className = "related-relation__navigate";
+  navigateButton.textContent = `Consultar ${related.term.term}`;
+  navigateButton.addEventListener("click", () => onNavigate(related.term.id));
+
+  elements.relatedRelationOutput.replaceChildren(
+    pair,
+    sentence,
+    navigateButton,
+  );
+  elements.relatedRelationOutput.hidden = false;
 }
 
 export function setLoadingState() {
+  elements.appStatus.hidden = false;
   elements.appStatus.dataset.state = "loading";
   elements.appStatus.textContent = "Carregando os conceitos…";
   elements.resultsSummary.textContent = "Carregando…";
@@ -148,7 +203,8 @@ export function setLoadingState() {
 
 export function setReadyState(termCount) {
   elements.appStatus.dataset.state = "ready";
-  elements.appStatus.textContent = `${termCount} termos carregados. Selecione um conceito para começar.`;
+  elements.appStatus.textContent = `${termCount} termos carregados. Comece a digitar para pesquisar.`;
+  elements.appStatus.hidden = true;
 }
 
 export function enableSearch(onSearch) {
@@ -161,10 +217,86 @@ export function enableSearch(onSearch) {
   elements.searchInput.addEventListener("input", (event) => {
     onSearch(event.currentTarget.value);
   });
+
+  elements.searchInput.addEventListener("focus", (event) => {
+    if (event.currentTarget.value.trim()) {
+      onSearch(event.currentTarget.value);
+    }
+  });
+
+  elements.searchInput.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowDown") {
+      const firstSuggestion = elements.results.querySelector("button");
+
+      if (firstSuggestion) {
+        event.preventDefault();
+        firstSuggestion.focus();
+      }
+    } else if (event.key === "Escape") {
+      hideSearchSuggestions();
+    }
+  });
+
+  elements.results.addEventListener("keydown", (event) => {
+    const buttons = [...elements.results.querySelectorAll("button")];
+    const currentIndex = buttons.indexOf(event.target);
+
+    if (currentIndex === -1) {
+      return;
+    }
+
+    if (event.key === "ArrowDown") {
+      event.preventDefault();
+      buttons[(currentIndex + 1) % buttons.length].focus();
+    } else if (event.key === "ArrowUp") {
+      event.preventDefault();
+
+      if (currentIndex === 0) {
+        elements.searchInput.focus();
+      } else {
+        buttons[currentIndex - 1].focus();
+      }
+    } else if (event.key === "Escape") {
+      event.preventDefault();
+      hideSearchSuggestions();
+      elements.searchInput.focus();
+    }
+  });
+
+  document.addEventListener("pointerdown", (event) => {
+    if (!elements.searchForm.contains(event.target)) {
+      hideSearchSuggestions();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    const target = event.target;
+    const isTyping =
+      target instanceof HTMLInputElement ||
+      target instanceof HTMLTextAreaElement ||
+      target?.isContentEditable;
+
+    if (event.key === "/" && !isTyping) {
+      event.preventDefault();
+      elements.searchInput.focus();
+      elements.searchInput.select();
+    }
+  });
 }
 
 export function clearSearchInput() {
   elements.searchInput.value = "";
+  hideSearchSuggestions();
+}
+
+export function setSearchInputValue(value) {
+  elements.searchInput.value = value;
+  hideSearchSuggestions();
+}
+
+function hideSearchSuggestions() {
+  elements.searchSuggestions.hidden = true;
+  elements.searchInput.setAttribute("aria-expanded", "false");
 }
 
 export function enableRelationControls(onToggle, onRelate) {
@@ -232,6 +364,7 @@ export function renderRelationsOutput(result, termsById) {
 }
 
 export function setErrorState(message) {
+  elements.appStatus.hidden = false;
   elements.appStatus.dataset.state = "error";
   elements.appStatus.textContent = message;
   elements.resultsSummary.textContent = "Não foi possível exibir os termos.";

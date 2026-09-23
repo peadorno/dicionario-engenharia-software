@@ -35,6 +35,22 @@ test("prioriza o nome exato em relação a ocorrências menos relevantes", () =>
   assert.equal(results[0].id, "producao");
 });
 
+test("expande intenções para conceitos tecnicamente relacionados", () => {
+  assert.equal(searchTerms(terms, "publicar aplicação")[0].id, "deploy");
+  assert.equal(searchTerms(terms, "desfazer versão com problema")[0].id, "rollback");
+  assert.equal(searchTerms(terms, "responder perguntas com documentos")[0].id, "rag");
+});
+
+test("tolera pequenos erros de digitação", () => {
+  assert.equal(searchTerms(terms, "integacao continua")[0].id, "ci");
+});
+
+test("compreende intenções comuns de Git e GitHub", () => {
+  assert.equal(searchTerms(terms, "enviar commits")[0].id, "push");
+  assert.equal(searchTerms(terms, "hospedar site no GitHub")[0].id, "github-pages");
+  assert.equal(searchTerms(terms, "proteger branch principal")[0].id, "branch-protegida");
+});
+
 test("retorna uma lista vazia quando nada corresponde à consulta", () => {
-  assert.deepEqual(searchTerms(terms, "conceito inexistente"), []);
+  assert.deepEqual(searchTerms(terms, "qzxwplmn"), []);
 });

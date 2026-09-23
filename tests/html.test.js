@@ -32,3 +32,44 @@ test("todos os arquivos locais referenciados pelo HTML existem", async () => {
     localPaths.map((path) => access(new URL(`../${path.slice(2)}`, import.meta.url))),
   );
 });
+
+test("orienta quando o index é aberto diretamente pelo protocolo file", () => {
+  assert.match(html, /id="local-file-warning"/);
+  assert.match(html, /window\.location\.protocol === "file:"/);
+  assert.match(html, /python -m http\.server 8000/);
+});
+
+test("configura a busca como uma lista suspensa de sugestões", () => {
+  assert.match(html, /role="combobox"/);
+  assert.match(html, /aria-autocomplete="list"/);
+  assert.match(html, /aria-controls="search-suggestions"/);
+  assert.match(html, /id="search-suggestions"[^>]*hidden/);
+  assert.match(html, /id="search-results" role="listbox"/);
+  assert.match(html, /aria-label="Pesquisar conceitos"/);
+  assert.doesNotMatch(html, />Buscar termo</);
+  assert.doesNotMatch(html, />\s*O que você quer consultar\?/);
+  assert.doesNotMatch(
+    html,
+    /Os termos cadastrados aparecem enquanto você digita/,
+  );
+});
+
+test("mantém o menu principal intencionalmente simples", () => {
+  assert.match(html, /class="site-brand"[\s\S]*?assets\/favicon\.svg/);
+  assert.match(html, /href="#sobre">Sobre<\/a>/);
+  assert.match(html, /id="theme-toggle"/);
+  assert.match(html, /src="\.\/src\/theme\.js"/);
+});
+
+test("anuncia atualizações dinâmicas relevantes", () => {
+  assert.match(html, /id="app-status" role="status" aria-live="polite"/);
+  assert.match(html, /id="results-summary" aria-live="polite"/);
+  assert.match(
+    html,
+    /id="related-relation-output"[\s\S]*?role="status"[\s\S]*?aria-live="polite"/,
+  );
+  assert.match(
+    html,
+    /id="relations-output" role="status" aria-live="polite"/,
+  );
+});

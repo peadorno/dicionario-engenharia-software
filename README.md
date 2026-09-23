@@ -18,11 +18,11 @@ Construir gradualmente uma base pessoal de conhecimento técnico que seja:
 
 ## Escopo do MVP
 
-A primeira versão deverá oferecer:
+A versão atual oferece:
 
-- aproximadamente 12 termos iniciais;
-- busca por nome, alias, categoria, definição e explicação;
-- lista de resultados ordenada por relevância;
+- 526 termos pesquisáveis, sendo 112 verbetes curados e 414 itens catalogados para curadoria;
+- busca híbrida por texto, contexto, intenção e pequenas variações de escrita;
+- lista suspensa de sugestões ordenadas por relevância durante a digitação;
 - visualização de definição, explicação, exemplo e categoria;
 - navegação entre termos relacionados;
 - seleção de dois ou mais termos;
@@ -43,20 +43,26 @@ Não fazem parte do MVP:
 - busca fuzzy;
 - favoritos, comentários ou analytics.
 
-## Termos iniciais
+## Cobertura atual
 
-- Git
-- Commit
-- Branch
-- Merge
-- Pull Request
-- CI
-- CD
-- Deploy
-- Staging
-- Produção
-- Rollback
-- Feature Flag
+A base começou com 12 conceitos de Git e entrega de software e agora reúne 112
+verbetes completos e conectados, além de 414 termos pesquisáveis em processo de
+curadoria. Os principais grupos são:
+
+- Git, GitHub, colaboração, segurança e entrega contínua;
+- arquitetura e qualidade de software;
+- testes automatizados;
+- dados, web e segurança;
+- containers, nuvem e infraestrutura;
+- inteligência artificial, modelos de linguagem, agentes e RAG.
+- governança de dados e metadados, semântica e ontologias;
+- mídia, broadcast, audiovisual, publicidade e produto.
+
+Os verbetes completos, com definições, aliases e exemplos, estão em
+[`data/terms.json`](data/terms.json). Os itens ainda não definidos estão
+separados em [`data/catalog.json`](data/catalog.json), identificados na interface
+como “Em curadoria”. A procedência e o método de inclusão estão documentados em
+[`docs/sources.md`](docs/sources.md).
 
 ## Tecnologias
 
@@ -77,21 +83,25 @@ Não fazem parte do MVP:
 │       └── styles.css
 ├── data/
 │   ├── relations.json
+│   ├── catalog.json
 │   └── terms.json
 ├── docs/
 │   ├── architecture.md
-│   └── manual-testing.md
+│   ├── manual-testing.md
+│   └── sources.md
 ├── src/
 │   ├── app.js
 │   ├── data-service.js
 │   ├── relations.js
 │   ├── search.js
+│   ├── theme.js
 │   └── ui.js
 ├── tests/
 │   ├── data-service.test.js
 │   ├── html.test.js
 │   ├── relations.test.js
-│   └── search.test.js
+│   ├── search.test.js
+│   └── theme.test.js
 ├── .gitignore
 ├── index.html
 ├── package.json
@@ -102,6 +112,7 @@ Os dados iniciais já estão disponíveis em:
 
 - [`data/terms.json`](data/terms.json): definições e exemplos dos termos;
 - [`data/relations.json`](data/relations.json): conexões e explicações entre conceitos.
+- [`data/catalog.json`](data/catalog.json): termos identificados e ainda em curadoria.
 
 ## Arquitetura
 
@@ -116,6 +127,8 @@ python -m http.server 8000
 ```
 
 Depois, acesse `http://localhost:8000` no navegador. Para encerrar o servidor, pressione `Ctrl+C` no terminal.
+
+Não abra o arquivo `index.html` diretamente com duplo clique. Nesse caso o navegador usa o protocolo `file://` e bloqueia, por segurança, os módulos JavaScript e o carregamento dos arquivos JSON. A versão publicada e o servidor local não possuem essa limitação.
 
 ## Executar os testes
 

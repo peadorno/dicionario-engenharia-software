@@ -7,55 +7,107 @@
       name="description"
       content="Dicionário para estudar conceitos de Engenharia de Software e Tecnologia e compreender suas relações."
     >
-    <meta name="theme-color" content="#f4f7fb">
+    <meta name="theme-color" content="#fafbfc">
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("dicionario-theme");
+        const prefersDark = matchMedia("(prefers-color-scheme: dark)").matches;
+        const initialTheme =
+          savedTheme === "dark" || savedTheme === "light"
+            ? savedTheme
+            : prefersDark
+              ? "dark"
+              : "light";
+        document.documentElement.dataset.theme = initialTheme;
+        document.querySelector('meta[name="theme-color"]').content =
+          initialTheme === "dark" ? "#111318" : "#fafbfc";
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Dicionário de Engenharia de Software e Tecnologia</title>
   </head>
   <body>
     <a href="#main-content">Ir para o conteúdo principal</a>
 
-    <header>
-      <p>Base pessoal de conhecimento</p>
-      <h1>Dicionário de Engenharia de Software e Tecnologia</h1>
-      <p>
-        Pesquise conceitos, consulte exemplos e descubra como diferentes termos
-        participam do mesmo fluxo.
-      </p>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a class="site-brand" href="#main-content" aria-label="Dicionário técnico — início">
+          <img src="./assets/favicon.svg" width="32" height="32" alt="">
+          <span>Dicionário técnico</span>
+        </a>
+
+        <div class="site-nav__actions">
+          <a href="#sobre">Sobre</a>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Ativar tema escuro"
+            title="Ativar tema escuro"
+          >
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+            </svg>
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
     </header>
 
     <main id="main-content" tabindex="-1">
-      <section aria-labelledby="search-heading">
-        <h2 id="search-heading">Pesquisar conceitos</h2>
+      <h1 class="visually-hidden">Dicionário de Engenharia de Software e Tecnologia</h1>
 
+      <section aria-label="Busca de conceitos">
         <form id="search-form" role="search">
-          <label for="search-input">
-            Nome, alias, categoria, definição ou explicação
-          </label>
-          <input
-            id="search-input"
-            name="query"
-            type="search"
-            autocomplete="off"
-            aria-controls="search-results"
-            aria-describedby="search-help"
-            disabled
-          >
-          <p id="search-help">A busca não diferencia letras maiúsculas ou acentos.</p>
+          <div class="search-control">
+            <svg class="search-control__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-4-4"></path>
+            </svg>
+            <input
+              id="search-input"
+              name="query"
+              type="search"
+              role="combobox"
+              aria-label="Pesquisar conceitos"
+              autocomplete="off"
+              aria-autocomplete="list"
+              aria-controls="search-suggestions"
+              aria-expanded="false"
+              placeholder="Busque por conceito, problema ou intenção"
+              disabled
+            >
+            <kbd aria-hidden="true">/</kbd>
+          </div>
+
+          <div id="search-suggestions" aria-labelledby="results-heading" hidden>
+            <h2 id="results-heading">Sugestões de busca</h2>
+            <p id="results-summary" aria-live="polite">Nenhum termo carregado.</p>
+            <ul id="search-results" role="listbox"></ul>
+          </div>
         </form>
 
         <p id="app-status" role="status" aria-live="polite">
-          Aguardando a implementação do carregamento dos termos.
+          Carregando os conceitos…
         </p>
 
-        <div aria-labelledby="results-heading">
-          <h2 id="results-heading">Resultados</h2>
-          <p id="results-summary" aria-live="polite">Nenhum termo carregado.</p>
-          <ul id="search-results"></ul>
-        </div>
+        <aside id="local-file-warning" role="alert" hidden>
+          <strong>Abertura direta não suportada.</strong>
+          Para usar a aplicação localmente, execute
+          <code>python -m http.server 8000</code> nesta pasta e acesse
+          <code>http://localhost:8000</code>.
+        </aside>
+
       </section>
 
       <section aria-labelledby="details-heading">
-        <h2 id="details-heading">Detalhes do termo</h2>
+        <h2 id="details-heading">Significado e contexto</h2>
 
         <p id="empty-details">Selecione um termo para consultar seus detalhes.</p>
 
@@ -67,6 +119,7 @@
         >
           <header>
             <p id="term-category"></p>
+            <p id="term-source" hidden></p>
             <h3 id="term-name"></h3>
             <p id="term-aliases"></p>
             <button
@@ -97,12 +150,18 @@
           <section id="related-section" aria-labelledby="related-heading" hidden>
             <h4 id="related-heading">Termos relacionados</h4>
             <ul id="related-terms"></ul>
+            <div
+              id="related-relation-output"
+              role="status"
+              aria-live="polite"
+              hidden
+            ></div>
           </section>
         </article>
       </section>
 
       <section aria-labelledby="relations-heading">
-        <h2 id="relations-heading">Relacionar termos</h2>
+        <h2 id="relations-heading">Comparar conceitos</h2>
         <p id="relations-help">
           Selecione pelo menos dois conceitos para consultar as relações cadastradas
           entre eles.
@@ -121,14 +180,27 @@
       </section>
     </main>
 
-    <footer>
-      <p>Projeto pessoal de estudo e consulta técnica.</p>
+    <footer id="sobre">
+      <h2>Sobre</h2>
+      <p>
+        Um dicionário pessoal para consultar tecnologia, engenharia de software
+        e governança de metadados com contexto e relações entre conceitos.
+      </p>
     </footer>
 
     <noscript>
       <p>Esta aplicação precisa de JavaScript para carregar e pesquisar os conceitos.</p>
     </noscript>
 
+    <script>
+      if (window.location.protocol === "file:") {
+        document.querySelector("#local-file-warning").hidden = false;
+        document.querySelector("#app-status").hidden = true;
+        document.querySelector("#results-summary").textContent =
+          "A aplicação precisa de um servidor HTTP local para carregar os dados.";
+      }
+    </script>
+    <script type="module" src="./src/theme.js"></script>
     <script type="module" src="./src/app.js"></script>
   </body>
 </html>

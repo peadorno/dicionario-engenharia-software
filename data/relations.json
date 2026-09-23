@@ -117,5 +117,698 @@
     "target": "producao",
     "type": "controls",
     "explanation": "Em produção, uma feature flag permite liberar gradualmente ou desativar uma funcionalidade sem novo deploy."
+  },
+  {
+    "id": "api-rest",
+    "source": "api",
+    "target": "rest",
+    "type": "can-follow",
+    "explanation": "Uma API para a web pode seguir as restrições de REST para expor recursos por uma interface uniforme."
+  },
+  {
+    "id": "api-autenticacao",
+    "source": "api",
+    "target": "autenticacao",
+    "type": "protected-by",
+    "explanation": "Uma API pode exigir autenticação para verificar a identidade de quem solicita acesso."
+  },
+  {
+    "id": "algoritmo-arquitetura-de-software",
+    "source": "algoritmo",
+    "target": "arquitetura-de-software",
+    "type": "implemented-within",
+    "explanation": "Algoritmos implementam comportamentos específicos dentro dos componentes definidos pela arquitetura de software."
+  },
+  {
+    "id": "arquitetura-de-software-design-pattern",
+    "source": "arquitetura-de-software",
+    "target": "design-pattern",
+    "type": "uses",
+    "explanation": "Uma arquitetura pode empregar design patterns para resolver problemas recorrentes em partes do sistema."
+  },
+  {
+    "id": "arquitetura-de-software-monolito",
+    "source": "arquitetura-de-software",
+    "target": "monolito",
+    "type": "can-adopt",
+    "explanation": "Uma arquitetura de software pode adotar um monólito modular quando simplicidade operacional é prioridade."
+  },
+  {
+    "id": "clean-code-refatoracao",
+    "source": "clean-code",
+    "target": "refatoracao",
+    "type": "improved-by",
+    "explanation": "A refatoração pode tornar o código mais claro e alinhado às práticas de Clean Code sem mudar seu comportamento."
+  },
+  {
+    "id": "clean-code-solid",
+    "source": "clean-code",
+    "target": "solid",
+    "type": "guided-by",
+    "explanation": "Princípios SOLID podem orientar decisões que aumentam clareza e capacidade de mudança do código."
+  },
+  {
+    "id": "code-review-pull-request",
+    "source": "code-review",
+    "target": "pull-request",
+    "type": "performed-in",
+    "explanation": "O code review costuma acontecer em uma pull request antes da integração das alterações."
+  },
+  {
+    "id": "code-review-divida-tecnica",
+    "source": "code-review",
+    "target": "divida-tecnica",
+    "type": "reveals",
+    "explanation": "Uma revisão de código pode identificar decisões que criariam dívida técnica difícil de manter."
+  },
+  {
+    "id": "design-pattern-injecao-de-dependencia",
+    "source": "design-pattern",
+    "target": "injecao-de-dependencia",
+    "type": "complements",
+    "explanation": "Injeção de dependência pode complementar padrões de projeto ao desacoplar componentes de implementações concretas."
+  },
+  {
+    "id": "refatoracao-divida-tecnica",
+    "source": "refatoracao",
+    "target": "divida-tecnica",
+    "type": "reduces",
+    "explanation": "Refatorações planejadas podem reduzir dívida técnica e facilitar mudanças futuras."
+  },
+  {
+    "id": "refatoracao-teste-unitario",
+    "source": "refatoracao",
+    "target": "teste-unitario",
+    "type": "protected-by",
+    "explanation": "Testes unitários ajudam a confirmar que uma refatoração preservou o comportamento esperado."
+  },
+  {
+    "id": "teste-unitario-tdd",
+    "source": "teste-unitario",
+    "target": "tdd",
+    "type": "used-by",
+    "explanation": "TDD frequentemente usa testes unitários para descrever um comportamento antes de sua implementação."
+  },
+  {
+    "id": "teste-de-integracao-ci",
+    "source": "teste-de-integracao",
+    "target": "ci",
+    "type": "automated-by",
+    "explanation": "O CI pode executar testes de integração para verificar a colaboração entre componentes a cada mudança."
+  },
+  {
+    "id": "teste-end-to-end-ci",
+    "source": "teste-end-to-end",
+    "target": "ci",
+    "type": "automated-by",
+    "explanation": "O CI pode executar testes end-to-end dos fluxos críticos antes de liberar uma versão."
+  },
+  {
+    "id": "solid-injecao-de-dependencia",
+    "source": "solid",
+    "target": "injecao-de-dependencia",
+    "type": "supported-by",
+    "explanation": "A injeção de dependência ajuda módulos a depender de contratos, apoiando o princípio de inversão de dependência do SOLID."
+  },
+  {
+    "id": "microsservicos-arquitetura-de-software",
+    "source": "microsservicos",
+    "target": "arquitetura-de-software",
+    "type": "architectural-style",
+    "explanation": "Microsserviços são uma opção de arquitetura de software para separar capacidades em serviços independentes."
+  },
+  {
+    "id": "microsservicos-monolito",
+    "source": "microsservicos",
+    "target": "monolito",
+    "type": "alternative-to",
+    "explanation": "Microsserviços e monólitos oferecem compromissos diferentes de desenvolvimento, implantação e operação."
+  },
+  {
+    "id": "arquitetura-orientada-a-eventos-fila-de-mensagens",
+    "source": "arquitetura-orientada-a-eventos",
+    "target": "fila-de-mensagens",
+    "type": "can-use",
+    "explanation": "Uma arquitetura orientada a eventos pode usar filas de mensagens para transportar trabalho de forma assíncrona."
+  },
+  {
+    "id": "fila-de-mensagens-microsservicos",
+    "source": "fila-de-mensagens",
+    "target": "microsservicos",
+    "type": "decouples",
+    "explanation": "Uma fila de mensagens pode desacoplar microsserviços e permitir que processem solicitações em ritmos diferentes."
+  },
+  {
+    "id": "observabilidade-producao",
+    "source": "observabilidade",
+    "target": "producao",
+    "type": "explains",
+    "explanation": "Observabilidade ajuda a compreender o comportamento e o impacto real do software em produção."
+  },
+  {
+    "id": "banco-de-dados-sql",
+    "source": "banco-de-dados",
+    "target": "sql",
+    "type": "queried-with",
+    "explanation": "Bancos relacionais são definidos e consultados com SQL."
+  },
+  {
+    "id": "banco-de-dados-nosql",
+    "source": "banco-de-dados",
+    "target": "nosql",
+    "type": "includes-family",
+    "explanation": "NoSQL reúne modelos de banco de dados não relacionais voltados a diferentes padrões de acesso."
+  },
+  {
+    "id": "banco-de-dados-cache",
+    "source": "banco-de-dados",
+    "target": "cache",
+    "type": "accelerated-by",
+    "explanation": "Um cache pode reduzir consultas repetidas ao banco de dados, desde que a atualização dos dados seja controlada."
+  },
+  {
+    "id": "container-docker",
+    "source": "container",
+    "target": "docker",
+    "type": "managed-by",
+    "explanation": "Docker oferece ferramentas para construir imagens e executar aplicações em containers."
+  },
+  {
+    "id": "container-kubernetes",
+    "source": "container",
+    "target": "kubernetes",
+    "type": "orchestrated-by",
+    "explanation": "Kubernetes orquestra a implantação, escala e recuperação de aplicações executadas em containers."
+  },
+  {
+    "id": "kubernetes-infraestrutura-como-codigo",
+    "source": "kubernetes",
+    "target": "infraestrutura-como-codigo",
+    "type": "configured-as",
+    "explanation": "Recursos do Kubernetes podem ser descritos declarativamente e versionados como infraestrutura como código."
+  },
+  {
+    "id": "infraestrutura-como-codigo-computacao-em-nuvem",
+    "source": "infraestrutura-como-codigo",
+    "target": "computacao-em-nuvem",
+    "type": "provisions",
+    "explanation": "Infraestrutura como código torna a criação de recursos em nuvem repetível e revisável."
+  },
+  {
+    "id": "computacao-em-nuvem-serverless",
+    "source": "computacao-em-nuvem",
+    "target": "serverless",
+    "type": "offers-model",
+    "explanation": "Provedores de computação em nuvem oferecem plataformas serverless que gerenciam servidores e escala."
+  },
+  {
+    "id": "autenticacao-autorizacao",
+    "source": "autenticacao",
+    "target": "autorizacao",
+    "type": "precedes",
+    "explanation": "A autenticação identifica o sujeito; depois, a autorização decide quais ações ele pode realizar."
+  },
+  {
+    "id": "inteligencia-artificial-machine-learning",
+    "source": "inteligencia-artificial",
+    "target": "machine-learning",
+    "type": "includes",
+    "explanation": "Machine learning é uma das abordagens usadas no campo mais amplo da inteligência artificial."
+  },
+  {
+    "id": "algoritmo-machine-learning",
+    "source": "algoritmo",
+    "target": "machine-learning",
+    "type": "used-by",
+    "explanation": "Machine learning usa algoritmos para ajustar modelos a partir de dados e realizar previsões."
+  },
+  {
+    "id": "machine-learning-deep-learning",
+    "source": "machine-learning",
+    "target": "deep-learning",
+    "type": "includes",
+    "explanation": "Deep learning é uma subárea de machine learning baseada em redes neurais com muitas camadas."
+  },
+  {
+    "id": "deep-learning-rede-neural",
+    "source": "deep-learning",
+    "target": "rede-neural",
+    "type": "uses",
+    "explanation": "Deep learning usa redes neurais profundas para aprender representações complexas dos dados."
+  },
+  {
+    "id": "inteligencia-artificial-ia-generativa",
+    "source": "inteligencia-artificial",
+    "target": "ia-generativa",
+    "type": "includes",
+    "explanation": "IA generativa é uma área da inteligência artificial voltada à criação de novos conteúdos."
+  },
+  {
+    "id": "ia-generativa-modelo-fundacional",
+    "source": "ia-generativa",
+    "target": "modelo-fundacional",
+    "type": "often-built-on",
+    "explanation": "Aplicações de IA generativa frequentemente usam modelos fundacionais treinados em grande escala."
+  },
+  {
+    "id": "modelo-fundacional-llm",
+    "source": "modelo-fundacional",
+    "target": "llm",
+    "type": "can-be",
+    "explanation": "Um LLM pode ser um modelo fundacional quando serve de base para muitas tarefas de linguagem."
+  },
+  {
+    "id": "llm-nlp",
+    "source": "llm",
+    "target": "nlp",
+    "type": "used-for",
+    "explanation": "LLMs são usados em tarefas de NLP como resumo, classificação, extração e geração de texto."
+  },
+  {
+    "id": "transformer-llm",
+    "source": "transformer",
+    "target": "llm",
+    "type": "powers",
+    "explanation": "A arquitetura transformer sustenta muitos LLMs modernos ao processar relações no contexto."
+  },
+  {
+    "id": "token-llm",
+    "source": "token",
+    "target": "llm",
+    "type": "processed-by",
+    "explanation": "Um LLM recebe e produz sequências de tokens para representar texto e outros dados."
+  },
+  {
+    "id": "embedding-banco-vetorial",
+    "source": "embedding",
+    "target": "banco-vetorial",
+    "type": "stored-in",
+    "explanation": "Um banco vetorial armazena e indexa embeddings para recuperar conteúdos por similaridade."
+  },
+  {
+    "id": "rag-banco-vetorial",
+    "source": "rag",
+    "target": "banco-vetorial",
+    "type": "can-query",
+    "explanation": "Uma arquitetura RAG pode consultar um banco vetorial para recuperar conteúdos relevantes à pergunta."
+  },
+  {
+    "id": "rag-llm",
+    "source": "rag",
+    "target": "llm",
+    "type": "augments",
+    "explanation": "RAG fornece ao LLM informações recuperadas para apoiar a geração de uma resposta contextualizada."
+  },
+  {
+    "id": "prompt-llm",
+    "source": "prompt",
+    "target": "llm",
+    "type": "instructs",
+    "explanation": "O prompt fornece instruções e contexto que orientam a saída de um LLM."
+  },
+  {
+    "id": "inferencia-llm",
+    "source": "inferencia",
+    "target": "llm",
+    "type": "runs",
+    "explanation": "Durante a inferência, um LLM processa a entrada e gera novos tokens como saída."
+  },
+  {
+    "id": "agente-de-ia-llm",
+    "source": "agente-de-ia",
+    "target": "llm",
+    "type": "can-use",
+    "explanation": "Um agente de IA pode usar um LLM para interpretar objetivos, planejar passos e avaliar resultados."
+  },
+  {
+    "id": "agente-de-ia-function-calling",
+    "source": "agente-de-ia",
+    "target": "function-calling",
+    "type": "acts-through",
+    "explanation": "Um agente de IA pode usar function calling para solicitar ações estruturadas a ferramentas autorizadas."
+  },
+  {
+    "id": "grounding-rag",
+    "source": "grounding",
+    "target": "rag",
+    "type": "supported-by",
+    "explanation": "RAG pode apoiar grounding ao fornecer ao modelo informações recuperadas de fontes selecionadas."
+  },
+  {
+    "id": "alucinacao-grounding",
+    "source": "alucinacao",
+    "target": "grounding",
+    "type": "mitigated-by",
+    "explanation": "Grounding pode reduzir alucinações ao apoiar a resposta em informações verificáveis, embora não elimine o risco."
+  },
+  {
+    "id": "fine-tuning-modelo-fundacional",
+    "source": "fine-tuning",
+    "target": "modelo-fundacional",
+    "type": "adapts",
+    "explanation": "Fine-tuning adapta um modelo fundacional com exemplos específicos de uma tarefa ou domínio."
+  },
+  {
+    "id": "fine-tuning-rag",
+    "source": "fine-tuning",
+    "target": "rag",
+    "type": "alternative-or-complement",
+    "explanation": "Fine-tuning adapta o comportamento do modelo, enquanto RAG fornece conhecimento recuperado; as técnicas podem ser alternativas ou complementares."
+  },
+  {
+    "id": "repositorio-git",
+    "source": "repositorio",
+    "target": "git",
+    "type": "managed-by",
+    "explanation": "O Git armazena histórico, referências e objetos dentro de um repositório."
+  },
+  {
+    "id": "arvore-trabalho-repositorio",
+    "source": "arvore-trabalho",
+    "target": "repositorio",
+    "type": "belongs-to",
+    "explanation": "A árvore de trabalho expõe para edição os arquivos de uma versão do repositório."
+  },
+  {
+    "id": "staging-area-commit",
+    "source": "staging-area",
+    "target": "commit",
+    "type": "prepares",
+    "explanation": "O staging area define o conteúdo que será registrado pelo próximo commit."
+  },
+  {
+    "id": "head-branch",
+    "source": "head",
+    "target": "branch",
+    "type": "points-to",
+    "explanation": "Em uso normal, HEAD referencia a branch atualmente selecionada."
+  },
+  {
+    "id": "remote-repositorio",
+    "source": "remote",
+    "target": "repositorio",
+    "type": "references",
+    "explanation": "Um remote associa um nome local à URL de outro repositório."
+  },
+  {
+    "id": "origin-remote",
+    "source": "origin",
+    "target": "remote",
+    "type": "conventional-name",
+    "explanation": "Origin é o nome convencional do remote criado durante a clonagem."
+  },
+  {
+    "id": "upstream-remote",
+    "source": "upstream",
+    "target": "remote",
+    "type": "tracks",
+    "explanation": "Upstream identifica o remote ou a branch usados como referência para sincronização."
+  },
+  {
+    "id": "clone-repositorio",
+    "source": "clone",
+    "target": "repositorio",
+    "type": "copies",
+    "explanation": "Clone cria uma cópia local de um repositório com histórico e configuração inicial."
+  },
+  {
+    "id": "fork-github",
+    "source": "fork",
+    "target": "github",
+    "type": "provided-by",
+    "explanation": "O GitHub permite criar forks para desenvolver mudanças a partir de outro repositório."
+  },
+  {
+    "id": "fetch-remote",
+    "source": "fetch",
+    "target": "remote",
+    "type": "downloads-from",
+    "explanation": "Fetch baixa objetos do remote e atualiza referências remotas sem integrar a branch atual."
+  },
+  {
+    "id": "pull-fetch",
+    "source": "pull",
+    "target": "fetch",
+    "type": "includes",
+    "explanation": "Pull começa buscando mudanças e depois tenta integrá-las à branch atual."
+  },
+  {
+    "id": "push-remote",
+    "source": "push",
+    "target": "remote",
+    "type": "uploads-to",
+    "explanation": "Push envia commits locais e solicita a atualização de referências no remote."
+  },
+  {
+    "id": "checkout-arvore-trabalho",
+    "source": "checkout",
+    "target": "arvore-trabalho",
+    "type": "updates",
+    "explanation": "Checkout pode atualizar a árvore de trabalho para refletir outra branch ou versão."
+  },
+  {
+    "id": "git-switch-branch",
+    "source": "git-switch",
+    "target": "branch",
+    "type": "selects",
+    "explanation": "Git switch seleciona uma branch existente ou cria uma nova."
+  },
+  {
+    "id": "git-restore-arvore-trabalho",
+    "source": "git-restore",
+    "target": "arvore-trabalho",
+    "type": "restores",
+    "explanation": "Git restore substitui conteúdo na árvore de trabalho ou ajusta o staging area."
+  },
+  {
+    "id": "rebase-branch",
+    "source": "rebase",
+    "target": "branch",
+    "type": "rewrites",
+    "explanation": "Rebase reaplica os commits de uma branch sobre uma nova base."
+  },
+  {
+    "id": "cherry-pick-commit",
+    "source": "cherry-pick",
+    "target": "commit",
+    "type": "reapplies",
+    "explanation": "Cherry-pick reaplica em outra posição a mudança introduzida por um commit."
+  },
+  {
+    "id": "stash-arvore-trabalho",
+    "source": "stash",
+    "target": "arvore-trabalho",
+    "type": "stores-temporarily",
+    "explanation": "Stash guarda temporariamente mudanças da árvore de trabalho e do índice."
+  },
+  {
+    "id": "tag-commit",
+    "source": "tag",
+    "target": "commit",
+    "type": "references",
+    "explanation": "Uma tag fornece um nome estável para um commit específico."
+  },
+  {
+    "id": "release-tag",
+    "source": "release",
+    "target": "tag",
+    "type": "based-on",
+    "explanation": "Uma release do GitHub normalmente apresenta uma versão identificada por uma tag."
+  },
+  {
+    "id": "conflito-merge",
+    "source": "conflito-merge",
+    "target": "merge",
+    "type": "may-interrupt",
+    "explanation": "Um conflito interrompe o merge quando mudanças concorrentes não podem ser combinadas automaticamente."
+  },
+  {
+    "id": "gitignore-arvore-trabalho",
+    "source": "gitignore",
+    "target": "arvore-trabalho",
+    "type": "filters-untracked",
+    "explanation": ".gitignore informa quais arquivos não rastreados da árvore de trabalho devem ser ignorados."
+  },
+  {
+    "id": "git-diff-staging-area",
+    "source": "git-diff",
+    "target": "staging-area",
+    "type": "compares",
+    "explanation": "Git diff pode comparar a árvore de trabalho, o staging area e commits."
+  },
+  {
+    "id": "git-status-arvore-trabalho",
+    "source": "git-status",
+    "target": "arvore-trabalho",
+    "type": "summarizes",
+    "explanation": "Git status resume as mudanças presentes na árvore de trabalho e no staging area."
+  },
+  {
+    "id": "git-log-commit",
+    "source": "git-log",
+    "target": "commit",
+    "type": "lists",
+    "explanation": "Git log consulta e apresenta commits alcançáveis no histórico."
+  },
+  {
+    "id": "git-init-repositorio",
+    "source": "git-init",
+    "target": "repositorio",
+    "type": "creates",
+    "explanation": "Git init cria os metadados necessários para um novo repositório."
+  },
+  {
+    "id": "git-add-staging-area",
+    "source": "git-add",
+    "target": "staging-area",
+    "type": "updates",
+    "explanation": "Git add coloca no staging area o estado selecionado do conteúdo."
+  },
+  {
+    "id": "git-reset-staging-area",
+    "source": "git-reset",
+    "target": "staging-area",
+    "type": "may-update",
+    "explanation": "Git reset pode mover uma referência e ajustar o staging area conforme o modo escolhido."
+  },
+  {
+    "id": "git-revert-commit",
+    "source": "git-revert",
+    "target": "commit",
+    "type": "reverses-with-new-commit",
+    "explanation": "Git revert preserva o histórico criando um novo commit que desfaz outro."
+  },
+  {
+    "id": "github-git",
+    "source": "github",
+    "target": "git",
+    "type": "hosts",
+    "explanation": "O GitHub hospeda repositórios Git e adiciona recursos de colaboração."
+  },
+  {
+    "id": "issue-github",
+    "source": "issue",
+    "target": "github",
+    "type": "managed-by",
+    "explanation": "Issues são registros de discussão e acompanhamento mantidos pelo GitHub."
+  },
+  {
+    "id": "github-actions-ci",
+    "source": "github-actions",
+    "target": "ci",
+    "type": "implements",
+    "explanation": "GitHub Actions pode implementar CI executando verificações em eventos do repositório."
+  },
+  {
+    "id": "workflow-github-actions",
+    "source": "workflow",
+    "target": "github-actions",
+    "type": "configures",
+    "explanation": "Um workflow define quando e como o GitHub Actions executa jobs e etapas."
+  },
+  {
+    "id": "github-pages-github",
+    "source": "github-pages",
+    "target": "github",
+    "type": "provided-by",
+    "explanation": "GitHub Pages é o serviço de hospedagem estática integrado ao GitHub."
+  },
+  {
+    "id": "organizacao-github",
+    "source": "organizacao-github",
+    "target": "github",
+    "type": "groups-resources",
+    "explanation": "Uma organização agrupa pessoas, equipes e repositórios no GitHub."
+  },
+  {
+    "id": "colaborador-repositorio",
+    "source": "colaborador",
+    "target": "repositorio",
+    "type": "has-access-to",
+    "explanation": "Um colaborador recebe um nível definido de acesso ao repositório."
+  },
+  {
+    "id": "visibilidade-repositorio",
+    "source": "visibilidade-repositorio",
+    "target": "repositorio",
+    "type": "controls-access",
+    "explanation": "A visibilidade determina quem pode localizar e acessar o repositório no GitHub."
+  },
+  {
+    "id": "repositorio-arquivado-repositorio",
+    "source": "repositorio-arquivado",
+    "target": "repositorio",
+    "type": "preserves-read-only",
+    "explanation": "O arquivamento preserva um repositório em estado somente leitura."
+  },
+  {
+    "id": "chave-ssh-remote",
+    "source": "chave-ssh",
+    "target": "remote",
+    "type": "authenticates",
+    "explanation": "Uma chave SSH pode autenticar a comunicação Git com um remote."
+  },
+  {
+    "id": "personal-access-token-github",
+    "source": "personal-access-token",
+    "target": "github",
+    "type": "authenticates",
+    "explanation": "Um personal access token autentica chamadas e operações autorizadas no GitHub."
+  },
+  {
+    "id": "github-cli-github",
+    "source": "github-cli",
+    "target": "github",
+    "type": "operates",
+    "explanation": "GitHub CLI permite gerenciar recursos do GitHub pelo terminal."
+  },
+  {
+    "id": "branch-padrao-branch",
+    "source": "branch-padrao",
+    "target": "branch",
+    "type": "specializes",
+    "explanation": "A branch padrão é a referência principal usada pelo repositório para navegação e contribuições."
+  },
+  {
+    "id": "branch-protegida-branch",
+    "source": "branch-protegida",
+    "target": "branch",
+    "type": "constrains",
+    "explanation": "Uma branch protegida aplica regras que restringem alterações e integrações."
+  },
+  {
+    "id": "codeowners-pull-request",
+    "source": "codeowners",
+    "target": "pull-request",
+    "type": "requests-reviewers",
+    "explanation": "CODEOWNERS permite solicitar revisores responsáveis conforme os arquivos alterados na pull request."
+  },
+  {
+    "id": "reflog-head",
+    "source": "reflog",
+    "target": "head",
+    "type": "records-movements",
+    "explanation": "O reflog registra localmente movimentos recentes de HEAD e outras referências."
+  },
+  {
+    "id": "submodulo-repositorio",
+    "source": "submodulo",
+    "target": "repositorio",
+    "type": "references",
+    "explanation": "Um submódulo faz um repositório apontar para um commit de outro repositório."
+  },
+  {
+    "id": "squash-merge-pull-request",
+    "source": "squash-merge",
+    "target": "pull-request",
+    "type": "integrates",
+    "explanation": "Squash merge integra uma pull request como um único commit na branch de destino."
+  },
+  {
+    "id": "fast-forward-merge",
+    "source": "fast-forward",
+    "target": "merge",
+    "type": "strategy",
+    "explanation": "Fast-forward conclui a integração avançando a referência sem criar um commit de merge."
   }
 ]

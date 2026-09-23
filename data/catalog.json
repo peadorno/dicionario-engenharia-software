@@ -1,0 +1,3447 @@
+[
+  {
+    "id": "catalogo-governanca-de-dados",
+    "term": "Governança de Dados",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-governanca-de-metadados",
+    "term": "Governança de Metadados",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-metadado",
+    "term": "Metadado",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-metadados-de-conteudo",
+    "term": "Metadados de Conteúdo",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-metadados-tecnicos",
+    "term": "Metadados Técnicos",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-metadados-descritivos",
+    "term": "Metadados Descritivos",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-metadados-estruturais",
+    "term": "Metadados Estruturais",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-metadados-administrativos",
+    "term": "Metadados Administrativos",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-metadados-contextuais",
+    "term": "Metadados Contextuais",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-metadado-canonico",
+    "term": "Metadado Canônico",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-metadado-operacional",
+    "term": "Metadado Operacional",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-modelo-canonico",
+    "term": "Modelo Canônico",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-modelo-conceitual",
+    "term": "Modelo Conceitual",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-modelo-logico",
+    "term": "Modelo Lógico",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-modelo-fisico",
+    "term": "Modelo Físico",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-dicionario-de-dados",
+    "term": "Dicionário de Dados",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-glossario-de-negocio",
+    "term": "Glossário de Negócio",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-catalogo-de-dados",
+    "term": "Catálogo de Dados",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-vocabulario-controlado",
+    "term": "Vocabulário Controlado",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-taxonomia",
+    "term": "Taxonomia",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-tesauro",
+    "term": "Tesauro",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-lista-de-autoridade",
+    "term": "Lista de Autoridade",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-controle-de-autoridade",
+    "term": "Controle de Autoridade",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-sistema-de-autoridade",
+    "term": "Sistema de Autoridade",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-source-of-truth-sot",
+    "term": "Source of Truth (SoT)",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-single-source-of-truth-ssot",
+    "term": "Single Source of Truth (SSOT)",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-golden-record",
+    "term": "Golden Record",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-master-data-management-mdm",
+    "term": "Master Data Management (MDM)",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-dados-mestres",
+    "term": "Dados Mestres",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-dados-de-referencia",
+    "term": "Dados de Referência",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-data-stewardship",
+    "term": "Data Stewardship",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-data-steward",
+    "term": "Data Steward",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-data-owner",
+    "term": "Data Owner",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-data-custodian",
+    "term": "Data Custodian",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-ponto-focal",
+    "term": "Ponto Focal",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-linhagem-de-dados-data-lineage",
+    "term": "Linhagem de Dados (Data Lineage)",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-proveniencia-de-dados",
+    "term": "Proveniência de Dados",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-rastreabilidade",
+    "term": "Rastreabilidade",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-qualidade-de-dados",
+    "term": "Qualidade de Dados",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-regra-de-validacao",
+    "term": "Regra de Validação",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-contrato-de-dados-data-contract",
+    "term": "Contrato de Dados (Data Contract)",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-ciclo-de-vida-do-dado",
+    "term": "Ciclo de Vida do Dado",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-maturidade-em-governanca",
+    "term": "Maturidade em Governança",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-dama-dmbok",
+    "term": "DAMA-DMBOK",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-mapeamento-canonico",
+    "term": "Mapeamento Canônico",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-de-para",
+    "term": "De-para",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-correspondencia-equivalente",
+    "term": "Correspondência Equivalente",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-correspondencia-parcial",
+    "term": "Correspondência Parcial",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-duplicidade-operacional",
+    "term": "Duplicidade Operacional",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-gap-de-governanca",
+    "term": "Gap de Governança",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-cardinalidade",
+    "term": "Cardinalidade",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-obrigatoriedade",
+    "term": "Obrigatoriedade",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-sensibilidade-do-dado",
+    "term": "Sensibilidade do Dado",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-classificacao-da-informacao",
+    "term": "Classificação da Informação",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-dado-intrinseco",
+    "term": "Dado Intrínseco",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-dado-derivado",
+    "term": "Dado Derivado",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-metadado-estruturante",
+    "term": "Metadado Estruturante",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-autoridade-universal",
+    "term": "Autoridade Universal",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-autoridade-condicional",
+    "term": "Autoridade Condicional",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-enriquecimento-de-metadados",
+    "term": "Enriquecimento de Metadados",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-padronizacao-de-nomenclatura",
+    "term": "Padronização de Nomenclatura",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-chave-primaria-pk",
+    "term": "Chave Primária (PK)",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-chave-estrangeira-fk",
+    "term": "Chave Estrangeira (FK)",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-identificador-unico",
+    "term": "Identificador Único",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-identificador-externo",
+    "term": "Identificador Externo",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-desambiguacao",
+    "term": "Desambiguação",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-sign-off",
+    "term": "Sign-off",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-human-in-the-loop-hitl",
+    "term": "Human-in-the-loop (HITL)",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-discovery",
+    "term": "Discovery",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-diagnostico",
+    "term": "Diagnóstico",
+    "category": "Governança de dados e metadados",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-ontologia",
+    "term": "Ontologia",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-grafo-de-conhecimento-knowledge-graph",
+    "term": "Grafo de Conhecimento (Knowledge Graph)",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-web-semantica",
+    "term": "Web Semântica",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-rdf-resource-description-framework",
+    "term": "RDF (Resource Description Framework)",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-rdfs",
+    "term": "RDFS",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-owl-web-ontology-language",
+    "term": "OWL (Web Ontology Language)",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-skos-simple-knowledge-organization-system",
+    "term": "SKOS (Simple Knowledge Organization System)",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-turtle-ttl",
+    "term": "Turtle (.ttl)",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-tripla-sujeito-predicado-objeto",
+    "term": "Tripla (sujeito-predicado-objeto)",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-classe",
+    "term": "Classe",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-instancia",
+    "term": "Instância",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-propriedade",
+    "term": "Propriedade",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-datatypeproperty",
+    "term": "DatatypeProperty",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-objectproperty",
+    "term": "ObjectProperty",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-conceptscheme",
+    "term": "ConceptScheme",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-subclasse-is-a",
+    "term": "Subclasse (is-a)",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-relacao-de-composicao-part-of",
+    "term": "Relação de Composição (part-of)",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-relacao-de-classificacao",
+    "term": "Relação de Classificação",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-entidade",
+    "term": "Entidade",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-atributo",
+    "term": "Atributo",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-relacao",
+    "term": "Relação",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-entidade-associativa",
+    "term": "Entidade Associativa",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-entidade-de-referencia",
+    "term": "Entidade de Referência",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-reificacao",
+    "term": "Reificação",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-namespace",
+    "term": "Namespace",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-uri",
+    "term": "URI",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-protege",
+    "term": "Protégé",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-wikidata",
+    "term": "Wikidata",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-linked-data",
+    "term": "Linked Data",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-modelo-entidade-relacionamento-mer",
+    "term": "Modelo Entidade-Relacionamento (MER)",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-no",
+    "term": "Nó",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-aresta",
+    "term": "Aresta",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-grafo-direcionado",
+    "term": "Grafo Direcionado",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-kumu",
+    "term": "Kumu",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-schema",
+    "term": "Schema",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-json-schema",
+    "term": "JSON Schema",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-schema-org",
+    "term": "Schema.org",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-unified-data-architecture-uda",
+    "term": "Unified Data Architecture (UDA)",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-projecao-de-schema",
+    "term": "Projeção de Schema",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-arquitetura-da-informacao",
+    "term": "Arquitetura da Informação",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-notacao-entidade-atributo",
+    "term": "Notação Entidade.Atributo",
+    "category": "Modelagem semântica, ontologias e grafos",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-mam-media-asset-management",
+    "term": "MAM (Media Asset Management)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-dam-digital-asset-management",
+    "term": "DAM (Digital Asset Management)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-asset",
+    "term": "Asset",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-ingest",
+    "term": "Ingest",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-ingestao",
+    "term": "Ingestão",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-encoding",
+    "term": "Encoding",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-transcoding",
+    "term": "Transcoding",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-codec",
+    "term": "Codec",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-container-formato-de-midia",
+    "term": "Container (formato de mídia)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-mp4",
+    "term": "MP4",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-resolucao",
+    "term": "Resolução",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-bitrate",
+    "term": "Bitrate",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-duracao",
+    "term": "Duração",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-timecode",
+    "term": "Timecode",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-frame",
+    "term": "Frame",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-proxy",
+    "term": "Proxy",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-copiao",
+    "term": "Copião",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-offline-edicao",
+    "term": "Offline (edição)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-online-edicao",
+    "term": "Online (edição)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-conform",
+    "term": "Conform",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-sonorizacao",
+    "term": "Sonorização",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-colorizacao-color-grading",
+    "term": "Colorização (Color Grading)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-pos-producao",
+    "term": "Pós-produção",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-finalizacao",
+    "term": "Finalização",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-workflow-de-aprovacao",
+    "term": "Workflow de Aprovação",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-review-and-approval",
+    "term": "Review and Approval",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-playout",
+    "term": "Playout",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-as-run-log-de-exibicao",
+    "term": "As Run (log de exibição)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-grade-de-programacao",
+    "term": "Grade de Programação",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-epg-electronic-program-guide",
+    "term": "EPG (Electronic Program Guide)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-smart-epg",
+    "term": "Smart EPG",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-linear",
+    "term": "Linear",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-tv-linear",
+    "term": "TV Linear",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-simulcast",
+    "term": "Simulcast",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-vod-video-on-demand",
+    "term": "VOD (Video on Demand)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-live-ao-vivo",
+    "term": "Live (ao vivo)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-ott-over-the-top",
+    "term": "OTT (Over-the-top)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-streaming",
+    "term": "Streaming",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-catalogo",
+    "term": "Catálogo",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-titulo-title",
+    "term": "Título (Title)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-temporada-season",
+    "term": "Temporada (Season)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-episodio-episode",
+    "term": "Episódio (Episode)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-segmento",
+    "term": "Segmento",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-bloco",
+    "term": "Bloco",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-break-comercial",
+    "term": "Break Comercial",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-cena",
+    "term": "Cena",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-integra",
+    "term": "Íntegra",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-teaser",
+    "term": "Teaser",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-trailer",
+    "term": "Trailer",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-promo",
+    "term": "Promo",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-promo-segmentada",
+    "term": "Promo Segmentada",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-visionamento",
+    "term": "Visionamento",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-acervo",
+    "term": "Acervo",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-classificacao-indicativa",
+    "term": "Classificação Indicativa",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-janela-de-exibicao",
+    "term": "Janela de Exibição",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-janela-de-licenciamento",
+    "term": "Janela de Licenciamento",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-direitos-de-exibicao",
+    "term": "Direitos de Exibição",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-territorio",
+    "term": "Território",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-drm-digital-rights-management",
+    "term": "DRM (Digital Rights Management)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-geobloqueio",
+    "term": "Geobloqueio",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-legenda",
+    "term": "Legenda",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-closed-caption",
+    "term": "Closed Caption",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-audiodescricao",
+    "term": "Audiodescrição",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-transcricao-automatica",
+    "term": "Transcrição Automática",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-speech-to-text",
+    "term": "Speech-to-Text",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-reconhecimento-de-objetos",
+    "term": "Reconhecimento de Objetos",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-reconhecimento-facial",
+    "term": "Reconhecimento Facial",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-tagueamento-automatico",
+    "term": "Tagueamento Automático",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-indexacao-de-video",
+    "term": "Indexação de Vídeo",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-sinopse",
+    "term": "Sinopse",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-storyline",
+    "term": "Storyline",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-elenco",
+    "term": "Elenco",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-creditos",
+    "term": "Créditos",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-epk-electronic-press-kit",
+    "term": "EPK (Electronic Press Kit)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-newsroom-computer-system-nrcs",
+    "term": "Newsroom Computer System (NRCS)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-rundown",
+    "term": "Rundown",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-roteiro-script",
+    "term": "Roteiro (Script)",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-distribuicao-multiplataforma",
+    "term": "Distribuição Multiplataforma",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-publishing",
+    "term": "Publishing",
+    "category": "Mídia, broadcast e audiovisual",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-publicidade-contextual",
+    "term": "Publicidade Contextual",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-adtech",
+    "term": "AdTech",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-ad-server",
+    "term": "Ad Server",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-segmentacao",
+    "term": "Segmentação",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-targeting-contextual",
+    "term": "Targeting Contextual",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-inventario-publicitario",
+    "term": "Inventário Publicitário",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-midia-avulsa",
+    "term": "Mídia Avulsa",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-merchandising",
+    "term": "Merchandising",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-recomendacao",
+    "term": "Recomendação",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-sistema-de-recomendacao",
+    "term": "Sistema de Recomendação",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-personalizacao",
+    "term": "Personalização",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-busca-semantica",
+    "term": "Busca Semântica",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-descoberta-de-conteudo-content-discovery",
+    "term": "Descoberta de Conteúdo (Content Discovery)",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-audiencia",
+    "term": "Audiência",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-analytics",
+    "term": "Analytics",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-pico-de-audiencia",
+    "term": "Pico de Audiência",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-crm",
+    "term": "CRM",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-salesforce",
+    "term": "Salesforce",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-sla-service-level-agreement",
+    "term": "SLA (Service Level Agreement)",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-d-x-antecedencia",
+    "term": "D-X (antecedência)",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-kpi",
+    "term": "KPI",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-epico",
+    "term": "Épico",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-historia-de-usuario-user-story",
+    "term": "História de Usuário (User Story)",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-backlog",
+    "term": "Backlog",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-product-owner-po",
+    "term": "Product Owner (PO)",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-stakeholder",
+    "term": "Stakeholder",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-caso-de-uso-use-case",
+    "term": "Caso de Uso (Use Case)",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-pipeline-de-casos",
+    "term": "Pipeline de Casos",
+    "category": "Publicidade, dados de negócio e produto",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-arquitetura-de-dados",
+    "term": "Arquitetura de Dados",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-arquitetura-de-solucoes",
+    "term": "Arquitetura de Soluções",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-endpoint",
+    "term": "Endpoint",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-json",
+    "term": "JSON",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-csv",
+    "term": "CSV",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-xml",
+    "term": "XML",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-payload",
+    "term": "Payload",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-webhook",
+    "term": "Webhook",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-integracao-de-sistemas",
+    "term": "Integração de Sistemas",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-sistema-legado",
+    "term": "Sistema Legado",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-migracao-de-dados",
+    "term": "Migração de Dados",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-etl",
+    "term": "ETL",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-elt",
+    "term": "ELT",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-pipeline-de-dados",
+    "term": "Pipeline de Dados",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-data-lake",
+    "term": "Data Lake",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-data-warehouse",
+    "term": "Data Warehouse",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-lakehouse",
+    "term": "Lakehouse",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-data-mesh",
+    "term": "Data Mesh",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-data-product",
+    "term": "Data Product",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-bigquery",
+    "term": "BigQuery",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-gcp-google-cloud-platform",
+    "term": "GCP (Google Cloud Platform)",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-nuvem-cloud",
+    "term": "Nuvem (Cloud)",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-storage-distribuido",
+    "term": "Storage Distribuído",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-object-storage",
+    "term": "Object Storage",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-media-lake",
+    "term": "Media Lake",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-banco-de-dados-relacional",
+    "term": "Banco de Dados Relacional",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-banco-de-dados-de-grafos",
+    "term": "Banco de Dados de Grafos",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-ddl",
+    "term": "DDL",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-consulta-query",
+    "term": "Consulta (Query)",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-schema-on-read",
+    "term": "Schema-on-read",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-schema-on-write",
+    "term": "Schema-on-write",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-normalizacao",
+    "term": "Normalização",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-deduplicacao",
+    "term": "Deduplicação",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-entidade-de-primeira-classe",
+    "term": "Entidade de Primeira Classe",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-backend",
+    "term": "Backend",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-frontend",
+    "term": "Frontend",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-full-stack",
+    "term": "Full-stack",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-admin-painel-administrativo",
+    "term": "Admin (painel administrativo)",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-backstage",
+    "term": "Backstage",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-federacao-de-identidade",
+    "term": "Federação de Identidade",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-sso-single-sign-on",
+    "term": "SSO (Single Sign-On)",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-controle-de-acesso",
+    "term": "Controle de Acesso",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-rbac-controle-de-acesso-baseado-em-papeis",
+    "term": "RBAC (controle de acesso baseado em papéis)",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-matriz-de-permissoes",
+    "term": "Matriz de Permissões",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-versionamento",
+    "term": "Versionamento",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-github",
+    "term": "GitHub",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-github-actions",
+    "term": "GitHub Actions",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-ci-cd",
+    "term": "CI/CD",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-vercel",
+    "term": "Vercel",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-node-js",
+    "term": "Node.js",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-python",
+    "term": "Python",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-html",
+    "term": "HTML",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-css",
+    "term": "CSS",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-javascript",
+    "term": "JavaScript",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-quality-gate",
+    "term": "Quality Gate",
+    "category": "Arquitetura, dados e engenharia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-inteligencia-artificial-ia",
+    "term": "Inteligência Artificial (IA)",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-llm-large-language-model",
+    "term": "LLM (Large Language Model)",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-engenharia-de-prompt",
+    "term": "Engenharia de Prompt",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-system-prompt",
+    "term": "System Prompt",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-janela-de-contexto",
+    "term": "Janela de Contexto",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-embeddings",
+    "term": "Embeddings",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-busca-vetorial",
+    "term": "Busca Vetorial",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-rag-retrieval-augmented-generation",
+    "term": "RAG (Retrieval-Augmented Generation)",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-agente-autonomo",
+    "term": "Agente Autônomo",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-subagente",
+    "term": "Subagente",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-multiagente",
+    "term": "Multiagente",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-mcp-model-context-protocol",
+    "term": "MCP (Model Context Protocol)",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-conector",
+    "term": "Conector",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-tool-use",
+    "term": "Tool Use",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-classificacao-automatica",
+    "term": "Classificação Automática",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-extracao-de-entidades-ner",
+    "term": "Extração de Entidades (NER)",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-visao-computacional",
+    "term": "Visão Computacional",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-copilot",
+    "term": "Copilot",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-copilot-studio",
+    "term": "Copilot Studio",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-agent-builder",
+    "term": "Agent Builder",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-claude-code",
+    "term": "Claude Code",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-vibe-coding",
+    "term": "Vibe Coding",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-busca-semantica-com-ia",
+    "term": "Busca Semântica com IA",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-loop-de-feedback",
+    "term": "Loop de Feedback",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-sharepoint",
+    "term": "SharePoint",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-microsoft-lists",
+    "term": "Microsoft Lists",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-power-automate",
+    "term": "Power Automate",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-microsoft-loop",
+    "term": "Microsoft Loop",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-microsoft-teams",
+    "term": "Microsoft Teams",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-confluence",
+    "term": "Confluence",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-jira",
+    "term": "Jira",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-miro",
+    "term": "Miro",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-notion",
+    "term": "Notion",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-vscode",
+    "term": "VSCode",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-markdown",
+    "term": "Markdown",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-kanban",
+    "term": "Kanban",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-portal-corporativo",
+    "term": "Portal Corporativo",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-frame-io",
+    "term": "Frame.io",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-adobe-premiere",
+    "term": "Adobe Premiere",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-avid-mediacentral",
+    "term": "Avid MediaCentral",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-avid-interplay",
+    "term": "Avid Interplay",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-viz-one",
+    "term": "Viz One",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-metodo-para",
+    "term": "Método PARA",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-second-brain",
+    "term": "Second Brain",
+    "category": "Ferramentas e colaboração",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "Base profissional de governança de metadados, mídia e TI"
+  },
+  {
+    "id": "catalogo-agente-de-codigo",
+    "term": "Agente de código",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-benchmark-de-llm",
+    "term": "Benchmark de LLM",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-modelo-local-de-ia",
+    "term": "Modelo local de IA",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-memoria-de-agente",
+    "term": "Memória de agente",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-midia-generativa",
+    "term": "Mídia generativa",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-planejador-e-executor",
+    "term": "Planejador e executor",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-contexto-longo",
+    "term": "Contexto longo",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-banco-de-dados-vetorial",
+    "term": "Banco de dados vetorial",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-one-shot-prompt",
+    "term": "One-shot prompt",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-watermark-de-ia",
+    "term": "Watermark de IA",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-sistema-multiagente",
+    "term": "Sistema multiagente",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-modelo-multimodal",
+    "term": "Modelo multimodal",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-inferencia-local",
+    "term": "Inferência local",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-raciocinio-de-modelo",
+    "term": "Raciocínio de modelo",
+    "category": "Inteligência artificial",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-monorepo",
+    "term": "Monorepo",
+    "category": "Engenharia de software",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-job-assincrono",
+    "term": "Job assíncrono",
+    "category": "Engenharia de software",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-sistema-distribuido",
+    "term": "Sistema distribuído",
+    "category": "Engenharia de software",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-type-safety",
+    "term": "Type safety",
+    "category": "Engenharia de software",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-cli",
+    "term": "CLI",
+    "category": "Engenharia de software",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-wrapper",
+    "term": "Wrapper",
+    "category": "Engenharia de software",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-codigo-aberto",
+    "term": "Código aberto",
+    "category": "Engenharia de software",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-linguagem-de-programacao",
+    "term": "Linguagem de programação",
+    "category": "Engenharia de software",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-framework-web",
+    "term": "Framework web",
+    "category": "Engenharia de software",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-cache-de-aplicacao",
+    "term": "Cache de aplicação",
+    "category": "Engenharia de software",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-painel-administrativo",
+    "term": "Painel administrativo",
+    "category": "Engenharia de software",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-pos-deploy",
+    "term": "Pós-deploy",
+    "category": "Engenharia de software",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-sandbox",
+    "term": "Sandbox",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-linux",
+    "term": "Linux",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-home-server",
+    "term": "Home server",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-homelab",
+    "term": "Homelab",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-distrobox",
+    "term": "Distrobox",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-btrfs",
+    "term": "Btrfs",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-snapshot",
+    "term": "Snapshot",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-backup",
+    "term": "Backup",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-x11",
+    "term": "X11",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-xlibre",
+    "term": "XLibre",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-gpu",
+    "term": "GPU",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-vram",
+    "term": "VRAM",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-dual-gpu",
+    "term": "Dual GPU",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-arm64",
+    "term": "ARM64",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-x86-64",
+    "term": "x86-64",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-virtualizacao-de-gpu",
+    "term": "Virtualização de GPU",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-shell-script",
+    "term": "Shell script",
+    "category": "Infraestrutura e DevOps",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-rust",
+    "term": "Rust",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-zig",
+    "term": "Zig",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-crystal",
+    "term": "Crystal",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-ruby",
+    "term": "Ruby",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-ruby-on-rails",
+    "term": "Ruby on Rails",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-sqlite",
+    "term": "SQLite",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-kamal",
+    "term": "Kamal",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-ffmpeg",
+    "term": "FFmpeg",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-grep",
+    "term": "Grep",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-restic",
+    "term": "Restic",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-bubblewrap",
+    "term": "Bubblewrap",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-lsp",
+    "term": "LSP",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-github-cli",
+    "term": "GitHub CLI",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-omarchy",
+    "term": "Omarchy",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-opencode",
+    "term": "OpenCode",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-crush",
+    "term": "Crush",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-cursor",
+    "term": "Cursor",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-windsurf",
+    "term": "Windsurf",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-antigravity",
+    "term": "Antigravity",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-gpt-codex",
+    "term": "GPT Codex",
+    "category": "Linguagens, ferramentas e plataformas",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-web-scraping",
+    "term": "Web scraping",
+    "category": "Web, dados e mídia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-text-to-speech",
+    "term": "Text-to-Speech",
+    "category": "Web, dados e mídia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-smtp",
+    "term": "SMTP",
+    "category": "Web, dados e mídia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-autenticacao-de-e-mail",
+    "term": "Autenticação de e-mail",
+    "category": "Web, dados e mídia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-data-mining",
+    "term": "Data mining",
+    "category": "Web, dados e mídia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-indexacao-de-imagens",
+    "term": "Indexação de imagens",
+    "category": "Web, dados e mídia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-modelagem-3d-generativa",
+    "term": "Modelagem 3D generativa",
+    "category": "Web, dados e mídia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-editor-de-markdown",
+    "term": "Editor de Markdown",
+    "category": "Web, dados e mídia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-legenda-srt",
+    "term": "Legenda SRT",
+    "category": "Web, dados e mídia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-transcodificacao-de-audio",
+    "term": "Transcodificação de áudio",
+    "category": "Web, dados e mídia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-vector-database",
+    "term": "Vector database",
+    "category": "Web, dados e mídia",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-cve",
+    "term": "CVE",
+    "category": "Segurança e redes",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-sha-256",
+    "term": "SHA-256",
+    "category": "Segurança e redes",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-secp256k1",
+    "term": "secp256k1",
+    "category": "Segurança e redes",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-drm",
+    "term": "DRM",
+    "category": "Segurança e redes",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-tor",
+    "term": "Tor",
+    "category": "Segurança e redes",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-dns",
+    "term": "DNS",
+    "category": "Segurança e redes",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-isolamento-de-processos",
+    "term": "Isolamento de processos",
+    "category": "Segurança e redes",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-controle-de-permissoes",
+    "term": "Controle de permissões",
+    "category": "Segurança e redes",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-seguranca-de-agentes",
+    "term": "Segurança de agentes",
+    "category": "Segurança e redes",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-privacidade-digital",
+    "term": "Privacidade digital",
+    "category": "Segurança e redes",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-emulacao",
+    "term": "Emulação",
+    "category": "Retrocomputação e emulação",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-rom",
+    "term": "ROM",
+    "category": "Retrocomputação e emulação",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-nes",
+    "term": "NES",
+    "category": "Retrocomputação e emulação",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-master-system",
+    "term": "Master System",
+    "category": "Retrocomputação e emulação",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-arquitetura-6502",
+    "term": "Arquitetura 6502",
+    "category": "Retrocomputação e emulação",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-arquitetura-z80",
+    "term": "Arquitetura Z80",
+    "category": "Retrocomputação e emulação",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-claude",
+    "term": "Claude",
+    "category": "Modelos e serviços de IA",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-claude-opus",
+    "term": "Claude Opus",
+    "category": "Modelos e serviços de IA",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-claude-sonnet",
+    "term": "Claude Sonnet",
+    "category": "Modelos e serviços de IA",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-deepseek",
+    "term": "DeepSeek",
+    "category": "Modelos e serviços de IA",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-gemini",
+    "term": "Gemini",
+    "category": "Modelos e serviços de IA",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-glm",
+    "term": "GLM",
+    "category": "Modelos e serviços de IA",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-grok",
+    "term": "Grok",
+    "category": "Modelos e serviços de IA",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-qwen",
+    "term": "Qwen",
+    "category": "Modelos e serviços de IA",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-mimo",
+    "term": "Mimo",
+    "category": "Modelos e serviços de IA",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-openrouter",
+    "term": "OpenRouter",
+    "category": "Modelos e serviços de IA",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  },
+  {
+    "id": "catalogo-elevenlabs",
+    "term": "ElevenLabs",
+    "category": "Modelos e serviços de IA",
+    "aliases": [],
+    "status": "catalogado",
+    "source": "AkitaOnRails — posts de 2026",
+    "sourceUrl": "https://akitaonrails.com/"
+  }
+]

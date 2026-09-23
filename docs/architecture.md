@@ -18,8 +18,8 @@ A aplicação será uma página estática composta por:
 
 ```text
 terms.json ─────┐
-                ├──> carregamento e validação ──> estado da aplicação
-relations.json ─┘                                      │
+relations.json ─┼──> carregamento e validação ──> estado da aplicação
+catalog.json ───┘                                      │
                                                        ├──> busca
                                                        ├──> termo selecionado
                                                        └──> relação entre termos
@@ -77,14 +77,37 @@ Regras:
 
 Os termos relacionados serão derivados desse arquivo. Não haverá um segundo cadastro de `relatedTerms` dentro dos termos.
 
+### 3.3 Catálogo para curadoria
+
+Termos identificados em fontes externas ou em bases de trabalho ficam em
+`catalog.json` até receberem definição, explicação, exemplo e relações revisadas.
+Eles participam da busca, mas aparecem com o estado “Em curadoria” e não são
+apresentados como verbetes completos.
+
+```json
+{
+  "id": "catalogo-governanca-de-metadados",
+  "term": "Governança de Metadados",
+  "category": "Governança de dados e metadados",
+  "aliases": [],
+  "status": "catalogado",
+  "source": "Base profissional de governança de metadados, mídia e TI"
+}
+```
+
+Essa separação evita definições genéricas, preserva a procedência e permite que
+a curadoria avance por lotes sem reduzir a confiabilidade dos 112 verbetes já
+concluídos. Nomes marcados como internos não entram no repositório público.
+
 ## 4. Responsabilidades dos módulos
 
 | Módulo | Responsabilidade |
 |---|---|
 | `app.js` | Inicializar a aplicação, manter o estado mínimo e coordenar os demais módulos |
-| `data-service.js` | Carregar JSON, validar campos, IDs e referências |
-| `search.js` | Normalizar consultas, calcular relevância e ordenar resultados |
+| `data-service.js` | Carregar termos, catálogo e relações; validar campos, IDs e referências |
+| `search.js` | Normalizar, expandir e ranquear consultas híbridas |
 | `relations.js` | Encontrar e ordenar relações entre os termos selecionados |
+| `theme.js` | Resolver, aplicar e persistir a preferência de tema |
 | `ui.js` | Registrar eventos e renderizar estados da interface no DOM |
 
 As regras de busca e relacionamento não acessarão diretamente o DOM. Isso permite testá-las sem navegador e evita misturar lógica com apresentação.
@@ -103,11 +126,11 @@ Não será criada uma biblioteca própria de gerenciamento de estado.
 
 ## 6. Fluxo principal
 
-1. Carregar termos e relações.
+1. Carregar termos, catálogo e relações.
 2. Validar os dados e suas referências.
-3. Preparar um índice de busca em memória.
-4. Exibir os termos em ordem alfabética.
-5. Filtrar e ordenar resultados conforme a pesquisa.
+3. Manter as sugestões fechadas até que exista uma consulta.
+4. Preparar e reutilizar o índice de busca em memória.
+5. Expandir, filtrar e ordenar resultados conforme a pesquisa.
 6. Abrir os detalhes do termo selecionado.
 7. Derivar seus termos relacionados das conexões cadastradas.
 8. Permitir a seleção de dois ou mais termos.
@@ -122,19 +145,22 @@ Antes da comparação, textos serão:
 - normalizados para remover acentos;
 - tratados para remover espaços excedentes.
 
-Prioridade dos resultados:
+A busca combina quatro sinais:
 
-1. nome exatamente igual;
-2. alias exatamente igual;
-3. nome iniciado pela consulta;
-4. alias iniciado pela consulta;
-5. ocorrência no nome ou alias;
-6. ocorrência na categoria;
-7. ocorrência na definição ou explicação.
+1. correspondência de frase em nome, aliases, categoria e conteúdo;
+2. pesos diferentes por campo, priorizando nome e aliases;
+3. tolerância controlada a flexões e pequenos erros de digitação;
+4. expansão semântica de intenções para conceitos relacionados.
 
-A ordenação usa a correspondência mais forte encontrada para cada termo. Pontos de campos diferentes não são somados, evitando que várias coincidências fracas superem um nome ou alias mais preciso.
+Por exemplo, “publicar aplicação” expande a consulta para conceitos de entrega e
+prioriza **Deploy**; “desfazer versão com problema” prioriza **Rollback**. A
+expansão é um vocabulário local, explícito e testável. Ela não envia a consulta a
+um serviço externo e não depende de um modelo de linguagem.
 
-Uma consulta vazia mostrará todos os termos em ordem alfabética. Busca fuzzy e bibliotecas externas não fazem parte do MVP.
+Os campos normalizados e seus tokens são armazenados em cache por objeto durante
+a sessão. Verbetes em curadoria usam somente nome, aliases e categoria, evitando
+que o texto padrão de curadoria contamine os resultados. Uma consulta vazia
+mantém a ordenação alfabética.
 
 ## 8. Estratégia de relacionamento
 

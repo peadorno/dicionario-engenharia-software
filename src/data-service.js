@@ -1,6 +1,7 @@
 const DATA_URLS = {
   terms: new URL("../data/terms.json", import.meta.url),
   relations: new URL("../data/relations.json", import.meta.url),
+  catalog: new URL("../data/catalog.json", import.meta.url),
 };
 
 const REQUIRED_TERM_FIELDS = [
@@ -14,6 +15,7 @@ const REQUIRED_TERM_FIELDS = [
 ];
 
 const REQUIRED_RELATION_FIELDS = ["id", "source", "target", "type", "explanation"];
+const REQUIRED_CATALOG_FIELDS = ["id", "term", "category", "aliases", "status", "source"];
 const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 async function fetchJson(url, label) {
@@ -137,6 +139,79 @@ function validateRelations(relations, termIds) {
 
 }
 
+export function validateCatalog(catalog) {
+  assertArray(catalog, "catálogo");
+
+  for (const entry of catalog) {
+    assertRequiredFields(
+      entry,
+      REQUIRED_CATALOG_FIELDS,
+      `Entrada de catálogo "${entry.id ?? "desconhecida"}"`,
+    );
+    assertStringFields(
+      entry,
+      ["id", "term", "category", "status", "source"],
+      `Entrada de catálogo "${entry.id}"`,
+    );
+    assertValidId(entry.id, `Entrada de catálogo "${entry.term}"`);
+
+    if (entry.status !== "catalogado") {
+      throw new Error(`A entrada "${entry.id}" possui status inválido.`);
+    }
+
+    if (!Array.isArray(entry.aliases)) {
+      throw new Error(`Os aliases da entrada "${entry.id}" devem formar uma lista.`);
+    }
+
+    if (entry.aliases.some((alias) => typeof alias !== "string" || alias.trim() === "")) {
+      throw new Error(`Os aliases da entrada "${entry.id}" devem conter apenas textos.`);
+    }
+
+    if (
+      entry.sourceUrl !== undefined &&
+      (typeof entry.sourceUrl !== "string" || !entry.sourceUrl.startsWith("https://"))
+    ) {
+      throw new Error(`A URL da fonte da entrada "${entry.id}" deve usar HTTPS.`);
+    }
+  }
+
+  assertUniqueIds(catalog, "catálogo");
+  const normalizedTerms = new Set();
+
+  for (const entry of catalog) {
+    const normalizedTerm = normalizeName(entry.term);
+
+    if (normalizedTerms.has(normalizedTerm)) {
+      throw new Error(`Termo duplicado no catálogo: "${entry.term}".`);
+    }
+
+    normalizedTerms.add(normalizedTerm);
+  }
+}
+
+function normalizeName(value) {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLocaleLowerCase("pt-BR")
+    .trim();
+}
+
+function expandCatalog(catalog, curatedTerms) {
+  const curatedNames = new Set(
+    curatedTerms.flatMap((term) => [term.term, ...term.aliases]).map(normalizeName),
+  );
+
+  return catalog
+    .filter((entry) => !curatedNames.has(normalizeName(entry.term)))
+    .map((entry) => ({
+      ...entry,
+      definition: "Verbete identificado e incluído no catálogo; definição técnica em curadoria.",
+      explanation: `Este conceito está classificado na categoria ${entry.category}. O conteúdo detalhado será revisado antes de receber uma definição definitiva.`,
+      example: "Exemplo de uso ainda não disponível para este verbete.",
+    }));
+}
+
 export function validateKnowledgeBase(terms, relations) {
   validateTerms(terms);
 
@@ -145,15 +220,18 @@ export function validateKnowledgeBase(terms, relations) {
 }
 
 export async function loadKnowledgeBase() {
-  const [terms, relations] = await Promise.all([
+  const [terms, relations, catalog] = await Promise.all([
     fetchJson(DATA_URLS.terms, "os termos"),
     fetchJson(DATA_URLS.relations, "as relações"),
+    fetchJson(DATA_URLS.catalog, "o catálogo"),
   ]);
 
   validateKnowledgeBase(terms, relations);
+  validateCatalog(catalog);
+  const catalogTerms = expandCatalog(catalog, terms);
 
   return {
-    terms: [...terms].sort((first, second) =>
+    terms: [...terms, ...catalogTerms].sort((first, second) =>
       first.term.localeCompare(second.term, "pt-BR"),
     ),
     relations,

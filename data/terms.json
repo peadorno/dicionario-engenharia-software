@@ -106,5 +106,1040 @@
     "definition": "Mecanismo que permite ativar ou desativar uma funcionalidade sem remover seu código ou realizar um novo deploy.",
     "explanation": "Feature flags separam a publicação técnica do código da liberação da funcionalidade aos usuários. Elas permitem liberações graduais e reação rápida, mas precisam ser gerenciadas para não acumular complexidade desnecessária.",
     "example": "A equipe ativou a nova busca para um grupo pequeno usando uma feature flag."
+  },
+  {
+    "id": "api",
+    "term": "API",
+    "category": "Engenharia de Software",
+    "aliases": ["interface de programação de aplicações", "application programming interface"],
+    "definition": "Contrato que permite a comunicação entre sistemas por meio de operações, formatos e regras definidos.",
+    "explanation": "Uma API expõe capacidades de um software sem exigir que o consumidor conheça sua implementação interna. Bons contratos são consistentes, documentados e versionados.",
+    "example": "O aplicativo consulta uma API para obter a previsão do tempo."
+  },
+  {
+    "id": "algoritmo",
+    "term": "Algoritmo",
+    "category": "Fundamentos",
+    "aliases": ["algorithm"],
+    "definition": "Sequência finita de instruções usada para resolver um problema ou executar uma tarefa.",
+    "explanation": "Algoritmos transformam entradas em saídas. Eles podem ser avaliados pela correção, clareza e pelo consumo de tempo e memória.",
+    "example": "Um algoritmo de ordenação organiza os resultados da busca em ordem alfabética."
+  },
+  {
+    "id": "arquitetura-de-software",
+    "term": "Arquitetura de Software",
+    "category": "Engenharia de Software",
+    "aliases": ["software architecture"],
+    "definition": "Estrutura de alto nível de um sistema, incluindo seus componentes, responsabilidades e formas de interação.",
+    "explanation": "A arquitetura orienta decisões que afetam qualidade, evolução e operação do produto. Ela deve responder às necessidades reais, evitando complexidade sem benefício.",
+    "example": "A equipe separou interface, regras de negócio e acesso a dados na arquitetura da aplicação."
+  },
+  {
+    "id": "clean-code",
+    "term": "Clean Code",
+    "category": "Qualidade de Software",
+    "aliases": ["código limpo"],
+    "definition": "Prática de escrever código claro, simples, coeso e fácil de modificar.",
+    "explanation": "Código limpo comunica intenção por nomes, funções pequenas e estruturas previsíveis. O objetivo é facilitar entendimento e manutenção, não seguir regras de forma rígida.",
+    "example": "Renomear uma variável genérica para totalDoPedido tornou a intenção do código mais clara."
+  },
+  {
+    "id": "code-review",
+    "term": "Code Review",
+    "category": "Qualidade de Software",
+    "aliases": ["revisão de código"],
+    "definition": "Análise de uma alteração de código por outra pessoa antes de sua integração.",
+    "explanation": "A revisão ajuda a encontrar defeitos, compartilhar conhecimento e manter padrões. Comentários eficazes discutem o código com respeito e explicam o motivo da sugestão.",
+    "example": "Uma pessoa revisou o pull request e sugeriu simplificar a validação."
+  },
+  {
+    "id": "design-pattern",
+    "term": "Design Pattern",
+    "category": "Engenharia de Software",
+    "aliases": ["padrão de projeto"],
+    "definition": "Solução reutilizável e nomeada para um problema recorrente de design de software.",
+    "explanation": "Padrões oferecem vocabulário comum e ideias testadas, mas não são receitas obrigatórias. Só devem ser aplicados quando o problema correspondente existe.",
+    "example": "O padrão Strategy permitiu trocar a regra de cálculo sem alterar o fluxo principal."
+  },
+  {
+    "id": "refatoracao",
+    "term": "Refatoração",
+    "category": "Qualidade de Software",
+    "aliases": ["refactoring"],
+    "definition": "Melhoria da estrutura interna do código sem alterar seu comportamento observável.",
+    "explanation": "Refatorar reduz complexidade e prepara o software para mudanças. Testes automatizados diminuem o risco de introduzir regressões durante o processo.",
+    "example": "A função extensa foi dividida em funções menores mantendo o mesmo resultado."
+  },
+  {
+    "id": "divida-tecnica",
+    "term": "Dívida Técnica",
+    "category": "Engenharia de Software",
+    "aliases": ["technical debt"],
+    "definition": "Custo futuro criado por decisões técnicas que priorizam uma solução mais rápida ou limitada no presente.",
+    "explanation": "Nem toda dívida técnica é acidental ou ruim, mas precisa ser visível e gerenciada. Juros aparecem como mudanças mais lentas, falhas e manutenção difícil.",
+    "example": "A equipe registrou a duplicação temporária para refatorá-la na próxima entrega."
+  },
+  {
+    "id": "teste-unitario",
+    "term": "Teste Unitário",
+    "category": "Testes",
+    "aliases": ["unit test"],
+    "definition": "Teste automatizado de uma pequena unidade de comportamento de forma isolada e rápida.",
+    "explanation": "Testes unitários fornecem retorno rápido sobre regras específicas. Eles devem verificar comportamento relevante sem depender excessivamente de detalhes internos.",
+    "example": "Um teste unitário verifica se o desconto é calculado corretamente."
+  },
+  {
+    "id": "teste-de-integracao",
+    "term": "Teste de Integração",
+    "category": "Testes",
+    "aliases": ["integration test"],
+    "definition": "Teste que verifica a colaboração entre componentes, serviços ou recursos externos.",
+    "explanation": "Esse teste encontra problemas em contratos, configurações e acesso a dados que testes isolados não revelam. Em geral, é mais lento e exige ambiente controlado.",
+    "example": "O teste confirma que a API salva e recupera um usuário no banco de dados."
+  },
+  {
+    "id": "teste-end-to-end",
+    "term": "Teste End-to-End",
+    "category": "Testes",
+    "aliases": ["E2E", "teste ponta a ponta"],
+    "definition": "Teste de um fluxo completo do sistema pela perspectiva do usuário ou consumidor.",
+    "explanation": "Testes end-to-end validam componentes funcionando em conjunto. Como são mais caros e frágeis, devem se concentrar nos fluxos mais importantes.",
+    "example": "O teste E2E simula cadastro, login e conclusão de uma compra."
+  },
+  {
+    "id": "tdd",
+    "term": "TDD",
+    "category": "Testes",
+    "aliases": ["test-driven development", "desenvolvimento guiado por testes"],
+    "definition": "Ciclo de desenvolvimento em que se escreve um teste antes do código que satisfaz o comportamento esperado.",
+    "explanation": "O ciclo costuma seguir vermelho, verde e refatorar: criar um teste que falha, fazê-lo passar e melhorar o design mantendo os testes verdes.",
+    "example": "Antes de implementar a validação, a pessoa escreveu um teste para a entrada inválida."
+  },
+  {
+    "id": "solid",
+    "term": "SOLID",
+    "category": "Design de Software",
+    "aliases": ["princípios SOLID"],
+    "definition": "Conjunto de cinco princípios para criar módulos orientados a objetos mais compreensíveis e flexíveis.",
+    "explanation": "SOLID aborda responsabilidade, extensão, substituição, interfaces e dependências. Os princípios orientam decisões, mas não justificam abstrações desnecessárias.",
+    "example": "Separar envio e cálculo da fatura reduz responsabilidades de uma única classe."
+  },
+  {
+    "id": "injecao-de-dependencia",
+    "term": "Injeção de Dependência",
+    "category": "Design de Software",
+    "aliases": ["dependency injection", "DI"],
+    "definition": "Técnica em que um componente recebe suas dependências em vez de criá-las internamente.",
+    "explanation": "A injeção reduz acoplamento e facilita testes e substituições. Ela pode ser aplicada diretamente, sem exigir um framework ou contêiner específico.",
+    "example": "O serviço recebe um repositório pelo construtor e pode usar uma implementação falsa no teste."
+  },
+  {
+    "id": "microsservicos",
+    "term": "Microsserviços",
+    "category": "Arquitetura",
+    "aliases": ["microservices"],
+    "definition": "Estilo arquitetural que organiza um sistema como serviços pequenos e implantáveis de forma independente.",
+    "explanation": "Microsserviços podem dar autonomia a equipes e partes do produto, mas aumentam desafios de rede, dados, observabilidade e operação distribuída.",
+    "example": "Catálogo e pagamento são serviços separados com ciclos de deploy independentes."
+  },
+  {
+    "id": "monolito",
+    "term": "Monólito",
+    "category": "Arquitetura",
+    "aliases": ["monolith", "arquitetura monolítica"],
+    "definition": "Aplicação construída e implantada como uma única unidade principal.",
+    "explanation": "Um monólito pode ser simples de desenvolver e operar, especialmente no início. Uma boa modularização interna evita que ele se torne difícil de evoluir.",
+    "example": "A primeira versão reúne interface, regras e persistência em uma única aplicação modular."
+  },
+  {
+    "id": "rest",
+    "term": "REST",
+    "category": "Web",
+    "aliases": ["representational state transfer", "API REST"],
+    "definition": "Estilo arquitetural para sistemas distribuídos baseado em recursos e em uma interface uniforme.",
+    "explanation": "Na web, REST costuma usar HTTP, URLs de recursos e métodos como GET e POST. Uma API HTTP não se torna REST apenas por usar esses métodos.",
+    "example": "GET /termos/42 retorna a representação de um termo."
+  },
+  {
+    "id": "arquitetura-orientada-a-eventos",
+    "term": "Arquitetura Orientada a Eventos",
+    "category": "Arquitetura",
+    "aliases": ["event-driven architecture", "EDA"],
+    "definition": "Estilo em que componentes publicam e reagem a eventos que representam fatos ocorridos.",
+    "explanation": "Eventos reduzem acoplamento temporal e facilitam processamento assíncrono. Exigem atenção a duplicidade, ordem, rastreamento e consistência dos dados.",
+    "example": "O evento PedidoCriado inicia faturamento e separação sem chamada direta entre os serviços."
+  },
+  {
+    "id": "fila-de-mensagens",
+    "term": "Fila de Mensagens",
+    "category": "Sistemas Distribuídos",
+    "aliases": ["message queue", "mensageria"],
+    "definition": "Mecanismo que armazena mensagens para processamento assíncrono por consumidores.",
+    "explanation": "Filas ajudam a absorver picos e desacoplar produtores de consumidores. O sistema deve lidar com repetição, falha e confirmação de processamento.",
+    "example": "Os e-mails de confirmação entram em uma fila e são enviados por trabalhadores em segundo plano."
+  },
+  {
+    "id": "observabilidade",
+    "term": "Observabilidade",
+    "category": "Operações",
+    "aliases": ["observability"],
+    "definition": "Capacidade de compreender o estado interno de um sistema a partir dos sinais que ele produz.",
+    "explanation": "Logs, métricas e rastreamentos ajudam a investigar comportamento e impacto. Observabilidade eficaz começa com perguntas operacionais, não apenas com coleta de dados.",
+    "example": "Um rastreamento mostrou em qual serviço a requisição ficou lenta."
+  },
+  {
+    "id": "banco-de-dados",
+    "term": "Banco de Dados",
+    "category": "Dados",
+    "aliases": ["database", "DB"],
+    "definition": "Sistema organizado para armazenar, consultar e atualizar dados de forma controlada.",
+    "explanation": "A escolha do banco depende do modelo dos dados, consultas, consistência, escala e operação. Diferentes necessidades podem exigir tecnologias diferentes.",
+    "example": "A aplicação registra usuários e pedidos em um banco de dados."
+  },
+  {
+    "id": "sql",
+    "term": "SQL",
+    "category": "Dados",
+    "aliases": ["structured query language", "linguagem de consulta estruturada"],
+    "definition": "Linguagem usada para definir, consultar e manipular dados em bancos relacionais.",
+    "explanation": "SQL expressa operações sobre tabelas e relações. Consultas, índices e transações bem planejados influenciam correção e desempenho.",
+    "example": "Uma consulta SQL seleciona os pedidos realizados no mês atual."
+  },
+  {
+    "id": "nosql",
+    "term": "NoSQL",
+    "category": "Dados",
+    "aliases": ["banco não relacional", "not only SQL"],
+    "definition": "Família de bancos de dados que utiliza modelos como documento, chave-valor, colunas ou grafos.",
+    "explanation": "NoSQL não representa uma única tecnologia nem ausência total de estrutura. Cada modelo favorece determinados padrões de acesso e compromissos de consistência.",
+    "example": "Um banco de documentos armazena catálogos com atributos variados."
+  },
+  {
+    "id": "cache",
+    "term": "Cache",
+    "category": "Desempenho",
+    "aliases": ["armazenamento temporário"],
+    "definition": "Armazenamento temporário de dados para reduzir o custo e o tempo de acessos futuros.",
+    "explanation": "Cache melhora desempenho, mas introduz o problema de manter dados atualizados. Políticas de expiração e invalidação precisam ser explícitas.",
+    "example": "Os termos mais acessados ficam em cache para evitar consultas repetidas."
+  },
+  {
+    "id": "container",
+    "term": "Container",
+    "category": "Infraestrutura",
+    "aliases": ["contêiner"],
+    "definition": "Unidade isolada que empacota uma aplicação com as dependências necessárias para executá-la.",
+    "explanation": "Containers compartilham o kernel do sistema hospedeiro e favorecem ambientes consistentes. Imagens pequenas e configuração externa facilitam segurança e operação.",
+    "example": "A API é executada no mesmo container em desenvolvimento e produção."
+  },
+  {
+    "id": "docker",
+    "term": "Docker",
+    "category": "Infraestrutura",
+    "aliases": ["Docker Engine"],
+    "definition": "Plataforma e conjunto de ferramentas para construir, distribuir e executar containers.",
+    "explanation": "Docker popularizou imagens declarativas e execução reproduzível. Ele é uma implementação do conceito de container, não um sinônimo obrigatório dele.",
+    "example": "O Dockerfile descreve como montar a imagem da aplicação."
+  },
+  {
+    "id": "kubernetes",
+    "term": "Kubernetes",
+    "category": "Infraestrutura",
+    "aliases": ["K8s", "orquestrador de containers"],
+    "definition": "Plataforma de código aberto para automatizar implantação, escala e gerenciamento de aplicações em containers.",
+    "explanation": "Kubernetes coordena cargas em um cluster e oferece mecanismos declarativos. Seu poder traz custo operacional, por isso não é necessário para todo projeto.",
+    "example": "O Kubernetes substitui automaticamente uma instância da aplicação que falhou."
+  },
+  {
+    "id": "infraestrutura-como-codigo",
+    "term": "Infraestrutura como Código",
+    "category": "Infraestrutura",
+    "aliases": ["infrastructure as code", "IaC"],
+    "definition": "Gerenciamento de infraestrutura por arquivos versionados e executáveis em vez de configuração manual.",
+    "explanation": "IaC torna mudanças revisáveis, repetíveis e automatizáveis. Estado, segredos e permissões precisam de tratamento cuidadoso.",
+    "example": "A rede e o banco são definidos em código e revisados por pull request."
+  },
+  {
+    "id": "computacao-em-nuvem",
+    "term": "Computação em Nuvem",
+    "category": "Infraestrutura",
+    "aliases": ["cloud computing", "nuvem"],
+    "definition": "Fornecimento sob demanda de recursos computacionais por uma rede, normalmente com cobrança por uso.",
+    "explanation": "A nuvem oferece serviços gerenciados e capacidade elástica, mas não elimina decisões de arquitetura, segurança, custo e confiabilidade.",
+    "example": "A aplicação usa armazenamento e banco gerenciado de um provedor de nuvem."
+  },
+  {
+    "id": "serverless",
+    "term": "Serverless",
+    "category": "Infraestrutura",
+    "aliases": ["computação sem servidor", "functions as a service", "FaaS"],
+    "definition": "Modelo em que o provedor gerencia servidores e escala, enquanto a equipe implanta funções ou serviços orientados à demanda.",
+    "explanation": "Serverless reduz tarefas operacionais e pode cobrar por execução. Limites de plataforma, inicialização e dependência do provedor devem ser avaliados.",
+    "example": "Uma função serverless processa a imagem quando um arquivo é enviado."
+  },
+  {
+    "id": "autenticacao",
+    "term": "Autenticação",
+    "category": "Segurança",
+    "aliases": ["authentication", "AuthN"],
+    "definition": "Processo de verificar a identidade de uma pessoa, serviço ou dispositivo.",
+    "explanation": "Senhas, chaves e fatores adicionais podem comprovar identidade. A autenticação responde quem é o sujeito, não o que ele pode fazer.",
+    "example": "O usuário comprova sua identidade com senha e um segundo fator."
+  },
+  {
+    "id": "autorizacao",
+    "term": "Autorização",
+    "category": "Segurança",
+    "aliases": ["authorization", "AuthZ"],
+    "definition": "Processo de decidir quais ações um sujeito autenticado pode executar.",
+    "explanation": "A autorização aplica políticas e permissões sobre recursos. Ela deve ser verificada no servidor e seguir o princípio do menor privilégio.",
+    "example": "Somente administradores podem excluir contas de usuários."
+  },
+  {
+    "id": "inteligencia-artificial",
+    "term": "Inteligência Artificial",
+    "category": "Inteligência Artificial",
+    "aliases": ["IA", "artificial intelligence", "AI"],
+    "definition": "Área da computação dedicada a sistemas capazes de realizar tarefas associadas à inteligência humana.",
+    "explanation": "IA inclui técnicas baseadas em regras, busca, aprendizado de máquina e outras abordagens. O termo descreve um campo amplo, não uma única tecnologia.",
+    "example": "Um sistema de IA classifica mensagens e sugere respostas."
+  },
+  {
+    "id": "machine-learning",
+    "term": "Machine Learning",
+    "category": "Inteligência Artificial",
+    "aliases": ["aprendizado de máquina", "ML"],
+    "definition": "Subárea da IA em que modelos aprendem padrões a partir de dados para fazer previsões ou decisões.",
+    "explanation": "Em vez de programar cada regra, a equipe define dados, objetivo e método de treinamento. A qualidade do resultado depende dos dados, da avaliação e do uso pretendido.",
+    "example": "Um modelo aprende com transações anteriores a estimar o risco de fraude."
+  },
+  {
+    "id": "deep-learning",
+    "term": "Deep Learning",
+    "category": "Inteligência Artificial",
+    "aliases": ["aprendizado profundo", "DL"],
+    "definition": "Subárea de machine learning baseada em redes neurais com muitas camadas.",
+    "explanation": "Deep learning é eficaz em linguagem, visão e áudio quando há dados e capacidade computacional adequados. Treinamento e explicabilidade podem ser desafiadores.",
+    "example": "Uma rede profunda reconhece objetos em fotografias."
+  },
+  {
+    "id": "rede-neural",
+    "term": "Rede Neural",
+    "category": "Inteligência Artificial",
+    "aliases": ["neural network"],
+    "definition": "Modelo computacional composto por camadas de unidades conectadas que ajustam pesos durante o aprendizado.",
+    "explanation": "Redes neurais aproximam relações complexas entre entradas e saídas. Arquitetura, dados, função de perda e otimização influenciam seu comportamento.",
+    "example": "A rede neural recebe pixels e estima a categoria da imagem."
+  },
+  {
+    "id": "ia-generativa",
+    "term": "IA Generativa",
+    "category": "Inteligência Artificial",
+    "aliases": ["generative AI", "GenAI"],
+    "definition": "Tipo de IA capaz de produzir novos conteúdos, como texto, imagem, áudio, vídeo ou código.",
+    "explanation": "Modelos generativos aprendem padrões de grandes conjuntos de dados e produzem saídas condicionadas à entrada. Resultados precisam ser avaliados porque podem conter erros.",
+    "example": "Uma IA generativa cria um resumo a partir de um documento."
+  },
+  {
+    "id": "modelo-fundacional",
+    "term": "Modelo Fundacional",
+    "category": "Inteligência Artificial",
+    "aliases": ["foundation model"],
+    "definition": "Modelo treinado em grande escala que pode ser adaptado a muitas tarefas diferentes.",
+    "explanation": "Modelos fundacionais servem como base para aplicações por prompting, ajuste fino ou integração com outros sistemas. Eles podem ser multimodais ou especializados.",
+    "example": "Uma equipe adapta um modelo fundacional para responder dúvidas sobre seus produtos."
+  },
+  {
+    "id": "llm",
+    "term": "LLM",
+    "category": "Inteligência Artificial",
+    "aliases": ["large language model", "grande modelo de linguagem"],
+    "definition": "Modelo de linguagem de grande escala treinado para compreender e gerar sequências de texto e outros dados.",
+    "explanation": "LLMs estimam tokens prováveis com base no contexto. Podem resumir, responder e programar, mas não garantem verdade factual nem raciocínio correto.",
+    "example": "Um LLM transforma uma pergunta em linguagem natural em uma resposta explicativa."
+  },
+  {
+    "id": "nlp",
+    "term": "NLP",
+    "category": "Inteligência Artificial",
+    "aliases": ["processamento de linguagem natural", "natural language processing", "PLN"],
+    "definition": "Área que desenvolve métodos para computadores processarem e produzirem linguagem humana.",
+    "explanation": "NLP abrange classificação, extração, tradução, busca e geração de texto. Técnicas modernas frequentemente usam transformers e modelos de linguagem.",
+    "example": "Um sistema de NLP identifica o assunto principal de cada mensagem."
+  },
+  {
+    "id": "transformer",
+    "term": "Transformer",
+    "category": "Inteligência Artificial",
+    "aliases": ["arquitetura transformer"],
+    "definition": "Arquitetura de rede neural que usa mecanismos de atenção para relacionar partes de uma sequência.",
+    "explanation": "Transformers processam contexto de forma eficiente e sustentam muitos modelos modernos de linguagem, visão e áudio.",
+    "example": "O transformer relaciona palavras distantes para interpretar o sentido da frase."
+  },
+  {
+    "id": "token",
+    "term": "Token",
+    "category": "Inteligência Artificial",
+    "aliases": ["unidade de tokenização"],
+    "definition": "Unidade em que um modelo divide uma entrada, podendo representar palavra, parte de palavra, caractere ou outro elemento.",
+    "explanation": "Modelos recebem e produzem sequências de tokens. A tokenização influencia limites de contexto, custo e tratamento de diferentes idiomas.",
+    "example": "Uma palavra longa pode ser dividida em vários tokens pelo modelo."
+  },
+  {
+    "id": "embedding",
+    "term": "Embedding",
+    "category": "Inteligência Artificial",
+    "aliases": ["incorporação vetorial", "representação vetorial"],
+    "definition": "Representação numérica que posiciona conteúdos semanticamente semelhantes próximos em um espaço vetorial.",
+    "explanation": "Embeddings permitem busca semântica, recomendação e agrupamento. A similaridade numérica é útil, mas depende do modelo e do contexto dos dados.",
+    "example": "A busca usa embeddings para encontrar textos com significado parecido."
+  },
+  {
+    "id": "banco-vetorial",
+    "term": "Banco Vetorial",
+    "category": "Dados e IA",
+    "aliases": ["vector database", "vector store"],
+    "definition": "Sistema otimizado para armazenar vetores e recuperar itens por similaridade.",
+    "explanation": "Bancos vetoriais indexam embeddings e ajudam a localizar conteúdos semanticamente próximos. Metadados e filtros melhoram precisão e governança.",
+    "example": "O banco vetorial encontra os documentos mais próximos da pergunta do usuário."
+  },
+  {
+    "id": "rag",
+    "term": "RAG",
+    "category": "Inteligência Artificial",
+    "aliases": ["retrieval-augmented generation", "geração aumentada por recuperação"],
+    "definition": "Arquitetura que recupera informações externas e as fornece ao modelo para apoiar a geração de uma resposta.",
+    "explanation": "RAG conecta modelos a fontes atualizadas ou privadas e pode melhorar fundamentação. Recuperação ruim ou contexto insuficiente ainda produzem respostas inadequadas.",
+    "example": "Antes de responder, o sistema recupera trechos da documentação interna."
+  },
+  {
+    "id": "prompt",
+    "term": "Prompt",
+    "category": "Inteligência Artificial",
+    "aliases": ["instrução", "entrada do modelo"],
+    "definition": "Entrada fornecida a um modelo para orientar a tarefa e o formato da resposta.",
+    "explanation": "Um prompt pode conter instruções, contexto, exemplos e restrições. Clareza ajuda, mas não substitui validação, dados adequados e controles do sistema.",
+    "example": "O prompt pede um resumo em três tópicos e informa o público-alvo."
+  },
+  {
+    "id": "inferencia",
+    "term": "Inferência",
+    "category": "Inteligência Artificial",
+    "aliases": ["inference"],
+    "definition": "Uso de um modelo treinado para produzir uma previsão, classificação ou conteúdo a partir de uma entrada.",
+    "explanation": "Inferência acontece quando uma aplicação executa o modelo, diferentemente do treinamento. Latência, custo e qualidade orientam a escolha de modelo e infraestrutura.",
+    "example": "O modelo realiza inferência para classificar uma nova imagem."
+  },
+  {
+    "id": "agente-de-ia",
+    "term": "Agente de IA",
+    "category": "Inteligência Artificial",
+    "aliases": ["AI agent", "agente inteligente"],
+    "definition": "Sistema que usa um modelo para planejar ações, utilizar ferramentas e buscar um objetivo com algum grau de autonomia.",
+    "explanation": "Agentes combinam modelo, instruções, estado e ferramentas. Permissões, limites, validação e supervisão são essenciais quando as ações afetam sistemas reais.",
+    "example": "Um agente consulta uma agenda e propõe horários disponíveis."
+  },
+  {
+    "id": "grounding",
+    "term": "Grounding",
+    "category": "Inteligência Artificial",
+    "aliases": ["fundamentação", "ancoragem em fontes"],
+    "definition": "Processo de apoiar a saída de um modelo em informações verificáveis e relevantes fornecidas por fontes externas.",
+    "explanation": "Grounding aproxima a resposta de dados autorizados e pode permitir citações. Ele reduz alguns erros, mas não garante que toda conclusão seja correta.",
+    "example": "A resposta é fundamentada nos manuais oficiais recuperados pela aplicação."
+  },
+  {
+    "id": "alucinacao",
+    "term": "Alucinação",
+    "category": "Inteligência Artificial",
+    "aliases": ["hallucination", "confabulação"],
+    "definition": "Saída plausível de um modelo que contém informação incorreta, inventada ou não sustentada pela entrada.",
+    "explanation": "Alucinações podem ocorrer mesmo quando o texto parece seguro e bem escrito. Verificação, fontes, limites de tarefa e revisão humana ajudam a reduzir o risco.",
+    "example": "O modelo citou um documento inexistente, por isso a resposta foi rejeitada."
+  },
+  {
+    "id": "function-calling",
+    "term": "Function Calling",
+    "category": "Inteligência Artificial",
+    "aliases": ["chamada de função", "tool calling", "uso de ferramentas"],
+    "definition": "Mecanismo pelo qual um modelo solicita a execução estruturada de uma função ou ferramenta disponível.",
+    "explanation": "A aplicação valida os argumentos, executa a ferramenta e devolve o resultado ao modelo. O modelo não deve receber permissões maiores do que a tarefa exige.",
+    "example": "O modelo solicita uma função de clima com cidade e data em campos estruturados."
+  },
+  {
+    "id": "fine-tuning",
+    "term": "Fine-Tuning",
+    "category": "Inteligência Artificial",
+    "aliases": ["ajuste fino", "fine tuning"],
+    "definition": "Continuação do treinamento de um modelo com dados específicos para adaptar seu comportamento a uma tarefa ou domínio.",
+    "explanation": "Ajuste fino pode melhorar estilo ou desempenho recorrente, mas exige dados de qualidade e avaliação. Prompting ou RAG podem ser opções mais simples em outros casos.",
+    "example": "O modelo foi ajustado com exemplos revisados do formato de resposta esperado."
+  },
+  {
+    "id": "repositorio",
+    "term": "Repositório",
+    "category": "Git",
+    "aliases": [
+      "repository",
+      "repo"
+    ],
+    "definition": "Estrutura que armazena os arquivos versionados, o histórico e os metadados de um projeto Git.",
+    "explanation": "Um repositório pode existir localmente, remotamente ou nos dois lugares. A pasta oculta .git mantém os objetos e referências que permitem ao Git reconstruir o histórico.",
+    "example": "Pedro inicializou um repositório para registrar a evolução do projeto."
+  },
+  {
+    "id": "arvore-trabalho",
+    "term": "Árvore de Trabalho",
+    "category": "Git",
+    "aliases": [
+      "working tree",
+      "working directory",
+      "diretório de trabalho"
+    ],
+    "definition": "Conjunto de arquivos do projeto atualmente disponível para edição fora do histórico confirmado.",
+    "explanation": "A árvore de trabalho reflete uma versão do projeto e pode conter alterações ainda não adicionadas ao índice. O Git compara esse estado com o índice e com o commit apontado por HEAD.",
+    "example": "O arquivo modificado aparece na árvore de trabalho antes de ser preparado para o commit."
+  },
+  {
+    "id": "staging-area",
+    "term": "Staging Area",
+    "category": "Git",
+    "aliases": [
+      "index",
+      "índice",
+      "área de preparação"
+    ],
+    "definition": "Área intermediária que reúne as mudanças selecionadas para o próximo commit.",
+    "explanation": "O staging area permite escolher exatamente quais alterações participarão de um commit. O comando git add atualiza essa área sem criar o commit imediatamente.",
+    "example": "Pedro adicionou apenas o README ao staging area para manter o próximo commit focado."
+  },
+  {
+    "id": "head",
+    "term": "HEAD",
+    "category": "Git",
+    "aliases": [
+      "referência atual"
+    ],
+    "definition": "Referência que indica o commit ou a branch atualmente selecionada no repositório.",
+    "explanation": "Normalmente HEAD aponta para a branch atual e acompanha seu commit mais recente. Em detached HEAD, ela aponta diretamente para um commit, sem estar associada a uma branch.",
+    "example": "Após trocar para a branch main, HEAD passou a apontar para essa linha de desenvolvimento."
+  },
+  {
+    "id": "remote",
+    "term": "Remote",
+    "category": "Git",
+    "aliases": [
+      "repositório remoto"
+    ],
+    "definition": "Referência configurada para outro repositório Git acessível por uma URL.",
+    "explanation": "Um remote associa um nome local a um repositório externo. Ele é usado por operações como fetch, pull e push para trocar objetos e referências.",
+    "example": "O projeto possui um remote que aponta para o repositório hospedado no GitHub."
+  },
+  {
+    "id": "origin",
+    "term": "Origin",
+    "category": "Git",
+    "aliases": [
+      "remote origin"
+    ],
+    "definition": "Nome convencional atribuído ao remote principal quando um repositório é clonado.",
+    "explanation": "Origin é apenas um nome configurável, não uma palavra especial obrigatória. Ele costuma apontar para o repositório do qual a cópia local foi criada.",
+    "example": "Pedro enviou a branch main para o remote origin."
+  },
+  {
+    "id": "upstream",
+    "term": "Upstream",
+    "category": "Git",
+    "aliases": [
+      "origem principal",
+      "branch upstream"
+    ],
+    "definition": "Repositório ou branch de referência a partir do qual mudanças são acompanhadas.",
+    "explanation": "Em uma branch local, upstream indica a branch remota usada por padrão em pull e push. Em projetos derivados, também pode designar o repositório original acompanhado por um fork.",
+    "example": "O fork foi atualizado com as mudanças recebidas do repositório upstream."
+  },
+  {
+    "id": "clone",
+    "term": "Clone",
+    "category": "Git",
+    "aliases": [
+      "git clone",
+      "clonagem"
+    ],
+    "definition": "Cópia local de um repositório Git que inclui arquivos, histórico e configuração inicial de remote.",
+    "explanation": "Clonar cria um novo diretório de trabalho e transfere os objetos necessários do repositório de origem. Por padrão, o remote criado recebe o nome origin.",
+    "example": "Pedro usou git clone para baixar o projeto do GitHub e trabalhar localmente."
+  },
+  {
+    "id": "fork",
+    "term": "Fork",
+    "category": "GitHub",
+    "aliases": [
+      "bifurcação de repositório"
+    ],
+    "definition": "Cópia de um repositório criada em outra conta ou organização no GitHub.",
+    "explanation": "Um fork permite experimentar mudanças ou colaborar sem acesso direto de escrita ao repositório original. As contribuições podem retornar por uma pull request.",
+    "example": "A desenvolvedora criou um fork antes de propor uma correção ao projeto original."
+  },
+  {
+    "id": "fetch",
+    "term": "Fetch",
+    "category": "Git",
+    "aliases": [
+      "git fetch",
+      "buscar referências remotas"
+    ],
+    "definition": "Operação que baixa objetos e atualiza referências remotas sem integrar mudanças à branch atual.",
+    "explanation": "Fetch permite inspecionar o que mudou no remote antes de alterar o trabalho local. Ele atualiza referências como origin/main, mas não executa merge automaticamente.",
+    "example": "Pedro executou git fetch para verificar as novidades do repositório remoto."
+  },
+  {
+    "id": "pull",
+    "term": "Pull",
+    "category": "Git",
+    "aliases": [
+      "git pull"
+    ],
+    "definition": "Operação que busca mudanças de uma branch remota e tenta integrá-las à branch atual.",
+    "explanation": "Pull combina um fetch com uma estratégia de integração, normalmente merge ou rebase conforme a configuração. Mudanças incompatíveis podem exigir resolução de conflitos.",
+    "example": "Antes de começar a trabalhar, Pedro executou git pull para atualizar a branch local."
+  },
+  {
+    "id": "push",
+    "term": "Push",
+    "category": "Git",
+    "aliases": [
+      "git push",
+      "envio ao remoto"
+    ],
+    "definition": "Operação que envia commits e atualiza referências em um repositório remoto.",
+    "explanation": "Push publica o histórico local em um remote quando a atualização é aceita. Proteções de branch, permissões ou um histórico remoto divergente podem impedir a operação.",
+    "example": "Depois de revisar os commits, Pedro executou git push origin main."
+  },
+  {
+    "id": "checkout",
+    "term": "Checkout",
+    "category": "Git",
+    "aliases": [
+      "git checkout"
+    ],
+    "definition": "Operação tradicional usada para trocar de branch ou restaurar arquivos a partir de outra versão.",
+    "explanation": "Checkout possui responsabilidades diferentes e por isso comandos mais específicos, como git switch e git restore, são preferíveis em muitos fluxos modernos.",
+    "example": "O checkout colocou a árvore de trabalho no estado da branch selecionada."
+  },
+  {
+    "id": "git-switch",
+    "term": "Git Switch",
+    "category": "Git",
+    "aliases": [
+      "git switch",
+      "trocar branch"
+    ],
+    "definition": "Comando dedicado a trocar a branch atual ou criar uma nova branch.",
+    "explanation": "Git switch torna explícita a intenção de navegar entre branches, evitando parte da ambiguidade do comando git checkout.",
+    "example": "Pedro executou git switch -c nova-busca para criar e acessar uma branch."
+  },
+  {
+    "id": "git-restore",
+    "term": "Git Restore",
+    "category": "Git",
+    "aliases": [
+      "git restore",
+      "restaurar arquivo"
+    ],
+    "definition": "Comando usado para restaurar conteúdo na árvore de trabalho ou remover mudanças do staging area.",
+    "explanation": "Restore pode descartar alterações locais, por isso o alvo e as opções devem ser revisados antes da execução. Ele não substitui a recuperação de commits já registrados.",
+    "example": "Pedro usou git restore --staged para retirar um arquivo do próximo commit sem apagá-lo."
+  },
+  {
+    "id": "rebase",
+    "term": "Rebase",
+    "category": "Git",
+    "aliases": [
+      "git rebase",
+      "rebase interativo"
+    ],
+    "definition": "Operação que reaplica commits sobre outra base e reescreve sua sequência histórica.",
+    "explanation": "Rebase pode produzir um histórico linear e também reorganizar commits localmente. Como altera identificadores, deve ser usado com cuidado em branches já compartilhadas.",
+    "example": "A branch foi atualizada por rebase sobre main antes da abertura da pull request."
+  },
+  {
+    "id": "cherry-pick",
+    "term": "Cherry-pick",
+    "category": "Git",
+    "aliases": [
+      "git cherry-pick"
+    ],
+    "definition": "Operação que aplica em uma branch a mudança introduzida por um commit específico.",
+    "explanation": "Cherry-pick cria um novo commit equivalente sobre a posição atual. É útil para transportar uma correção isolada sem integrar toda a branch de origem.",
+    "example": "O time aplicou por cherry-pick apenas o commit que corrigia a falha urgente."
+  },
+  {
+    "id": "stash",
+    "term": "Stash",
+    "category": "Git",
+    "aliases": [
+      "git stash",
+      "pilha de alterações"
+    ],
+    "definition": "Armazenamento temporário de mudanças locais ainda não confirmadas.",
+    "explanation": "Stash limpa provisoriamente a árvore de trabalho e permite reaplicar as mudanças depois. Ele é conveniente para interrupções curtas, mas não substitui commits bem organizados.",
+    "example": "Pedro guardou o trabalho incompleto no stash antes de trocar de branch."
+  },
+  {
+    "id": "tag",
+    "term": "Tag",
+    "category": "Git",
+    "aliases": [
+      "git tag",
+      "etiqueta"
+    ],
+    "definition": "Referência estável associada a um ponto específico do histórico Git.",
+    "explanation": "Tags costumam identificar versões publicadas, como v1.0.0. Uma tag anotada também pode registrar autor, data, mensagem e assinatura.",
+    "example": "A versão aprovada recebeu a tag v1.0.0."
+  },
+  {
+    "id": "release",
+    "term": "Release",
+    "category": "GitHub",
+    "aliases": [
+      "lançamento",
+      "versão publicada"
+    ],
+    "definition": "Publicação no GitHub associada normalmente a uma tag, com notas e arquivos distribuíveis.",
+    "explanation": "Uma release apresenta uma versão aos usuários sem alterar o significado da tag no Git. Ela pode incluir changelog, binários e outros artefatos.",
+    "example": "O projeto publicou uma release com as mudanças da versão e o arquivo instalável."
+  },
+  {
+    "id": "conflito-merge",
+    "term": "Conflito de Merge",
+    "category": "Git",
+    "aliases": [
+      "merge conflict",
+      "conflito"
+    ],
+    "definition": "Situação em que o Git não consegue combinar automaticamente mudanças concorrentes.",
+    "explanation": "O conflito marca trechos que exigem uma decisão humana. Depois da edição, os arquivos resolvidos devem ser preparados e a operação de integração concluída.",
+    "example": "Duas branches alteraram a mesma linha e produziram um conflito de merge."
+  },
+  {
+    "id": "gitignore",
+    "term": ".gitignore",
+    "category": "Git",
+    "aliases": [
+      "gitignore",
+      "arquivo de exclusão"
+    ],
+    "definition": "Arquivo que define padrões de arquivos não rastreados que o Git deve ignorar.",
+    "explanation": "O .gitignore evita adicionar arquivos gerados, caches e configurações locais. Ele não remove do histórico um arquivo que já esteja sendo rastreado.",
+    "example": "O projeto ignora node_modules e arquivos .env por meio do .gitignore."
+  },
+  {
+    "id": "git-diff",
+    "term": "Git Diff",
+    "category": "Git",
+    "aliases": [
+      "git diff",
+      "diferença de alterações"
+    ],
+    "definition": "Comando que exibe diferenças entre estados da árvore de trabalho, do índice e do histórico.",
+    "explanation": "Git diff ajuda a revisar o conteúdo exato de uma mudança antes do commit. Com opções adequadas, também compara branches, commits ou alterações já preparadas.",
+    "example": "Antes do commit, Pedro executou git diff --cached para revisar o staging area."
+  },
+  {
+    "id": "git-status",
+    "term": "Git Status",
+    "category": "Git",
+    "aliases": [
+      "git status",
+      "estado do repositório"
+    ],
+    "definition": "Comando que resume a branch atual e o estado dos arquivos rastreados e não rastreados.",
+    "explanation": "Git status diferencia mudanças preparadas, não preparadas e arquivos novos. É uma verificação segura e frequente antes de outras operações.",
+    "example": "O git status mostrou quais arquivos estavam prontos para o próximo commit."
+  },
+  {
+    "id": "git-log",
+    "term": "Git Log",
+    "category": "Git",
+    "aliases": [
+      "git log",
+      "histórico de commits"
+    ],
+    "definition": "Comando que consulta o histórico de commits alcançável pelas referências selecionadas.",
+    "explanation": "Git log pode mostrar autores, datas, mensagens, relações entre branches e alterações. Seus filtros ajudam a investigar quando e por que algo mudou.",
+    "example": "Pedro usou git log --oneline para obter uma visão compacta do histórico."
+  },
+  {
+    "id": "git-init",
+    "term": "Git Init",
+    "category": "Git",
+    "aliases": [
+      "git init",
+      "inicializar repositório"
+    ],
+    "definition": "Comando que cria a estrutura de um novo repositório Git.",
+    "explanation": "Git init adiciona os metadados necessários sem registrar automaticamente os arquivos existentes. O primeiro commit é criado somente depois da preparação das mudanças.",
+    "example": "O projeto local passou a ser versionado depois da execução de git init."
+  },
+  {
+    "id": "git-add",
+    "term": "Git Add",
+    "category": "Git",
+    "aliases": [
+      "git add",
+      "adicionar ao índice"
+    ],
+    "definition": "Comando que copia para o staging area o estado selecionado de arquivos ou trechos.",
+    "explanation": "Git add prepara conteúdo para o próximo commit. Novas alterações feitas depois disso precisam ser adicionadas novamente se também devam participar.",
+    "example": "Pedro executou git add README.md para preparar apenas a documentação."
+  },
+  {
+    "id": "git-reset",
+    "term": "Git Reset",
+    "category": "Git",
+    "aliases": [
+      "git reset"
+    ],
+    "definition": "Comando que move referências e, conforme o modo, também altera o índice e a árvore de trabalho.",
+    "explanation": "Reset pode apenas retirar mudanças do staging area ou descartar trabalho local. Modos destrutivos, como --hard, exigem confirmação e revisão cuidadosa do alvo.",
+    "example": "Pedro usou git reset sem modo destrutivo para reorganizar o próximo commit."
+  },
+  {
+    "id": "git-revert",
+    "term": "Git Revert",
+    "category": "Git",
+    "aliases": [
+      "git revert",
+      "reverter commit"
+    ],
+    "definition": "Comando que cria um novo commit para desfazer as mudanças introduzidas por outro commit.",
+    "explanation": "Revert preserva o histórico existente e costuma ser apropriado para commits já compartilhados. Ele pode exigir resolução de conflitos quando o código mudou depois.",
+    "example": "Uma alteração publicada foi desfeita com git revert e um novo commit corretivo."
+  },
+  {
+    "id": "github",
+    "term": "GitHub",
+    "category": "GitHub",
+    "aliases": [
+      "plataforma GitHub"
+    ],
+    "definition": "Plataforma de hospedagem e colaboração construída em torno de repositórios Git.",
+    "explanation": "GitHub acrescenta revisão de código, issues, automações, permissões e publicação, entre outros recursos. Git continua sendo o sistema de versionamento usado localmente.",
+    "example": "O repositório local foi conectado ao GitHub para colaboração e publicação."
+  },
+  {
+    "id": "issue",
+    "term": "Issue",
+    "category": "GitHub",
+    "aliases": [
+      "GitHub Issue",
+      "tarefa"
+    ],
+    "definition": "Registro no GitHub usado para discutir e acompanhar trabalho, dúvida, melhoria ou defeito.",
+    "explanation": "Uma issue pode possuir responsáveis, labels, comentários, marcos e vínculos com pull requests. Ela registra contexto e decisões fora do código.",
+    "example": "A equipe abriu uma issue para detalhar o problema antes da implementação."
+  },
+  {
+    "id": "github-actions",
+    "term": "GitHub Actions",
+    "category": "GitHub",
+    "aliases": [
+      "Actions",
+      "automação do GitHub"
+    ],
+    "definition": "Serviço do GitHub que executa workflows automatizados associados ao repositório.",
+    "explanation": "GitHub Actions reage a eventos como push e pull request para executar testes, builds, publicações ou tarefas administrativas.",
+    "example": "O GitHub Actions executou os testes automaticamente em cada pull request."
+  },
+  {
+    "id": "workflow",
+    "term": "Workflow",
+    "category": "GitHub",
+    "aliases": [
+      "workflow do GitHub Actions",
+      "fluxo automatizado"
+    ],
+    "definition": "Configuração em YAML que define eventos, jobs e etapas executados pelo GitHub Actions.",
+    "explanation": "Um workflow fica normalmente em .github/workflows e deve receber apenas as permissões necessárias. Jobs podem executar em paralelo ou depender de resultados anteriores.",
+    "example": "O workflow de CI instala o ambiente e executa a suíte de testes."
+  },
+  {
+    "id": "github-pages",
+    "term": "GitHub Pages",
+    "category": "GitHub",
+    "aliases": [
+      "Pages",
+      "hospedagem estática do GitHub"
+    ],
+    "definition": "Serviço do GitHub para publicar sites estáticos a partir de um repositório.",
+    "explanation": "GitHub Pages pode publicar arquivos de uma branch ou um artefato produzido por workflow. Conteúdo enviado à fonte configurada pode se tornar público.",
+    "example": "Este dicionário é disponibilizado como site pelo GitHub Pages."
+  },
+  {
+    "id": "organizacao-github",
+    "term": "Organização do GitHub",
+    "category": "GitHub",
+    "aliases": [
+      "GitHub Organization",
+      "organização"
+    ],
+    "definition": "Conta compartilhada que agrupa pessoas, equipes, políticas e repositórios no GitHub.",
+    "explanation": "Organizações facilitam administração de acesso e propriedade coletiva. Permissões podem ser concedidas por equipe e restringidas por políticas.",
+    "example": "Os repositórios da empresa foram reunidos em uma organização do GitHub."
+  },
+  {
+    "id": "colaborador",
+    "term": "Colaborador",
+    "category": "GitHub",
+    "aliases": [
+      "collaborator"
+    ],
+    "definition": "Pessoa ou equipe que recebe permissão para atuar em um repositório.",
+    "explanation": "O nível de acesso determina quais operações o colaborador pode realizar. O princípio do menor privilégio recomenda conceder somente as permissões necessárias.",
+    "example": "A mantenedora adicionou um colaborador com acesso compatível com sua função."
+  },
+  {
+    "id": "visibilidade-repositorio",
+    "term": "Visibilidade do Repositório",
+    "category": "GitHub",
+    "aliases": [
+      "público",
+      "privado",
+      "interno"
+    ],
+    "definition": "Configuração que determina quem pode localizar e acessar um repositório no GitHub.",
+    "explanation": "Repositórios podem ser públicos ou privados, além de internos em planos compatíveis. Alterar a visibilidade pode afetar forks, Pages, regras e exposição de conteúdo.",
+    "example": "A equipe revisou os impactos antes de mudar a visibilidade do repositório."
+  },
+  {
+    "id": "repositorio-arquivado",
+    "term": "Repositório Arquivado",
+    "category": "GitHub",
+    "aliases": [
+      "archived repository",
+      "arquivamento"
+    ],
+    "definition": "Repositório colocado em estado somente leitura para indicar que não recebe manutenção ativa.",
+    "explanation": "Arquivar preserva histórico e referências sem excluir o projeto. O repositório pode ser desarquivado posteriormente por quem possui permissão.",
+    "example": "O experimento antigo foi arquivado para manter o histórico sem sugerir manutenção."
+  },
+  {
+    "id": "chave-ssh",
+    "term": "Chave SSH",
+    "category": "Git e Segurança",
+    "aliases": [
+      "SSH key",
+      "par de chaves SSH"
+    ],
+    "definition": "Par criptográfico usado para autenticar operações Git sem transmitir uma senha.",
+    "explanation": "A chave privada permanece protegida no dispositivo e a chave pública é cadastrada no serviço remoto. Senha da chave, agente SSH e rotação reduzem riscos.",
+    "example": "Pedro cadastrou a chave pública no GitHub e manteve a chave privada protegida."
+  },
+  {
+    "id": "personal-access-token",
+    "term": "Personal Access Token",
+    "category": "Git e Segurança",
+    "aliases": [
+      "PAT",
+      "token de acesso pessoal"
+    ],
+    "definition": "Credencial gerada para autenticar operações e APIs do GitHub com permissões definidas.",
+    "explanation": "Tokens devem ter escopo e duração mínimos, ser armazenados com segurança e nunca entrar no repositório. Tokens refinados permitem limitar recursos e repositórios.",
+    "example": "A automação recebeu um token de curta duração com acesso apenas ao recurso necessário."
+  },
+  {
+    "id": "github-cli",
+    "term": "GitHub CLI",
+    "category": "GitHub",
+    "aliases": [
+      "gh",
+      "CLI do GitHub"
+    ],
+    "definition": "Ferramenta oficial de linha de comando para trabalhar com recursos do GitHub.",
+    "explanation": "O comando gh permite gerenciar autenticação, repositórios, issues, pull requests, workflows e chamadas à API sem sair do terminal.",
+    "example": "Pedro usou gh repo view para consultar os dados do repositório."
+  },
+  {
+    "id": "branch-padrao",
+    "term": "Branch Padrão",
+    "category": "GitHub",
+    "aliases": [
+      "default branch"
+    ],
+    "definition": "Branch usada pelo repositório como base padrão para navegação e novas contribuições.",
+    "explanation": "A branch padrão costuma ser main e influencia pull requests, clonagem e automações. Renomeá-la exige revisar referências e integrações.",
+    "example": "A branch main foi configurada como branch padrão do repositório."
+  },
+  {
+    "id": "branch-protegida",
+    "term": "Branch Protegida",
+    "category": "GitHub",
+    "aliases": [
+      "protected branch",
+      "regra de proteção"
+    ],
+    "definition": "Branch sujeita a regras que restringem alterações diretas e condições de integração.",
+    "explanation": "A proteção pode exigir revisão, testes aprovados, histórico linear ou impedir exclusão e force push. Regras reduzem mudanças acidentais em branches importantes.",
+    "example": "A branch main exige uma revisão e testes aprovados antes do merge."
+  },
+  {
+    "id": "codeowners",
+    "term": "CODEOWNERS",
+    "category": "GitHub",
+    "aliases": [
+      "proprietários de código"
+    ],
+    "definition": "Arquivo que associa padrões de caminhos a pessoas ou equipes responsáveis por revisar mudanças.",
+    "explanation": "GitHub pode solicitar automaticamente a revisão dos responsáveis quando uma pull request altera arquivos correspondentes. A localização do arquivo segue caminhos reconhecidos pela plataforma.",
+    "example": "Mudanças na infraestrutura solicitam revisão da equipe indicada no CODEOWNERS."
+  },
+  {
+    "id": "reflog",
+    "term": "Reflog",
+    "category": "Git",
+    "aliases": [
+      "git reflog",
+      "log de referências"
+    ],
+    "definition": "Registro local das alterações recentes feitas em referências como HEAD e branches.",
+    "explanation": "Reflog pode ajudar a localizar commits após reset, rebase ou troca de branch. Ele é local, temporário e não é compartilhado por push.",
+    "example": "Pedro consultou o reflog para encontrar um commit que não aparecia mais na branch."
+  },
+  {
+    "id": "submodulo",
+    "term": "Submódulo",
+    "category": "Git",
+    "aliases": [
+      "submodule",
+      "git submodule"
+    ],
+    "definition": "Referência de um repositório Git para um commit específico de outro repositório.",
+    "explanation": "Um submódulo permite incorporar outro projeto mantendo históricos separados. Clonagem, atualização e colaboração exigem comandos e cuidado adicionais.",
+    "example": "O projeto principal referencia uma biblioteca externa como submódulo."
+  },
+  {
+    "id": "squash-merge",
+    "term": "Squash Merge",
+    "category": "GitHub",
+    "aliases": [
+      "squash and merge",
+      "merge compactado"
+    ],
+    "definition": "Estratégia que reúne os commits de uma contribuição em um único commit na branch de destino.",
+    "explanation": "Squash merge mantém a branch principal compacta, mas elimina a separação dos commits originais nessa linha. A mensagem final deve resumir a mudança completa.",
+    "example": "A pull request foi integrada por squash merge como um único commit."
+  },
+  {
+    "id": "fast-forward",
+    "term": "Fast-forward",
+    "category": "Git",
+    "aliases": [
+      "fast-forward merge",
+      "avanço rápido"
+    ],
+    "definition": "Atualização em que uma referência avança diretamente para um commit descendente sem criar commit de merge.",
+    "explanation": "Fast-forward é possível quando a branch de destino não possui commits divergentes. O histórico permanece linear porque não há duas linhas a reconciliar.",
+    "example": "O merge foi concluído por fast-forward porque main não mudou durante o desenvolvimento."
   }
 ]

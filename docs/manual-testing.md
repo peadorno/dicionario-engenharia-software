@@ -4,15 +4,21 @@ Use esta lista antes de publicar uma nova versão. Execute a aplicação por um 
 
 ## Busca e conteúdo
 
-- [ ] A página informa que 12 termos foram carregados.
+- [ ] A página inicia sem exibir a lista de termos cadastrados.
+- [ ] As sugestões aparecem em uma lista suspensa enquanto o texto é digitado.
 - [ ] Uma busca sem acentos encontra o mesmo resultado que a palavra acentuada.
+- [ ] Uma intenção como “publicar aplicação” sugere **Deploy**.
+- [ ] Uma intenção como “desfazer versão com problema” sugere **Rollback**.
+- [ ] Pequenos erros de digitação não impedem encontrar o conceito esperado.
 - [ ] Uma busca inexistente apresenta uma mensagem clara.
-- [ ] Limpar a busca restaura todos os termos em ordem alfabética.
+- [ ] Limpar a busca fecha a lista de sugestões.
+- [ ] As setas para cima e para baixo percorrem as sugestões e `Enter` seleciona o termo.
 - [ ] Selecionar um resultado apresenta categoria, aliases, definição, explicação e exemplo.
 
 ## Relações
 
-- [ ] Os termos relacionados abrem seus respectivos detalhes.
+- [ ] Clicar em um termo relacionado exibe uma frase com os dois conceitos.
+- [ ] A ação **Consultar** abre os detalhes do termo relacionado.
 - [ ] É possível selecionar e remover conceitos da relação.
 - [ ] O botão **Relacionar termos** permanece desabilitado com menos de dois conceitos.
 - [ ] Selecionar CI, Deploy e Rollback apresenta duas explicações diretas.
@@ -27,6 +33,14 @@ Use esta lista antes de publicar uma nova versão. Execute a aplicação por um 
 - [ ] O link **Ir para o conteúdo principal** aparece ao receber foco e funciona.
 - [ ] As mensagens de busca, carregamento e relações são anunciadas por leitor de tela.
 - [ ] O conteúdo mantém contraste e legibilidade em todas as seções.
+- [ ] A tecla `/`, quando o foco não está em um campo de texto, leva à busca.
+
+## Tema
+
+- [ ] O controle no menu alterna entre os temas claro e escuro.
+- [ ] A escolha permanece depois de atualizar a página.
+- [ ] A cor da barra do navegador acompanha o tema selecionado.
+- [ ] Os dois temas mantêm contraste, foco visível e legibilidade.
 
 ## Responsividade
 

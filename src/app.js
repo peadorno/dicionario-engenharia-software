@@ -9,12 +9,14 @@ import {
   renderTermDetails,
   renderTermList,
   renderRelatedTerms,
+  renderRelatedRelation,
   renderRelationsOutput,
   renderSelectedTerms,
   renderSelectionToggle,
   setErrorState,
   setLoadingState,
   setReadyState,
+  setSearchInputValue,
 } from "./ui.js";
 
 const state = {
@@ -26,7 +28,8 @@ const state = {
 };
 
 function renderCurrentResults() {
-  const results = searchTerms(state.terms, state.query);
+  const query = state.query.trim();
+  const results = query ? searchTerms(state.terms, query).slice(0, 6) : [];
   renderTermList(results, state.selectedTermId, selectTerm, state.query.trim());
 }
 
@@ -38,11 +41,13 @@ function selectTerm(termId) {
   }
 
   state.selectedTermId = termId;
+  state.query = "";
+  setSearchInputValue(term.term);
   renderCurrentResults();
   renderTermDetails(term);
   renderRelatedTerms(
     findRelatedTerms(termId, state.terms, state.relations),
-    selectRelatedTerm,
+    showRelatedRelation,
   );
   renderSelectionToggle(term, state.selectedRelationTermIds.has(termId));
 }
@@ -56,6 +61,16 @@ function selectRelatedTerm(termId) {
   state.query = "";
   clearSearchInput();
   selectTerm(termId);
+}
+
+function showRelatedRelation(related) {
+  const currentTerm = state.terms.find((term) => term.id === state.selectedTermId);
+
+  if (!currentTerm) {
+    return;
+  }
+
+  renderRelatedRelation(currentTerm, related, selectRelatedTerm);
 }
 
 function getSelectedRelationTerms() {

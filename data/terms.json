@@ -49,7 +49,7 @@
     "term": "CI",
     "category": "DevOps",
     "aliases": ["Continuous Integration", "Integração Contínua"],
-    "definition": "Prática de integrar mudanças frequentemente e validá-las automaticamente.",
+    "definition": "Integração Contínua (Continuous Integration, ou CI) é a prática de integrar mudanças frequentes e validá-las automaticamente.",
     "explanation": "A integração contínua executa verificações como testes, análise estática e construção do projeto sempre que mudanças relevantes são enviadas. O objetivo é encontrar problemas cedo e manter o software em um estado integrável.",
     "example": "O CI executou os testes automaticamente quando a pull request foi atualizada."
   },
@@ -58,7 +58,7 @@
     "term": "CD",
     "category": "DevOps",
     "aliases": ["Continuous Delivery", "Entrega Contínua", "Continuous Deployment", "Implantação Contínua"],
-    "definition": "Conjunto de práticas que automatiza a preparação e, em alguns contextos, a publicação de versões do software.",
+    "definition": "CD significa Entrega Contínua ou Implantação Contínua e reúne práticas que automatizam a preparação e a publicação de versões.",
     "explanation": "CD pode significar entrega contínua, quando uma versão fica pronta para publicação, ou implantação contínua, quando versões aprovadas chegam automaticamente à produção. Em ambos os casos, a automação reduz passos manuais e torna o processo mais repetível.",
     "example": "Após as validações do CI, o fluxo de CD preparou a versão para publicação."
   },
@@ -112,7 +112,7 @@
     "term": "API",
     "category": "Engenharia de Software",
     "aliases": ["interface de programação de aplicações", "application programming interface"],
-    "definition": "Contrato que permite a comunicação entre sistemas por meio de operações, formatos e regras definidos.",
+    "definition": "Interface de Programação de Aplicações (API) é um contrato que permite a comunicação entre sistemas por operações, formatos e regras definidos.",
     "explanation": "Uma API expõe capacidades de um software sem exigir que o consumidor conheça sua implementação interna. Bons contratos são consistentes, documentados e versionados.",
     "example": "O aplicativo consulta uma API para obter a previsão do tempo."
   },
@@ -204,14 +204,14 @@
     "aliases": ["E2E", "teste ponta a ponta"],
     "definition": "Teste de um fluxo completo do sistema pela perspectiva do usuário ou consumidor.",
     "explanation": "Testes end-to-end validam componentes funcionando em conjunto. Como são mais caros e frágeis, devem se concentrar nos fluxos mais importantes.",
-    "example": "O teste E2E simula cadastro, login e conclusão de uma compra."
+    "example": "O teste ponta a ponta (E2E) simula cadastro, login e conclusão de uma compra."
   },
   {
     "id": "tdd",
     "term": "TDD",
     "category": "Testes",
     "aliases": ["test-driven development", "desenvolvimento guiado por testes"],
-    "definition": "Ciclo de desenvolvimento em que se escreve um teste antes do código que satisfaz o comportamento esperado.",
+    "definition": "Desenvolvimento Orientado por Testes (Test-Driven Development, ou TDD) é um ciclo que começa pelo teste do comportamento esperado.",
     "explanation": "O ciclo costuma seguir vermelho, verde e refatorar: criar um teste que falha, fazê-lo passar e melhorar o design mantendo os testes verdes.",
     "example": "Antes de implementar a validação, a pessoa escreveu um teste para a entrada inválida."
   },
@@ -220,8 +220,8 @@
     "term": "SOLID",
     "category": "Design de Software",
     "aliases": ["princípios SOLID"],
-    "definition": "Conjunto de cinco princípios para criar módulos orientados a objetos mais compreensíveis e flexíveis.",
-    "explanation": "SOLID aborda responsabilidade, extensão, substituição, interfaces e dependências. Os princípios orientam decisões, mas não justificam abstrações desnecessárias.",
+    "definition": "SOLID é um acrônimo para cinco princípios que ajudam a criar módulos orientados a objetos mais compreensíveis e flexíveis.",
+    "explanation": "Os princípios tratam de responsabilidade única, aberto-fechado, substituição de Liskov, segregação de interfaces e inversão de dependência. Eles orientam decisões, mas não justificam abstrações desnecessárias.",
     "example": "Separar envio e cálculo da fatura reduz responsabilidades de uma única classe."
   },
   {
@@ -256,7 +256,7 @@
     "term": "REST",
     "category": "Web",
     "aliases": ["representational state transfer", "API REST"],
-    "definition": "Estilo arquitetural para sistemas distribuídos baseado em recursos e em uma interface uniforme.",
+    "definition": "Transferência de Estado Representacional (REST) é um estilo arquitetural para sistemas distribuídos baseado em recursos e interface uniforme.",
     "explanation": "Na web, REST costuma usar HTTP, URLs de recursos e métodos como GET e POST. Uma API HTTP não se torna REST apenas por usar esses métodos.",
     "example": "GET /termos/42 retorna a representação de um termo."
   },
@@ -301,7 +301,7 @@
     "term": "SQL",
     "category": "Dados",
     "aliases": ["structured query language", "linguagem de consulta estruturada"],
-    "definition": "Linguagem usada para definir, consultar e manipular dados em bancos relacionais.",
+    "definition": "Linguagem de Consulta Estruturada (Structured Query Language, ou SQL) define, consulta e manipula dados em bancos relacionais.",
     "explanation": "SQL expressa operações sobre tabelas e relações. Consultas, índices e transações bem planejados influenciam correção e desempenho.",
     "example": "Uma consulta SQL seleciona os pedidos realizados no mês atual."
   },
@@ -310,7 +310,7 @@
     "term": "NoSQL",
     "category": "Dados",
     "aliases": ["banco não relacional", "not only SQL"],
-    "definition": "Família de bancos de dados que utiliza modelos como documento, chave-valor, colunas ou grafos.",
+    "definition": "NoSQL, ou Not Only SQL, reúne bancos que usam modelos como documento, chave-valor, colunas ou grafos, além do modelo relacional tradicional.",
     "explanation": "NoSQL não representa uma única tecnologia nem ausência total de estrutura. Cada modelo favorece determinados padrões de acesso e compromissos de consistência.",
     "example": "Um banco de documentos armazena catálogos com atributos variados."
   },
@@ -356,7 +356,7 @@
     "category": "Infraestrutura",
     "aliases": ["infrastructure as code", "IaC"],
     "definition": "Gerenciamento de infraestrutura por arquivos versionados e executáveis em vez de configuração manual.",
-    "explanation": "IaC torna mudanças revisáveis, repetíveis e automatizáveis. Estado, segredos e permissões precisam de tratamento cuidadoso.",
+    "explanation": "Infraestrutura como Código (Infrastructure as Code, ou IaC) torna mudanças revisáveis, repetíveis e automatizáveis. Estado, segredos e permissões precisam de tratamento cuidadoso.",
     "example": "A rede e o banco são definidos em código e revisados por pull request."
   },
   {
@@ -454,7 +454,7 @@
     "term": "LLM",
     "category": "Inteligência Artificial",
     "aliases": ["large language model", "grande modelo de linguagem"],
-    "definition": "Modelo de linguagem de grande escala treinado para compreender e gerar sequências de texto e outros dados.",
+    "definition": "Grande Modelo de Linguagem (Large Language Model, ou LLM) é treinado em muitos dados para processar e gerar linguagem e outros conteúdos.",
     "explanation": "LLMs estimam tokens prováveis com base no contexto. Podem resumir, responder e programar, mas não garantem verdade factual nem raciocínio correto.",
     "example": "Um LLM transforma uma pergunta em linguagem natural em uma resposta explicativa."
   },
@@ -463,9 +463,9 @@
     "term": "NLP",
     "category": "Inteligência Artificial",
     "aliases": ["processamento de linguagem natural", "natural language processing", "PLN"],
-    "definition": "Área que desenvolve métodos para computadores processarem e produzirem linguagem humana.",
-    "explanation": "NLP abrange classificação, extração, tradução, busca e geração de texto. Técnicas modernas frequentemente usam transformers e modelos de linguagem.",
-    "example": "Um sistema de NLP identifica o assunto principal de cada mensagem."
+    "definition": "Processamento de Linguagem Natural (Natural Language Processing, ou NLP) desenvolve métodos para computadores interpretarem e produzirem linguagem humana.",
+    "explanation": "NLP, também chamado de PLN em português, abrange classificação, extração, tradução, busca e geração de texto. Técnicas modernas frequentemente usam transformers e modelos de linguagem.",
+    "example": "Um sistema de processamento de linguagem natural identifica o assunto principal de cada mensagem."
   },
   {
     "id": "transformer",
@@ -508,7 +508,7 @@
     "term": "RAG",
     "category": "Inteligência Artificial",
     "aliases": ["retrieval-augmented generation", "geração aumentada por recuperação"],
-    "definition": "Arquitetura que recupera informações externas e as fornece ao modelo para apoiar a geração de uma resposta.",
+    "definition": "Geração Aumentada por Recuperação (Retrieval-Augmented Generation, ou RAG) combina busca em fontes externas com a geração de respostas por um modelo.",
     "explanation": "RAG conecta modelos a fontes atualizadas ou privadas e pode melhorar fundamentação. Recuperação ruim ou contexto insuficiente ainda produzem respostas inadequadas.",
     "example": "Antes de responder, o sistema recupera trechos da documentação interna."
   },
@@ -1044,7 +1044,7 @@
       "PAT",
       "token de acesso pessoal"
     ],
-    "definition": "Credencial gerada para autenticar operações e APIs do GitHub com permissões definidas.",
+    "definition": "Token de Acesso Pessoal (Personal Access Token, ou PAT) é uma credencial usada para autenticar operações e APIs do GitHub com permissões definidas.",
     "explanation": "Tokens devem ter escopo e duração mínimos, ser armazenados com segurança e nunca entrar no repositório. Tokens refinados permitem limitar recursos e repositórios.",
     "example": "A automação recebeu um token de curta duração com acesso apenas ao recurso necessário."
   },

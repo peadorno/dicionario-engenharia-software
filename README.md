@@ -87,6 +87,7 @@ como “Em curadoria”. A procedência e o método de inclusão estão document
 │   └── terms.json
 ├── docs/
 │   ├── architecture.md
+│   ├── content-guidelines.md
 │   ├── manual-testing.md
 │   ├── project-guide.md
 │   └── sources.md
@@ -118,6 +119,8 @@ Os dados iniciais já estão disponíveis em:
 ## Arquitetura
 
 As decisões iniciais de arquitetura, modelo de dados, busca, relações e testes estão descritas em [`docs/architecture.md`](docs/architecture.md).
+
+As regras para escrever verbetes claros, progressivos e tecnicamente precisos estão em [`docs/content-guidelines.md`](docs/content-guidelines.md).
 
 ## Como apresentar e explicar o projeto
 

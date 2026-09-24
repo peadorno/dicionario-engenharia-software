@@ -40,7 +40,7 @@ Não fazem parte do MVP:
 - painel de edição;
 - integração com LLM;
 - visualização gráfica das relações;
-- busca fuzzy;
+- busca vetorial com embeddings;
 - favoritos, comentários ou analytics.
 
 ## Cobertura atual
@@ -88,6 +88,7 @@ como “Em curadoria”. A procedência e o método de inclusão estão document
 ├── docs/
 │   ├── architecture.md
 │   ├── manual-testing.md
+│   ├── project-guide.md
 │   └── sources.md
 ├── src/
 │   ├── app.js
@@ -117,6 +118,17 @@ Os dados iniciais já estão disponíveis em:
 ## Arquitetura
 
 As decisões iniciais de arquitetura, modelo de dados, busca, relações e testes estão descritas em [`docs/architecture.md`](docs/architecture.md).
+
+## Como apresentar e explicar o projeto
+
+O guia [`docs/project-guide.md`](docs/project-guide.md) reúne:
+
+- orientações para apresentar profissionalmente o perfil e o repositório;
+- modelos de mensagem para compartilhar o site;
+- roteiros de apresentação com diferentes durações;
+- uma aula técnica detalhada sobre arquitetura, dados, busca, relações, interface, testes, Git e GitHub Pages;
+- um glossário dos principais termos usados na implementação;
+- um passo a passo para reconstruir o projeto do zero.
 
 ## Executar localmente
 
